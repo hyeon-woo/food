@@ -81,7 +81,7 @@
             </HBox>
             <ImageView fitHeight="133.0" fitWidth="322.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../gusdn/img/KakaoTalk_20160919_094546180.png" />
+                  <Image url="@../../../food/img/KakaoTalk_20160919_094546180.png" />
                </image>
             </ImageView>
             <HBox alignment="CENTER" prefHeight="109.0" prefWidth="365.0">
@@ -138,7 +138,7 @@
                      <children>
                         <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../gusdn/img/ing_FrozenCorn.jpg" />
+                              <Image url="@../../../food/img/ing_FrozenCorn.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="NONE" />
@@ -151,7 +151,7 @@
                      <children>
                         <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../gusdn/img/ing_SweetPotato.jpg" />
+                              <Image url="@../../../food/img/ing_SweetPotato.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="NONE" />
@@ -167,7 +167,7 @@
                      <children>
                         <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../gusdn/img/ING_hot_sauce_9110.jpg" />
+                              <Image url="@../../../food/img/ING_hot_sauce_9110.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="NONE" />
@@ -180,7 +180,7 @@
                      <children>
                         <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../gusdn/img/ing_PintoBeans.jpg" />
+                              <Image url="@../../../food/img/ing_PintoBeans.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="NONE" />
@@ -193,7 +193,7 @@
                      <children>
                         <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../gusdn/img/ing_TomatoPaste.jpg" />
+                              <Image url="@../../../food/img/ing_TomatoPaste.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="NONE" />
@@ -206,7 +206,7 @@
                      <children>
                         <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../gusdn/img/ing_GroundCumin.jpg" />
+                              <Image url="@../../../food/img/ing_GroundCumin.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="NONE" />
@@ -219,7 +219,7 @@
                      <children>
                         <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../gusdn/img/ing_ChilePowder.jpg" />
+                              <Image url="@../../../food/img/ing_ChilePowder.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="NONE" />
@@ -232,7 +232,7 @@
                      <children>
                         <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../gusdn/img/ing_Orange_Sharp_Cheddar.jpg" />
+                              <Image url="@../../../food/img/ing_Orange_Sharp_Cheddar.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="NONE" />
@@ -245,7 +245,7 @@
                      <children>
                         <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../gusdn/img/ing_garlic.jpg" />
+                              <Image url="@../../../food/img/ing_garlic.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="NONE" />
@@ -258,7 +258,7 @@
                      <children>
                         <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../gusdn/img/ing_onion_2.jpg" />
+                              <Image url="@../../../food/img/ing_onion_2.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="NONE" />
@@ -271,7 +271,7 @@
                      <children>
                         <ImageView fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../gusdn/img/ing_MixedDriedMushrooms.jpg" />
+                              <Image url="@../../../food/img/ing_MixedDriedMushrooms.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="NONE" />

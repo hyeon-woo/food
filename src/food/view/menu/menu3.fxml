@@ -79,7 +79,7 @@
             </HBox>
             <ImageView fitHeight="133.0" fitWidth="322.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../gusdn/img/KakaoTalk_20160919_094546180.png" />
+                  <Image url="@../../food/img/KakaoTalk_20160919_094546180.png" />
                </image>
             </ImageView>
             <HBox alignment="CENTER" prefHeight="109.0" prefWidth="365.0">
@@ -124,7 +124,7 @@
                <children>
                   <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../gusdn/img/SKU0924_web_step01.jpg" />
+                        <Image url="@../../food/img/SKU0924_web_step01.jpg" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="쿡 쌀">
@@ -152,7 +152,7 @@
                <children>
                   <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../gusdn/img/SKU0924_web_step02.jpg" />
+                        <Image url="@../../food/img/SKU0924_web_step02.jpg" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="새콤 달콤한 오이 만들기">
@@ -180,7 +180,7 @@
                <children>
                   <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../gusdn/img/SKU0924_web_step03.jpg" />
+                        <Image url="@../../food/img/SKU0924_web_step03.jpg" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="준비 재료">
@@ -208,7 +208,7 @@
                <children>
                   <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../gusdn/img/SKU0924_web_step04.jpg" />
+                        <Image url="@../../food/img/SKU0924_web_step04.jpg" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="쿡 치킨">
@@ -236,7 +236,7 @@
                <children>
                   <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../gusdn/img/SKU0924_web_step05.jpg" />
+                        <Image url="@../../food/img/SKU0924_web_step05.jpg" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="프라이 쌀">
@@ -264,7 +264,7 @@
                <children>
                   <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../gusdn/img/SKU0924_web_step06.jpg" />
+                        <Image url="@../../food/img/SKU0924_web_step06.jpg" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="서브">

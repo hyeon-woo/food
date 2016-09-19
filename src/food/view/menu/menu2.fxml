@@ -79,7 +79,7 @@
             </HBox>
             <ImageView fitHeight="133.0" fitWidth="322.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../gusdn/img/KakaoTalk_20160919_094546180.png" />
+                  <Image url="@../../../food/img/KakaoTalk_20160919_094546180.png" />
                </image>
             </ImageView>
             <HBox alignment="CENTER" prefHeight="109.0" prefWidth="365.0">
@@ -157,7 +157,7 @@
             </VBox>
             <ImageView fitHeight="426.0" fitWidth="637.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../gusdn/img/FS_SKU0928_web__1_.jpg" />
+                  <Image url="@../../../food/img/FS_SKU0928_web__1_.jpg" />
                </image>
                <GridPane.margin>
                   <Insets left="10.0" right="5.0" />

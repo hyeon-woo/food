@@ -79,7 +79,7 @@
             </HBox>
             <ImageView fitHeight="133.0" fitWidth="322.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../gusdn/img/KakaoTalk_20160919_094546180.png" />
+                  <Image url="@../../../food/img/KakaoTalk_20160919_094546180.png" />
                </image>
             </ImageView>
             <HBox alignment="CENTER" prefHeight="109.0" prefWidth="365.0">
@@ -123,7 +123,7 @@
                <children>
                   <ImageView fitHeight="250.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../gusdn/img/FS_SKU0928_web__1_.jpg" />
+                        <Image url="@../../../food/img/FS_SKU0928_web__1_.jpg" />
                      </image>
                   </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="99.0" prefWidth="401.0" text="바질과 오이 샐러드와 치킨 볶음밥" textAlignment="CENTER">
@@ -137,7 +137,7 @@
                <children>
                   <ImageView fitHeight="250.0" fitWidth="400.0">
                      <image>
-                        <Image url="@../../../gusdn/img/FS_SKU0735_web_badge.jpg" />
+                        <Image url="@../../../food/img/FS_SKU0735_web_badge.jpg" />
                      </image>
                   </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="137.0" prefWidth="400.0" text="핀토 콩, 체다 치즈 옥수수와 고구마 고추" textAlignment="CENTER">
@@ -151,7 +151,7 @@
                <children>
                   <ImageView fitHeight="250.0" fitWidth="400.0">
                      <image>
-                        <Image url="@../../../gusdn/img/18.bmp" />
+                        <Image url="@../../../food/img/18.bmp" />
                      </image>
                   </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="88.0" prefWidth="401.0" text="비벼비벼 모든걸비빔밥" textAlignment="CENTER">
@@ -165,7 +165,7 @@
                <children>
                   <ImageView fitHeight="250.0" fitWidth="411.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../gusdn/img/d0013015_4fca36d64248c.jpg" />
+                        <Image url="@../../../food/img/d0013015_4fca36d64248c.jpg" />
                      </image>
                   </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="126.0" prefWidth="400.0" text="턱부서질샌드위치" textAlignment="CENTER">
