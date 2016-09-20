@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49224645-e0ee-441c-84fb-8ef80d35e24d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/img/getstart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/img/memberlogin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/img/order1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/img/order2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/getstart.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/joinmain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/joinmember.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/joinmemberController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/login.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/order.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cronian/project/login/payment.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cronian/project/DB/pjDAO.java" afterPath="$PROJECT_DIR$/src/cronian/project/DB/pjDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cronian/project/login/joinmember.fxml" afterPath="$PROJECT_DIR$/src/cronian/project/login/joinmember.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/loginout/joinmember.fxml" afterPath="$PROJECT_DIR$/src/hj/loginout/joinmember.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cronian/project/login/joinmemberController.java" afterPath="$PROJECT_DIR$/src/cronian/project/login/joinmemberController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="food.iws" />
@@ -60,15 +50,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="joinmemberController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="joinmemberController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cronian/project/login/joinmemberController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-0.39041096">
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="32" />
+              <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="joinmember.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cronian/project/login/joinmember.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2857144">
+              <caret line="236" column="38" selection-start-line="236" selection-start-column="38" selection-end-line="236" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -76,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/src/cronian/project/model/pjJoinUpdate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -96,24 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="joinmember.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cronian/project/login/joinmember.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.535714">
-              <caret line="213" column="65" selection-start-line="213" selection-start-column="65" selection-end-line="213" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pjDAO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pjDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cronian/project/DB/pjDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57473683">
-              <caret line="228" column="15" selection-start-line="228" selection-start-column="15" selection-end-line="228" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="224" column="22" selection-start-line="224" selection-start-column="22" selection-end-line="224" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,11 +149,12 @@
         <option value="$PROJECT_DIR$/src/cronian/project/sample/Loginpage.java" />
         <option value="$PROJECT_DIR$/src/cronian/project/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/cronian/project/managerLoginController.java" />
-        <option value="$PROJECT_DIR$/src/cronian/project/login/joinmember.fxml" />
         <option value="$PROJECT_DIR$/src/cronian/project/login/img/joinmain.java" />
         <option value="$PROJECT_DIR$/src/cronian/project/login/joinmain.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/50e65400-310b-484a-88bd-e9c30aa2ad4e/console.sql" />
         <option value="$PROJECT_DIR$/src/cronian/project/DB/pjDAO.java" />
+        <option value="$PROJECT_DIR$/src/hj/loginout/joinmember.fxml" />
+        <option value="$PROJECT_DIR$/src/cronian/project/login/joinmember.fxml" />
         <option value="$PROJECT_DIR$/src/cronian/project/login/joinmemberController.java" />
       </list>
     </option>
@@ -300,6 +289,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="food" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="food" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="food" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="food" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fxml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -324,6 +357,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\수업자료\cronian\java\1608i\food\src\cronian\project\login" />
       <recent name="D:\수업자료\cronian\java\1608i\food\src\cronian\project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -695,7 +729,7 @@
       <workItem from="1474276669379" duration="1918000" />
       <workItem from="1474329417173" duration="21752000" />
       <workItem from="1474355114717" duration="599000" />
-      <workItem from="1474356222426" duration="2691000" />
+      <workItem from="1474356222426" duration="5051000" />
     </task>
     <task id="LOCAL-00001" summary="DB 파일 + 데이터베이스 작업 커밋">
       <created>1474277346899</created>
@@ -739,11 +773,17 @@
       <option name="project" value="LOCAL" />
       <updated>1474351087019</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="main 커밋">
+      <created>1474358922156</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1474358922156</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26968000" />
+    <option name="totallyTimeSpent" value="29328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -756,10 +796,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3766756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3766756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20241287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32707775" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32707775" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24839538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13157895" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1278,10 +1318,18 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/50e65400-310b-484a-88bd-e9c30aa2ad4e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hj/loginout/joinmember.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.3074074">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1302,7 +1350,7 @@
     <entry file="file://$PROJECT_DIR$/src/cronian/project/model/pjJoinUpdate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1319,10 +1367,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cronian/project/DB/pjDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="224" column="22" selection-start-line="224" selection-start-column="22" selection-end-line="224" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cronian/project/login/joinmember.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.535714">
-          <caret line="213" column="65" selection-start-line="213" selection-start-column="65" selection-end-line="213" selection-end-column="65" />
+        <state vertical-scroll-proportion="-3.2857144">
+          <caret line="236" column="38" selection-start-line="236" selection-start-column="38" selection-end-line="236" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1330,31 +1388,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/50e65400-310b-484a-88bd-e9c30aa2ad4e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.7">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cronian/project/login/joinmemberController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cronian/project/DB/pjDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57473683">
-          <caret line="228" column="15" selection-start-line="228" selection-start-column="15" selection-end-line="228" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-0.39041096">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>

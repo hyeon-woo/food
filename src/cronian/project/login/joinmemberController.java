@@ -4,10 +4,9 @@ package cronian.project.login;
 import cronian.project.DB.pjDAO;
 import cronian.project.model.pjJoinUpdate;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 /**
  * Created by java on 2016-09-20.
@@ -17,8 +16,11 @@ public class joinmemberController {
     @FXML TextField emailbk;
     @FXML TextField username;
     @FXML TextField userphone;
+    @FXML PasswordField passwd;
+    @FXML PasswordField conpasswd;
     @FXML TextField useraddrnum;
     @FXML TextField useraddrtext;
+    @FXML Label checked;
 
     public void checkemail(ActionEvent event) {
         boolean result =false;
@@ -39,7 +41,7 @@ public class joinmemberController {
         sb.append(emailbk.getText()).append("@").append(emailbk.getText());
         StringBuilder sb1 = new StringBuilder();
         sb1.append(useraddrnum.getText()).append("//").append(useraddrtext.getText());
-        pj = new pjJoinUpdate(sb.toString(),username.getText(),userphone.getText(),"11",sb1.toString());
+        pj = new pjJoinUpdate(sb.toString(),username.getText(),userphone.getText(),passwd.getText(),sb1.toString());
         if(pjDAO.addMember(pj,1)){
             Waring("완료","가입완료");
         }else{
@@ -55,4 +57,15 @@ public class joinmemberController {
         al.showAndWait();
     }
 
+    public void passwdchck(Event event) {
+        if(conpasswd.getText().equals(passwd.getText())){
+            checked.setText("비밀번호가 일치합니다");
+            checked.setVisible(true);
+            checked.setStyle("-fx-text-fill: blue");
+        } else{
+            checked.setText("비밀번호가 일치하지 않습니다");
+            checked.setVisible(true);
+            checked.setStyle("-fx-text-fill: red");
+        }
+    }
 }
