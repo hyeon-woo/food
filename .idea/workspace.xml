@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fb25176-85d3-4d4a-a85e-2ccf993d6d75" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hj/loginout/joinmember.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hj/loginout/img/getstart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hj/loginout/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hj/loginout/img/order1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hj/loginout/img/order2.png" />
+      <change type="DELETED" beforePath="D:\haruhj\java\1608i\food\src\hj\loginout\signup.fxml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/loginout/getstart.fxml" afterPath="$PROJECT_DIR$/src/hj/loginout/getstart.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/loginout/login.fxml" afterPath="$PROJECT_DIR$/src/hj/loginout/login.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/loginout/order.fxml" afterPath="$PROJECT_DIR$/src/hj/loginout/order.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/loginout/payment.fxml" afterPath="$PROJECT_DIR$/src/hj/loginout/payment.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,46 +45,20 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="56.666668">
-              <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.fxml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="order.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hj/loginout/order.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.0">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="payment.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hj/loginout/payment.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4333334">
-              <caret line="365" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="joinmember.fxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/hj/loginout/joinmember.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5736434">
-              <caret line="213" column="19" selection-start-line="213" selection-start-column="19" selection-end-line="213" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.6996124">
+              <caret line="172" column="28" selection-start-line="172" selection-start-column="28" selection-end-line="172" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -92,8 +70,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5333333">
-              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+            <state vertical-scroll-proportion="-15.866667">
+              <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -119,14 +97,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/hj/loginout/login.fxml" />
         <option value="$PROJECT_DIR$/src/hj/loginout/parment.fxml" />
         <option value="$PROJECT_DIR$/src/food/controller/abccontroller.java" />
+        <option value="$PROJECT_DIR$/src/hj/loginout/payment.fxml" />
         <option value="$PROJECT_DIR$/src/hj/loginout/order.fxml" />
         <option value="$PROJECT_DIR$/src/hj/loginout/getstart.fxml" />
         <option value="$PROJECT_DIR$/src/hj/loginout/signup.fxml" />
-        <option value="$PROJECT_DIR$/src/hj/loginout/payment.fxml" />
-        <option value="$PROJECT_DIR$/src/hj/loginout/login.fxml" />
-        <option value="$PROJECT_DIR$/src/hj/loginout/joinmember.fxml" />
       </list>
     </option>
   </component>
@@ -213,6 +190,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="loginout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="food" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="food" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loginout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -528,7 +527,7 @@
       <option name="number" value="Default" />
       <updated>1474329354838</updated>
       <workItem from="1474329355254" duration="10219000" />
-      <workItem from="1474350670397" duration="4183000" />
+      <workItem from="1474350670397" duration="1562000" />
     </task>
     <task id="LOCAL-00001" summary="회원가입 레이아웃 올려요">
       <created>1474334011263</created>
@@ -572,17 +571,11 @@
       <option name="project" value="LOCAL" />
       <updated>1474351613278</updated>
     </task>
-    <task id="LOCAL-00008" summary="레이아웃">
-      <created>1474352239575</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1474352239575</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14402000" />
+    <option name="totallyTimeSpent" value="11781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
@@ -647,6 +640,17 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hj/loginout/payment.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7492712">
+          <caret line="60" column="60" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hj/loginout/img/order1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -658,18 +662,7 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="56.666668">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hj/loginout/order.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -679,30 +672,19 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5333333">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        <state vertical-scroll-proportion="-15.866667">
+          <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hj/loginout/payment.fxml">
+    <entry file="file://$PROJECT_DIR$/src/hj/loginout/order.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4333334">
-          <caret line="365" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hj/loginout/joinmember.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5736434">
-          <caret line="213" column="19" selection-start-line="213" selection-start-column="19" selection-end-line="213" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.6996124">
+          <caret line="172" column="28" selection-start-line="172" selection-start-column="28" selection-end-line="172" selection-end-column="28" />
           <folding />
         </state>
       </provider>
