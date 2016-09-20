@@ -47,10 +47,17 @@
         <Pane prefHeight="592.0" prefWidth="60.0" BorderPane.alignment="CENTER" />
     </right>
     <top>
-        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="1024.0" BorderPane.alignment="CENTER" />
+        <HBox alignment="CENTER" prefHeight="91.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/logo.png" />
+               </image>
+            </ImageView>
+         </children></HBox>
     </top>
    <center>
-          <GridPane alignment="CENTER" prefHeight="615.0" prefWidth="881.0" style="-fx-border-color: orange;" BorderPane.alignment="CENTER">
+          <GridPane alignment="CENTER" prefHeight="615.0" prefWidth="881.0" BorderPane.alignment="CENTER">
               <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="85.0" />
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
@@ -197,20 +204,14 @@
                   <Insets bottom="5.0" left="20.0" />
                </GridPane.margin>
             </Button>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: orange;" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="6">
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="6">
                <children>
-                      <ImageView fitHeight="154.0" fitWidth="327.0" layoutX="-8.0" layoutY="146.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" rotate="19.5">
-                          <cursor>
-                              <Cursor fx:constant="SW_RESIZE" />
-                          </cursor>
-                          <image>
-                              <Image url="@img/logo.png" />
-                          </image>
-                      </ImageView>
+                  <ImageView fitHeight="223.0" fitWidth="327.0" layoutX="12.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/memberlogin.png" />
+                     </image>
+                  </ImageView>
                </children>
-               <GridPane.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-               </GridPane.margin>
             </Pane>
               </children>
           </GridPane>
