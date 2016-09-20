@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -13,7 +14,8 @@ import java.io.IOException;
 /**
  * Created by java on 2016-09-20.
  */
-public class Menu3Controller {
+public class Menu1aController {
+@FXML private ImageView picture1;
     @FXML
     private Button Menu;
 
@@ -34,4 +36,23 @@ public class Menu3Controller {
             ex.printStackTrace();
         }
     }
+
+    public void goMenu2(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/menu/menu2.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage)picture1.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("foodmenu2");
+
+            stage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
+
 }
