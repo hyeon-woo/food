@@ -14,7 +14,7 @@
             <children>
                 <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">
                     <children>
-                        <Button fx:id="Menu" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" stylesheets="@../css/food.css" text="메뉴">
+                        <Button  mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" stylesheets="@../css/food.css" text="메뉴">
                      <font>
                         <Font size="16.0" />
                      </font>

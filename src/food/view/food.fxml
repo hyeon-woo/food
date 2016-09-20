@@ -8,13 +8,13 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food.controller.maincontroller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food.controller.MainController">
     <top>
         <HBox fx:id="background" alignment="CENTER" prefHeight="55.0" prefWidth="1024.0" stylesheets="@../css/food.css" BorderPane.alignment="CENTER">
             <children>
                 <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">
                     <children>
-                        <Button fx:id="menubtn" mnemonicParsing="false" onAction="#goMenu1" prefHeight="20.0" prefWidth="80.0" stylesheets="@../css/food.css" text="메뉴">
+                        <Button fx:id="Menu" mnemonicParsing="false" onAction="#goMenu1" prefHeight="20.0" prefWidth="80.0" stylesheets="@../css/food.css" text="메뉴">
                      <font>
                         <Font size="16.0" />
                      </font>

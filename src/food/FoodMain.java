@@ -9,10 +9,11 @@ import javafx.stage.Stage;
 /**
  * Created by java on 2016-09-08.
  */
-public class foodmain extends Application {
+public class FoodMain extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("view/food.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../food/view/food.fxml"));
+
         Parent root = loader.load();
 
         stage.setTitle("food");

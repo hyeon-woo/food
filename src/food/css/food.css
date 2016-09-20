@@ -1,8 +1,11 @@
+
+
 #background {-fx-background-color: white;}
 #background2 {-fx-background-color: white;}
 #background3 {-fx-background-color: white;}
 #background4 {-fx-background-color: white;}
 #Menu {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
+#Menu1 {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
 #Apply {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
 #Howwork {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
 #Recipe {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
