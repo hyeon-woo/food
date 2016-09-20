@@ -8,82 +8,96 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane fx:id="index" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kwon5820.src.index_Controller">
-   <top>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <Pane prefHeight="100.0" prefWidth="362.0">
-               <children>
-                  <Button fx:id="Menu" layoutX="76.0" layoutY="33.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="62.0" stylesheets="@css/foodicon.css" text="메뉴" textFill="#5e3939" />
-                  <Button fx:id="Price" layoutX="138.0" layoutY="33.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="62.0" stylesheets="@css/foodicon.css" text="가격" />
-                  <Button fx:id="Howwork" layoutX="200.0" layoutY="33.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="62.0" stylesheets="@css/foodicon.css" text="생산자" />
-                  <Button fx:id="Recipe" layoutX="262.0" layoutY="33.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="62.0" stylesheets="@css/foodicon.css" text="레시피" />
-                  <Line endX="910.0" layoutX="107.0" layoutY="96.0" startX="-100.0">
-                     <stroke>
-                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
-                           <stops>
-                              <Stop color="#f2964b" />
-                              <Stop color="WHITE" offset="1.0" />
-                           </stops>
-                        </RadialGradient>
-                     </stroke>
-                  </Line>
-               </children>
-            </Pane>
-            <Pane prefHeight="30.0" prefWidth="313.0">
-               <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="57.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@img/로고.png" />
-                     </image>
-                  </ImageView>
-               </children></Pane>
-            <Pane prefHeight="100.0" prefWidth="349.0">
-               <children>
-                  <Label layoutX="50.0" layoutY="43.0" text="kwon5820@nate.com" />
-               </children></Pane>
-         </children>
-      </HBox>
-   </top>
-   <left>
-      <Pane prefHeight="668.0" prefWidth="350.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label layoutX="36.0" layoutY="132.0" text="언제 받을 예정이세요?">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Button fx:id="thisweek" layoutX="30.0" layoutY="172.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="127.0" stylesheets="@css/foodicon.css" text="이번주">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="nextweek" layoutX="169.0" layoutY="172.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="127.0" stylesheets="@css/foodicon.css" text="다음주">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="fourfamily" layoutX="169.0" layoutY="331.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="127.0" stylesheets="@css/foodicon.css" text="4인가족">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button fx:id="twofamily" layoutX="30.0" layoutY="331.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="127.0" stylesheets="@css/foodicon.css" text="2인가족">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Label layoutX="36.0" layoutY="291.0" text="회원님의 가족을 선택해주세요">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Button fx:id="apply" layoutX="28.0" layoutY="437.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="268.0" stylesheets="@css/foodicon.css" text="신청하기">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-         </children>
-      </Pane>
-   </left>
+<BorderPane fx:id="index" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="kwon5820.src.index_Controller">
+    <top>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane prefHeight="100.0" prefWidth="362.0">
+                    <children>
+                        <Button fx:id="Menu" layoutX="76.0" layoutY="33.0" mnemonicParsing="false" prefHeight="34.0"
+                                prefWidth="62.0" stylesheets="@css/foodicon.css" text="메뉴" textFill="#5e3939"/>
+                        <Button fx:id="Price" layoutX="138.0" layoutY="33.0" mnemonicParsing="false" prefHeight="34.0"
+                                prefWidth="62.0" stylesheets="@css/foodicon.css" text="가격"/>
+                        <Button fx:id="Howwork" layoutX="200.0" layoutY="33.0" mnemonicParsing="false" prefHeight="34.0"
+                                prefWidth="62.0" stylesheets="@css/foodicon.css" text="생산자"/>
+                        <Button fx:id="Recipe" layoutX="262.0" layoutY="33.0" mnemonicParsing="false" prefHeight="34.0"
+                                prefWidth="62.0" stylesheets="@css/foodicon.css" text="레시피"/>
+                        <Line endX="910.0" layoutX="107.0" layoutY="96.0" startX="-100.0">
+                            <stroke>
+                                <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                    <stops>
+                                        <Stop color="#f2964b"/>
+                                        <Stop color="WHITE" offset="1.0"/>
+                                    </stops>
+                                </RadialGradient>
+                            </stroke>
+                        </Line>
+                    </children>
+                </Pane>
+                <Pane prefHeight="30.0" prefWidth="313.0">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="57.0" layoutY="20.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@img/로고.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Pane prefHeight="100.0" prefWidth="349.0">
+                    <children>
+                        <Label layoutX="50.0" layoutY="43.0" text="kwon5820@nate.com"/>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+    </top>
+    <left>
+        <Pane prefHeight="668.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="36.0" layoutY="132.0" text="언제 받을 예정이세요?">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="thisweek" layoutX="30.0" layoutY="172.0" mnemonicParsing="false" prefHeight="53.0"
+                        prefWidth="127.0" stylesheets="@css/foodicon.css" text="이번주">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="nextweek" layoutX="169.0" layoutY="172.0" mnemonicParsing="false" prefHeight="53.0"
+                        prefWidth="127.0" stylesheets="@css/foodicon.css" text="다음주">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="fourfamily" layoutX="169.0" layoutY="331.0" mnemonicParsing="false" prefHeight="53.0"
+                        prefWidth="127.0" stylesheets="@css/foodicon.css" text="4인가족">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="twofamily" layoutX="30.0" layoutY="331.0" mnemonicParsing="false" prefHeight="53.0"
+                        prefWidth="127.0" stylesheets="@css/foodicon.css" text="2인가족">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Label layoutX="36.0" layoutY="291.0" text="회원님의 가족을 선택해주세요">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="apply" layoutX="28.0" layoutY="437.0" mnemonicParsing="false" prefHeight="53.0"
+                        prefWidth="268.0" stylesheets="@css/foodicon.css" text="신청하기">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </left>
 </BorderPane>

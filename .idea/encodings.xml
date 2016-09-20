@@ -2,6 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/food" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/food/controller" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/src/food/controller/maincontroller.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/food/css" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/src/food/img" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/src/food/view" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/src/kwon5820/src/food" charset="UTF-8" />
   </component>
 </project>

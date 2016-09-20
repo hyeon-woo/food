@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class pjMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        pjJoinUpdate pj = new pjJoinUpdate(sc.next(), sc.next(), sc.next(), sc.next(), sc.next());
-        pjDAO.joinMember(pj,1);
+
+        System.out.println(pjDAO.checkemail("1",1));
     }
 }
