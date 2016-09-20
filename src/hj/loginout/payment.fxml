@@ -55,7 +55,7 @@
                         <Cursor fx:constant="SW_RESIZE" />
                     </cursor>
                     <image>
-                        <Image url="@../../../../HelloJavaFX/src/hj/img/logo.png" />
+                        <Image url="@img/logo.png" />
                     </image>
                     <HBox.margin>
                         <Insets bottom="10.0" left="50.0" />

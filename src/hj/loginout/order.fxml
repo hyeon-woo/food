@@ -54,7 +54,7 @@
                   <Cursor fx:constant="SW_RESIZE" />
                </cursor>
                <image>
-                  <Image url="@../../../../HelloJavaFX/src/hj/img/logo.png" />
+                  <Image url="@img/logo.png" />
                </image>
                <HBox.margin>
                   <Insets bottom="10.0" left="50.0" />
@@ -136,7 +136,7 @@
          <children>
             <ImageView fitHeight="420.0" fitWidth="390.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
                <image>
-                  <Image url="@../../../../HelloJavaFX/src/hj/img/order1.png" />
+                  <Image url="@img/order1.png" />
                </image>
                <GridPane.margin>
                   <Insets bottom="10.0" top="10.0" />
@@ -144,7 +144,7 @@
             </ImageView>
             <ImageView fitHeight="420.0" fitWidth="390.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                <image>
-                  <Image url="@../../../../HelloJavaFX/src/hj/img/order2.png" />
+                  <Image url="@img/order2.png" />
                </image>
                <GridPane.margin>
                   <Insets bottom="10.0" top="10.0" />
