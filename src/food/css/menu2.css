@@ -1,0 +1,10 @@
+#background {-fx-background-color: white;}
+#Menu {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
+#Apply {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
+#Howwork {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
+#Recipe {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
+#Login {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
+#picture5 {-fx-border-color: darkgray;}
+
+#get {-fx-background-color: slateblue; -fx-opacity: 0.8; -fx-border-radius: 20px;}
+#detail {-fx-background-color: dodgerblue; -fx-opacity: 0.8; -fx-border-radius: 20px;}
