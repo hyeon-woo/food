@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <Label alignment="CENTER" prefHeight="32.0" prefWidth="599.0" style="-fx-background-color: ;" text="관리자페이지" textFill="#53c1d0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets top="5.0" />
+            </BorderPane.margin>
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+    </top>
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="333.0" prefWidth="107.0" style="-fx-background-color: 794f80;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="managerinfo" text="관리자정보변경">
+                    <font>
+                        <Font size="14.5" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="memberad" text="회원관리">
+                    <font>
+                        <Font size="14.5" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="categoryad" text="카테고리관리">
+                    <font>
+                        <Font size="14.5" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="productad" text="상품관리">
+                    <font>
+                        <Font size="14.5" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="orderad" text="주문정보관리">
+                    <font>
+                        <Font size="14.5" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="gohome" text="홈폐이지로 가기">
+                    <font>
+                        <Font size="14.5" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="15.0" top="5.0" />
+            </BorderPane.margin>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </VBox>
+    </left>
+</BorderPane>
