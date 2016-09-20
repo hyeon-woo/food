@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="153.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="432.0" minWidth="10.0" prefWidth="294.0" />
@@ -19,9 +19,9 @@
     <RowConstraints maxHeight="190.0" minHeight="10.0" prefHeight="158.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <ImageView fitHeight="150.0" fitWidth="269.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+      <ImageView fitHeight="80.0" fitWidth="269.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
          <image>
-            <Image url="@../../../food/img/KakaoTalk_20160919_094546180.png" />
+            <Image url="@img/logo.png" />
          </image>
          <GridPane.margin>
             <Insets top="15.0" />
@@ -29,10 +29,12 @@
       </ImageView>
       <VBox prefHeight="124.0" prefWidth="294.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="이메일">
-               <font>
-                  <Font size="14.0" />
-               </font></Text>
+            <HBox alignment="CENTER" prefHeight="28.0" prefWidth="284.0">
+               <children>
+                  <Label text="Label" />
+                  <Button alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" text="Button" />
+               </children>
+            </HBox>
             <TextField alignment="CENTER" promptText="이메일을 입력하세요">
                <VBox.margin>
                   <Insets top="10.0" />
@@ -40,7 +42,7 @@
                <font>
                   <Font size="18.0" />
                </font></TextField>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="패스워드">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="비밀번호">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
@@ -108,10 +110,7 @@
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin></Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="회원등록">
-                     <HBox.margin>
-                        <Insets left="100.0" />
-                     </HBox.margin></Text>
+                  <Button alignment="CENTER_RIGHT" contentDisplay="CENTER" mnemonicParsing="false" text="Button" />
                </children>
             </HBox>
          </children>

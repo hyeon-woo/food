@@ -156,23 +156,27 @@
                         <Font size="18.0" />
                      </font>
                   </PasswordField>
-                  <Label prefHeight="51.0" prefWidth="500.0" text="비밀번호 확인">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
+                  <HBox prefHeight="31.0" prefWidth="500.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" text="로그인정보 기억하시겠습니까?">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </CheckBox>
+                        <Label text="비밀번호 찾기" underline="true">
+                           <HBox.margin>
+                              <Insets left="200.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
                      <padding>
-                        <Insets bottom="15.0" top="15.0" />
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </padding>
-                  </Label>
-                  <TextField promptText="비밀번호를 다시한번 입력해주세요">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                     <padding>
-                        <Insets bottom="15.0" left="10.0" top="15.0" />
-                     </padding>
-                  </TextField>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: orange;" text="회원가입" textAlignment="CENTER">
+                  </HBox>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: orange;" text="로그인" textAlignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -191,7 +195,7 @@
                         <Insets bottom="15.0" top="15.0" />
                      </padding>
                   </Label>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="395.0" style="-fx-background-color: orange;" text="Facebook으로 로그인">
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: orange;" text="회원가입">
                      <font>
                         <Font size="18.0" />
                      </font>
