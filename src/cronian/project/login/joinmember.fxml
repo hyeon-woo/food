@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cronian.project.login.joinmemberController">
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="67.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="금주의 식단을  E-mail로 받아보세요!">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField alignment="CENTER" text="이메일">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" text="받아보기">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </bottom>
+    <left>
+        <Pane prefHeight="592.0" prefWidth="83.0" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Pane prefHeight="592.0" prefWidth="60.0" BorderPane.alignment="CENTER" />
+    </right>
+    <top>
+        <HBox alignment="CENTER" prefHeight="91.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <GridPane alignment="CENTER" prefHeight="595.0" prefWidth="853.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="164.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="193.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="41.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.0" minWidth="10.0" prefWidth="198.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="165.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="110.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="203.0" text="회 원 가 입" textAlignment="CENTER" textOverrun="CLIP" GridPane.columnSpan="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </GridPane.margin>
+                </Label>
+                <Label text="이      메      일" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label text="이                름" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label text="전    화   번    호" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label text="주               소" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="useraddrtext" prefHeight="50.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="emailfw" prefHeight="50.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="emailbk" prefHeight="50.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </GridPane.margin>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TextField>
+                <TextField fx:id="userphone" prefHeight="50.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </GridPane.margin>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TextField>
+                <TextField fx:id="username" prefHeight="50.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </GridPane.margin>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TextField>
+                <TextField fx:id="useraddrnum" prefHeight="50.0" promptText="우편번호 입력" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </GridPane.margin>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TextField>
+                <ComboBox fx:id="edomain" prefHeight="50.0" prefWidth="150.0" promptText="직접입력" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="hotmail.com" />
+                            <String fx:value="hanmail.net" />
+                            <String fx:value="naver.com" />
+                            <String fx:value="daum.net" />
+                        </FXCollections>
+                    </items>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </GridPane.margin>
+
+
+                    <!--                            <GridPane.margin>
+                                                    <Insets bottom="5.0" left="10.0" right="10.0" />
+                                                      </GridPane.margin>
+                                                      <opaqueInsets>
+                                                          <Insets />
+                                                      </opaqueInsets>-->
+                </ComboBox>
+                <Label alignment="CENTER" contentDisplay="CENTER" text="\@" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="88.0" text="우편번호검색" textFill="#111111" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </GridPane.margin>
+                </Button>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0" GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#joinmember" prefHeight="61.0" prefWidth="170.0" style="-fx-background-color: orange;" text="가입하기">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <Button mnemonicParsing="false" onAction="#checkemail" prefHeight="43.0" prefWidth="79.0" text="중복확인" textFill="#f20404" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </GridPane.margin>
+                </Button>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="6">
+                    <children>
+                        <ImageView fitHeight="168.0" fitWidth="256.0" layoutX="13.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/memberlogin.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Label text="비   밀    번   호" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label text="비밀번호 재확인" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="passwd" onKeyReleased="#passwdchck" prefHeight="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </GridPane.margin>
+                </PasswordField>
+                <PasswordField fx:id="conpasswd" onKeyReleased="#passwdchck" prefHeight="50.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                    </GridPane.margin>
+                </PasswordField>
+                <Label fx:id="checked" prefHeight="51.0" prefWidth="195.0" text="Label" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </GridPane>
+    </center>
+</BorderPane>

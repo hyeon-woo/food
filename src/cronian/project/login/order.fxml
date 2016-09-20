@@ -134,7 +134,7 @@
           <RowConstraints maxHeight="289.0" minHeight="10.0" prefHeight="142.0" valignment="CENTER" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView fitHeight="320.0" fitWidth="435.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+            <ImageView fitHeight="420.0" fitWidth="390.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
                <image>
                   <Image url="@img/order1.png" />
                </image>
@@ -142,7 +142,7 @@
                   <Insets bottom="10.0" top="10.0" />
                </GridPane.margin>
             </ImageView>
-            <ImageView fitHeight="437.0" fitWidth="435.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+            <ImageView fitHeight="420.0" fitWidth="390.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                <image>
                   <Image url="@img/order2.png" />
                </image>

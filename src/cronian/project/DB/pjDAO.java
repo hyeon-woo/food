@@ -176,7 +176,8 @@ public class pjDAO {
     // 신규 맴버 추가 함수
     // 입력한 정보를 pjJoinUpdate 형식으로 받고, 접근 방식에 따라
     // id의 타입 (1:일반유저,2:관리자,3:업체) 를 부여받는다.
-    public static void addMember(pjJoinUpdate pj, int type) {
+    public static boolean addMember(pjJoinUpdate pj, int type) {
+        boolean result = false;
         Connection conn = null;
         PreparedStatement pstmt = null;
         try {
@@ -190,6 +191,7 @@ public class pjDAO {
                     pstmt.setString(4, pj.getAddr());
                     pstmt.setString(5, pj.getPw());
                     pstmt.executeUpdate();
+                    result = true;
                     break;
                 case 2:
                     pstmt = conn.prepareStatement(JoinAdminMB);
@@ -199,6 +201,7 @@ public class pjDAO {
                     pstmt.setString(4, pj.getAddr());
                     pstmt.setString(5, pj.getPw());
                     pstmt.executeUpdate();
+                    result = true;
                     break;
                 case 3:
                     pstmt = conn.prepareStatement(JoinCompanyMB);
@@ -207,8 +210,10 @@ public class pjDAO {
                     pstmt.setString(3, pj.getNum());
                     pstmt.setString(4, pj.getPw());
                     pstmt.executeUpdate();
+                    result = true;
                     break;
                 default:
+                    result=false;
                     break;
             }
 
@@ -217,6 +222,7 @@ public class pjDAO {
         } finally {
             pjDAO.closeConn(conn, pstmt, null);
         }
+        return result;
     }
 
 
@@ -360,7 +366,7 @@ public class pjDAO {
         return pj;
     }
 
-    //게시판 전체 목록보기 메서드
+    // 유저 + 주문정보 보기 함수
     // 글번호, 제목, 작성자, 작성일, 조회수
     public static List<pjUOMmodel> listUOM() {
         Connection conn = null;

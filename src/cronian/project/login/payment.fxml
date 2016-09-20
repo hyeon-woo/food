@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
 <?import javafx.collections.*?>
 <?import java.lang.*?>
 <?import javafx.geometry.*?>
@@ -42,7 +41,7 @@
         </HBox>
     </bottom>
     <left>
-        <Pane prefHeight="592.0" prefWidth="43.0" BorderPane.alignment="CENTER" />
+        <Pane prefHeight="592.0" prefWidth="40.0" BorderPane.alignment="CENTER" />
     </left>
     <right>
         <Pane prefHeight="592.0" prefWidth="64.0" BorderPane.alignment="CENTER" />
@@ -125,7 +124,7 @@
                     </columnConstraints>
                     <rowConstraints>
                         <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="47.0" valignment="CENTER" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
@@ -141,7 +140,7 @@
                         <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" text="배송지 입력" textAlignment="CENTER" GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="주소입력" textAlignment="CENTER" GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -149,7 +148,12 @@
                                 <Insets bottom="10.0" top="10.0" />
                             </GridPane.margin>
                         </Label>
-                        <Label text="이메일" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                        <Label text="이메일" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Label text="아이디" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                             <font>
                                 <Font size="13.0" />
                             </font>
@@ -164,7 +168,7 @@
                                 <Font size="13.0" />
                             </font>
                         </Label>
-                        <Label text="주    소" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                        <Label text="주소" GridPane.halignment="CENTER" GridPane.rowIndex="5">
                             <font>
                                 <Font size="13.0" />
                             </font>
@@ -185,12 +189,12 @@
                                 <Insets bottom="10.0" top="10.0" />
                             </GridPane.margin>
                         </Label>
-                        <TextField prefHeight="50.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <TextField prefHeight="50.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                             <GridPane.margin>
                                 <Insets bottom="5.0" left="10.0" right="10.0" />
                             </GridPane.margin>
                         </TextField>
-                        <TextField prefHeight="50.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                        <TextField prefHeight="50.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                             <GridPane.margin>
                                 <Insets bottom="5.0" left="10.0" right="10.0" />
                             </GridPane.margin>
@@ -198,9 +202,17 @@
                                 <Insets />
                             </opaqueInsets>
                         </TextField>
-                        <TextField prefHeight="44.0" prefWidth="255.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="4">
+                        <TextField prefHeight="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                             <GridPane.margin>
-                                <Insets bottom="5.0" left="10.0" right="100.0" />
+                                <Insets bottom="5.0" left="10.0" right="10.0" />
+                            </GridPane.margin>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <TextField prefHeight="50.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <GridPane.margin>
+                                <Insets bottom="5.0" left="10.0" right="10.0" />
                             </GridPane.margin>
                             <opaqueInsets>
                                 <Insets />
@@ -222,7 +234,7 @@
                                 <Insets />
                             </opaqueInsets>
                         </TextField>
-                        <ComboBox fx:id="edomain" prefHeight="50.0" prefWidth="150.0" promptText="직접입력" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                        <ComboBox fx:id="edomain" prefHeight="50.0" prefWidth="150.0" promptText="직접입력" GridPane.columnIndex="4" GridPane.rowIndex="1">
                             <items>
                             <FXCollections fx:factory="observableArrayList">
                                 <String fx:value="hotmail.com" />
@@ -231,9 +243,6 @@
                                 <String fx:value="daum.net" />
                             </FXCollections>
                             </items>
-                     <GridPane.margin>
-                        <Insets bottom="5.0" />
-                     </GridPane.margin>
 
 
 <!--                            <GridPane.margin>
@@ -243,11 +252,24 @@
                                 <Insets />
                             </opaqueInsets>-->
                         </ComboBox>
-                        <Label alignment="CENTER" contentDisplay="CENTER" text="\@" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="\@" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </Label>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                            <children>
+                                <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="79.0" text="중복확인" textFill="#f20404">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="15.0" prefWidth="307.0" text="* 4~20자의 영, 숫자만 사용할 수 있습니다." textAlignment="CENTER" />
+                            </children>
+                        </HBox>
                         <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="88.0" text="우편번호검색" textFill="#111111" GridPane.columnIndex="3" GridPane.rowIndex="5">
                             <opaqueInsets>
                                 <Insets />
@@ -301,13 +323,6 @@
                                 <Separator layoutY="22.0" prefHeight="0.0" prefWidth="655.0" />
                             </children>
                         </Pane>
-                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
-                  <CheckBox mnemonicParsing="false" text="주문자 주소와 동일" GridPane.columnSpan="2" GridPane.rowIndex="1">
-                     <GridPane.margin>
-                        <Insets left="5.0" />
-                     </GridPane.margin>
-                  </CheckBox>
-                  <CheckBox mnemonicParsing="false" text="새로운 배송지 추가" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                     </children>
                     <HBox.margin>
                         <Insets />
