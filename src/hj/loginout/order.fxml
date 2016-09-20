@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.*?>
@@ -53,7 +54,7 @@
                   <Cursor fx:constant="SW_RESIZE" />
                </cursor>
                <image>
-                  <Image url="@../../food/img/KakaoTalk_20160919_094546180.png" />
+                  <Image url="@../../../../HelloJavaFX/src/hj/img/logo.png" />
                </image>
                <HBox.margin>
                   <Insets bottom="10.0" left="50.0" />
