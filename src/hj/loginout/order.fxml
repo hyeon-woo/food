@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.effect.*?>
-<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
@@ -90,7 +89,7 @@
                         <ColorAdjust />
                      </effect>
                   </Label>
-                  <Label contentDisplay="CENTER" text="③ 주문/결재" textAlignment="CENTER">
+                  <Label contentDisplay="CENTER" text="③ 주문/결제" textAlignment="CENTER">
                      <font>
                         <Font size="24.0" />
                      </font>

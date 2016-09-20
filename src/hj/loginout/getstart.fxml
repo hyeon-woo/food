@@ -78,7 +78,7 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Label contentDisplay="CENTER" text="③ 주문/결재" textAlignment="CENTER">
+                  <Label contentDisplay="CENTER" text="③ 주문/결제" textAlignment="CENTER">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
