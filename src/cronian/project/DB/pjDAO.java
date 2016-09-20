@@ -42,6 +42,12 @@ public class pjDAO {
     private static final String DeleteAdminMB;
     private static final String DeleteCompanyMB;
     private static final String listUOM;
+    private static final String checkMBLogin;
+    private static final String checkAdminLogin;
+    private static final String checkCompanyLogin;
+    private static final String insertMB;
+    private static final String insertAdminMB;
+    private static final String insertCompanyMB;
 
     static {
         JoinMB = "insert into users values (sq_users.nextval,?,?,?,?,?)";
@@ -59,6 +65,12 @@ public class pjDAO {
         checkAdminEmail = "select count(adminemail) as result from admin where adminemail = ?";
         checkComEmail = "select count(comemail) as result from company where comemail = ?";
         listUOM = "select * from UOM ";
+        checkMBLogin = "select userpw from users where useremail = ?";
+        checkAdminLogin = "select adminpw from admin where adminemail = ?";
+        checkCompanyLogin = "select compw from company where comemail = ?";
+        insertMB = "insert into users values (sq_user.nextval,?,?,?,?,?)";
+        insertAdminMB = "insert into admin values (sq_admin.nextval,?,?,?,?,?)";
+        insertCompanyMB = "insert into company values (sq_company.nextval,?,?,?,?)";
     }
 
     public static Connection openConn() {
@@ -218,17 +230,17 @@ public class pjDAO {
             switch (type) {
                 case 1:
                     pstmt = conn.prepareStatement(DeleteMB);
-                    pstmt.setString(1,id);
+                    pstmt.setString(1, id);
                     pstmt.executeUpdate();
                     break;
                 case 2:
                     pstmt = conn.prepareStatement(DeleteAdminMB);
-                    pstmt.setString(1,id);
+                    pstmt.setString(1, id);
                     pstmt.executeUpdate();
                     break;
                 case 3:
                     pstmt = conn.prepareStatement(DeleteCompanyMB);
-                    pstmt.setString(1,id);
+                    pstmt.setString(1, id);
                     pstmt.executeUpdate();
                     break;
                 default:
@@ -283,7 +295,7 @@ public class pjDAO {
         }
     }
 
-    // 개인정보 조회 , 수정 함수
+    // 개인정보 조회
     // 로그인 시에만 이용가능! 로그인 ID와 ID의 타입(1:일반유저,2:관리자,3:업체) 를 매개변수로 한다.
     // 조회된 결과를 pjJoinUpdate 형식으로 반환
     public static pjJoinUpdate memberInfo(String id, int type) {
@@ -298,7 +310,7 @@ public class pjDAO {
                 case 1:
                     pstmt = conn.prepareStatement(selectuserOneInfo);
                     pstmt.setString(1, id);
-                    rs = pstmt.executeQuery(selectuserOneInfo);
+                    rs = pstmt.executeQuery();
                     while (rs.next()) {
                         pj = new pjJoinUpdate(
                                 rs.getString("useremail"),
@@ -312,7 +324,7 @@ public class pjDAO {
                 case 2:
                     pstmt = conn.prepareStatement(selectadminOneInfo);
                     pstmt.setString(1, id);
-                    rs = pstmt.executeQuery(selectadminOneInfo);
+                    rs = pstmt.executeQuery();
                     while (rs.next()) {
                         pj = new pjJoinUpdate(
                                 rs.getString("adminemail"),
@@ -326,7 +338,7 @@ public class pjDAO {
                 case 3:
                     pstmt = conn.prepareStatement(selectcomOneInfo);
                     pstmt.setString(1, id);
-                    rs = pstmt.executeQuery(selectcomOneInfo);
+                    rs = pstmt.executeQuery();
                     while (rs.next()) {
                         pj = new pjJoinUpdate(
                                 rs.getString("comemail"),
@@ -395,5 +407,101 @@ public class pjDAO {
         }
         return result;
     }
+    // 로그인 함수
+    // 아이디와 비밀번호를 각각 getText() 함수로 받아와서
+    // 지정된 타입 (1:유저,2:관리자,3:업체) 과 함께 함수에 전달
+    // 검사해준다.
+    public static boolean Login(String id, String pw, int type) {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        boolean result = false;
+        try {
+            conn = pjDAO.openConn();
+            switch (type) {
+                case 1:
+                    pstmt = conn.prepareStatement(checkMBLogin);
+                    pstmt.setString(1, id);
+                    rs = pstmt.executeQuery();
+                    if (rs.next()) {
+                        if (rs.getString("userpw").equals(pw)) {
+                            result = true;
+                        }
+                    }
+                    break;
+                case 2:
+                    pstmt = conn.prepareStatement(checkAdminLogin);
+                    pstmt.setString(1, id);
+                    rs = pstmt.executeQuery();
+                    if (rs.next()) {
+                        if (rs.getString(1).equals(pw)) {
+                            result = true;
+                        }
+                    }
+                    break;
+                case 3:
+                    pstmt = conn.prepareStatement(checkCompanyLogin);
+                    pstmt.setString(1, id);
+                    rs = pstmt.executeQuery();
+                    if (rs.next()) {
+                        if (rs.getString("compw") .equals(pw)) {
+                            result = true;
+                        }
+                    }
+                    break;
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            pjDAO.closeConn(conn, pstmt, rs);
+        }
+        return result;
+    }
 
+    //회원가입
+
+
+    // 회원가입
+    // 가입 환경에 따라 타입(1:일반유저,2:관리자,3:업체) 를 매개변수로 한다.
+    public static void joinMember(pjJoinUpdate pj,int type) {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        try {
+            conn = pjDAO.openConn();
+
+            switch (type) {
+                case 1:
+                    pstmt = conn.prepareStatement(insertMB);
+                    pstmt.setString(1, pj.getName());
+                    pstmt.setString(2, pj.getEmail());
+                    pstmt.setString(3, pj.getNum());
+                    pstmt.setString(4, pj.getAddr());
+                    pstmt.setString(5, pj.getPw());
+
+                    break;
+                case 2:
+                    pstmt = conn.prepareStatement(insertAdminMB);
+                    pstmt.setString(1, pj.getName());
+                    pstmt.setString(2, pj.getEmail());
+                    pstmt.setString(3, pj.getNum());
+                    pstmt.setString(4, pj.getAddr());
+                    pstmt.setString(5, pj.getPw());
+                    break;
+                case 3:
+                    pstmt = conn.prepareStatement(insertCompanyMB);
+                    pstmt.setString(1, pj.getName());
+                    pstmt.setString(2, pj.getEmail());
+                    pstmt.setString(3, pj.getNum());
+                    pstmt.setString(4, pj.getPw());
+                    break;
+                default:
+                    break;
+            }
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            pjDAO.closeConn(conn, pstmt, null);
+        }
+    }
 }

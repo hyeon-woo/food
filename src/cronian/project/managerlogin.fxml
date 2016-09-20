@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kbh.sample.Controller">
+    <children>
+        <VBox layoutX="121.0" layoutY="96.0" prefHeight="124.0" prefWidth="294.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="이메일(관리자)">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="managerid" alignment="CENTER" promptText="이메일(관리자)을 입력하세요">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="패스워드">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Text>
+                <PasswordField fx:id="managerpwd" alignment="CENTER" promptText="비밀번호를 입력하세요">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </PasswordField>
+                <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <CheckBox mnemonicParsing="false" text="이메일 저장  " />
+                        <Label alignment="BOTTOM_CENTER" prefHeight="15.0" prefWidth="87.0" text="아이디찾기">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="  비밀번호찾기">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                    <VBox.margin>
+                        <Insets right="10.0" top="17.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </VBox>
+        <ImageView fitHeight="150.0" fitWidth="269.0" layoutX="133.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../food/img/KakaoTalk_20160919_094546180.png" />
+            </image>
+        </ImageView>
+        <Button alignment="CENTER" layoutX="146.0" layoutY="282.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#mapagego" prefHeight="33.0" prefWidth="85.0" text="로그인">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button alignment="CENTER" layoutX="293.0" layoutY="282.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="33.0" prefWidth="85.0" text="취소">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
