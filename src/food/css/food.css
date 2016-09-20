@@ -14,8 +14,8 @@
 
 #Start {-fx-background-color: darkorange;}
 #Seemenu {-fx-background-color: darkorange;}
-#CookingRedesigend {-fx-border-color: darkorange; -fx-border-style: dotted 2px; -fx-border-radius: 20px; -fx-background-color: whitesmoke;}
-#BroweOurRecipes {-fx-border-color: darkorange; -fx-border-style: dotted 2px; -fx-border-radius: 20px; -fx-background-color: whitesmoke;}
+#CookingRedesigend {-fx-border-color: darkorange; -fx-border-style: dotted;  -fx-border-radius: 20px; -fx-background-color: whitesmoke;}
+#BroweOurRecipes {-fx-border-color: darkorange; -fx-border-style: dotted; -fx-border-radius: 20px; -fx-background-color: whitesmoke;}
 #Receive {-fx-background-color: white; -fx-opacity: 1; }
 #footer {-fx-background-color: darkorange; -fx-opacity: 0.7; -fx-font-weight: bold;}
 

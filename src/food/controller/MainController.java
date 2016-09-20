@@ -23,8 +23,8 @@ import java.util.ResourceBundle;
 public class MainController {
     @FXML
     private Button Menu;
-    @FXML
-    private ImageView ibtn1;
+
+
 
     public void goMenu1(ActionEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
@@ -42,20 +42,4 @@ public class MainController {
         }
     }
 
-
-    public void goMenu2(Event event) {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "../view/menu/menu2.fxml"
-        ));
-        try {
-            Parent root = loader.load();
-            Stage stage = (Stage)ibtn1.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("foodmenu2");
-
-            stage.show();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
 }
