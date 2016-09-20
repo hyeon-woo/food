@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.collections.*?>
 <?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.*?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.text.*?>
 <?import javafx.collections.FXCollections?>
 
-<BorderPane fx:controller="food.controller.abccontroller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
     <bottom>
         <HBox alignment="CENTER" prefHeight="67.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
             <children>
@@ -54,7 +55,7 @@
                         <Cursor fx:constant="SW_RESIZE" />
                     </cursor>
                     <image>
-                        <Image url="@../../food/img/KakaoTalk_20160919_094546180.png" />
+                        <Image url="@../../../../HelloJavaFX/src/hj/img/logo.png" />
                     </image>
                     <HBox.margin>
                         <Insets bottom="10.0" left="50.0" />
@@ -237,10 +238,10 @@
                         <ComboBox fx:id="edomain" prefHeight="50.0" prefWidth="150.0" promptText="직접입력" GridPane.columnIndex="4" GridPane.rowIndex="1">
                             <items>
                             <FXCollections fx:factory="observableArrayList">
-                                <String fx:value="hotmail.com"/>
-                                <String fx:value="hanmail.net"/>
-                                <String fx:value="naver.com"/>
-                                <String fx:value="daum.net"/>
+                                <String fx:value="hotmail.com" />
+                                <String fx:value="hanmail.net" />
+                                <String fx:value="naver.com" />
+                                <String fx:value="daum.net" />
                             </FXCollections>
                             </items>
 
