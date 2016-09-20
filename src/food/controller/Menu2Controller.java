@@ -15,11 +15,29 @@ import java.io.IOException;
 /**
  * Created by java on 2016-09-20.
  */
-public class Menu2Controller {
+public class Menu2Controller extends MainController{
     @FXML
     private Button Menu;
+    @FXML
     private ImageView Main;
+    @FXML
+    private Button Howwork;
+    public void goMaker(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/maker/maker.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage)Howwork.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("maker");
 
+            stage.show();
+        } catch (IOException ex) {
+
+            ex.printStackTrace();
+        }
+    }
 
     public void goMenu1(ActionEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(

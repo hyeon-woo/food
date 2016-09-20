@@ -1,11 +1,13 @@
 package food.controller;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 
@@ -14,9 +16,11 @@ import java.io.IOException;
 /**
  * Created by java on 2016-09-19.
  */
-public class MainController {
+public class MainController{
     @FXML
     private Button Menu;
+    @FXML
+    private ImageView Main;
     @FXML
     private Button Howwork;
 
@@ -39,18 +43,35 @@ public class MainController {
     }
 
 
-    public void gomaker(ActionEvent event) {
+    public void goMain(Event event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "../view/maker/maker.fxml"
+                "../view/food.fxml"
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage)Menu.getScene().getWindow();
+            Stage stage = (Stage)Main.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("maker");
 
             stage.show();
         } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public void goMaker(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/maker/maker.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage)Howwork.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("maker");
+
+            stage.show();
+        } catch (IOException ex) {
+
             ex.printStackTrace();
         }
     }

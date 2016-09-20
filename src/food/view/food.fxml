@@ -36,7 +36,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                         </Button>
-                        <Button fx:id="Howwork" mnemonicParsing="false" onAction="#gomaker" prefHeight="20.0" prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../css/food.css" text="생산자">
+                        <Button fx:id="Howwork" mnemonicParsing="false" onAction="#goMaker" prefHeight="20.0" prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../css/food.css" text="생산자">
                             <HBox.margin>
                                 <Insets left="5.0" right="5.0" />
                             </HBox.margin>
@@ -63,8 +63,7 @@
                         <Insets right="30.0" />
                     </HBox.margin>
                 </HBox>
-                <ImageView fx:id="Main" fitHeight="80.0" fitWidth="240.0" nodeOrientation="INHERIT"
-                           pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                <ImageView fx:id="Main" fitHeight="80.0" fitWidth="240.0" nodeOrientation="INHERIT" onMouseClicked="#goMain" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
                     <image>
                         <Image url="@../../food/img/KakaoTalk_20160919_094546180.png" />
                     </image>

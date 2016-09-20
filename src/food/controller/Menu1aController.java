@@ -16,7 +16,7 @@ import java.io.IOException;
 /**
  * Created by java on 2016-09-20.
  */
-public class Menu1aController {
+public class Menu1aController extends MainController {
     @FXML
     private VBox picture1;
     @FXML
@@ -29,7 +29,24 @@ public class Menu1aController {
     private Button Menu;
     @FXML
     private ImageView Main;
+    @FXML
+    private Button Howwork;
+    public void goMaker(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/maker/maker.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage)Howwork.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("maker");
 
+            stage.show();
+        } catch (IOException ex) {
+
+            ex.printStackTrace();
+        }
+    }
 
 
     public void goMenu1(ActionEvent event) {
@@ -54,7 +71,7 @@ public class Menu1aController {
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage) picture1.getScene().getWindow();
+            Stage stage = (Stage) picture2.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("foodmenu2");
 
@@ -70,7 +87,7 @@ public class Menu1aController {
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage) picture1.getScene().getWindow();
+            Stage stage = (Stage) picture2.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("foodmenu2");
 
