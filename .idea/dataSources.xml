@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3096209207">
+  <component name="DataSourceManagerImpl" format="xml" hash="1647143672">
     <data-source source="LOCAL" name="Oracle - xe@192.168.139.128" uuid="50e65400-310b-484a-88bd-e9c30aa2ad4e">
       <driver-ref>oracle</driver-ref>
       <auto-commit>false</auto-commit>
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
       <jdbc-url>jdbc:oracle:thin:@//192.168.139.128:1521/xe</jdbc-url>
       <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Oracle - xe@192.168.0.35" uuid="39d10fce-941c-4935-b420-1aa59585007b">
+      <driver-ref>oracle</driver-ref>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@//192.168.0.35:1521/xe</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://C:/Java/jdbc/ojdbc7.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>

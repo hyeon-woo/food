@@ -55,3 +55,7 @@ create view UOC as select * from orders join users using (userno) join company u
 create view AOC as select * from orders join admin using (adminno) join company using (comno) with READ ONLY;
 create view MOA as select * from orders join menu using (menuno) join admin using (adminno) with READ ONLY;
 create view MOC as select * from orders join menu using (menuno) join company using (comno) with READ ONLY;
+
+
+
+commit;

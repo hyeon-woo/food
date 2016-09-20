@@ -17,9 +17,9 @@ import java.util.List;
  */
 public class pjDAO {
     private static final String DRV = "oracle.jdbc.OracleDriver";
-    private static final String URL = "jdbc:oracle:thin:@//192.168.139.128:1521/xe";
-    private static final String USR = "cronian";
-    private static final String PWD = "123456";
+    private static final String URL = "jdbc:oracle:thin:@//192.168.0.35:1521/xe";
+    private static final String USR = "foodicon";
+    private static final String PWD = "FOODICON";
 
     Connection conn = null;
     PreparedStatement pstmt = null;
