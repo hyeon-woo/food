@@ -1,4 +1,7 @@
 #background {-fx-background-color: white;}
+#background2 {-fx-background-color: white;}
+#background3 {-fx-background-color: white;}
+#background4 {-fx-background-color: white;}
 #Menu {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
 #Apply {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
 #Howwork {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: orange;}
@@ -18,13 +21,10 @@
 -fx-a:hover.thisweek{background-color: seagreen;}
 #nextweek {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: seagreen; -fx-border-radius: 0 10px 10px 0;}
 
+
+
 #sidemenutop {-fx-background-color: seagreen;}
-#sidemenu {-fx-border-color: seagreen;-fx-border-radius: 0 0 20px 20px;}
+#sidemenu {-fx-border-color: seagreen;-fx-border-radius: 0 0 20px 20px; -fx-background-color: white;}
 #twofamily {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: seagreen; -fx-border-radius: 10px 0 0 10px;}
 #fourfamily {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: seagreen; -fx-border-radius: 0 10px 10px 0;}
 #Apply2 {-fx-background-color: white; -fx-border-style: solid; -fx-border-color: seagreen; -fx-border-radius: 10px 10px 10px 10px;}
-
-#picture1 {-fx-border-color: darkgray;}
-#picture2 {-fx-border-color: darkgray;}
-#picture3 {-fx-border-color: darkgray;}
-#picture4 {-fx-border-color: darkgray;}
