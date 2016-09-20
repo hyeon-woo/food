@@ -213,7 +213,7 @@ public class pjDAO {
                     result = true;
                     break;
                 default:
-                    result=false;
+                    result = false;
                     break;
             }
 
@@ -413,6 +413,7 @@ public class pjDAO {
         }
         return result;
     }
+
     // 로그인 함수
     // 아이디와 비밀번호를 각각 getText() 함수로 받아와서
     // 지정된 타입 (1:유저,2:관리자,3:업체) 과 함께 함수에 전달
@@ -450,7 +451,7 @@ public class pjDAO {
                     pstmt.setString(1, id);
                     rs = pstmt.executeQuery();
                     if (rs.next()) {
-                        if (rs.getString("compw") .equals(pw)) {
+                        if (rs.getString("compw").equals(pw)) {
                             result = true;
                         }
                     }
@@ -469,7 +470,7 @@ public class pjDAO {
 
     // 회원가입
     // 가입 환경에 따라 타입(1:일반유저,2:관리자,3:업체) 를 매개변수로 한다.
-    public static void joinMember(pjJoinUpdate pj,int type) {
+    public static void joinMember(pjJoinUpdate pj, int type) {
         Connection conn = null;
         PreparedStatement pstmt = null;
         try {

@@ -1,11 +1,13 @@
 package food.controller;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,6 +18,8 @@ import java.io.IOException;
 public class Menu3Controller {
     @FXML
     private Button Menu;
+    @FXML
+    private ImageView Main;
 
 
 
@@ -33,5 +37,22 @@ public class Menu3Controller {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+
+    public void goMain(Event event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/food.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) Main.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("foodmain");
+
+            stage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
     }
 }

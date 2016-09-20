@@ -17,6 +17,8 @@ import java.io.IOException;
 public class MainController {
     @FXML
     private Button Menu;
+    @FXML
+    private Button Howwork;
 
 
 
@@ -29,6 +31,23 @@ public class MainController {
             Stage stage = (Stage)Menu.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("foodmenu1");
+
+            stage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
+    public void gomaker(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/maker/maker.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage)Menu.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("maker");
 
             stage.show();
         } catch (IOException ex) {

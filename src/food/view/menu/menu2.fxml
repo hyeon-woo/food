@@ -81,9 +81,10 @@
                         <Insets left="-50.0" right="10.0" />
                     </HBox.margin>
                 </HBox>
-                <ImageView fitHeight="80.0" fitWidth="240.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="Main" fitHeight="80.0" fitWidth="240.0" nodeOrientation="INHERIT"
+                           onMouseMoved="#goMain" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
                     <image>
-                        <Image url="@../../img/KakaoTalk_20160919_094546180.png" />
+                        <Image url="@../../img/KakaoTalk_20160919_094546180.png"/>
                     </image>
                 </ImageView>
                 <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">

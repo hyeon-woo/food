@@ -27,6 +27,9 @@ public class Menu1aController {
     private VBox picture4;
     @FXML
     private Button Menu;
+    @FXML
+    private ImageView Main;
+
 
 
     public void goMenu1(ActionEvent event) {
@@ -77,4 +80,19 @@ public class Menu1aController {
         }
     }
 
+    public void goMain(Event event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/food.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) Main.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("foodmain");
+
+            stage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
 }
