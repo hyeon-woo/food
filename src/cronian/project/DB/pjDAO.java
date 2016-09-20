@@ -3,11 +3,14 @@ package cronian.project.DB;
 import cronian.project.model.pjJoinUpdate;
 import cronian.project.model.pjMenumodel;
 import cronian.project.model.pjOrdermodel;
+import cronian.project.model.pjUOMmodel;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by java on 2016-09-19.
@@ -35,11 +38,18 @@ public class pjDAO {
     private static final String checkUserEmail;
     private static final String checkAdminEmail;
     private static final String checkComEmail;
+    private static final String DeleteMB;
+    private static final String DeleteAdminMB;
+    private static final String DeleteCompanyMB;
+    private static final String listUOM;
 
     static {
         JoinMB = "insert into users values (sq_users.nextval,?,?,?,?,?)";
         JoinAdminMB = "insert into admin values (sq_admin.nextval,?,?,?,?,?)";
         JoinCompanyMB = "insert into company values (sq_company.nextval,?,?,?,?)";
+        DeleteMB = "delete from users where useremail = ?";
+        DeleteAdminMB = "delete from admin where adminemail = ?";
+        DeleteCompanyMB = "delete from company where comemail = ?";
         insertMenu = "insert into menu values (?,?,?,?)";
         insertOrders = "insert into orders (orderno,menuno,delinfo,billinfo,comno,ordervalue,userno) values (sq_orders.nextval,?,?,?,?,?,?)";
         selectuserOneInfo = "select * from users where useremail = ?";
@@ -48,6 +58,7 @@ public class pjDAO {
         checkUserEmail = "select count(useremail) as result from users where useremail = ?";
         checkAdminEmail = "select count(adminemail) as result from admin where adminemail = ?";
         checkComEmail = "select count(comemail) as result from company where comemail = ?";
+        listUOM = "select * from UOM ";
     }
 
     public static Connection openConn() {
@@ -196,6 +207,42 @@ public class pjDAO {
         }
     }
 
+
+    // 맴버 삭제 함수
+    // id와 타입을 입력받아 일치하는 id 삭제
+    public static void deleteMember(String id, int type) {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        try {
+            conn = pjDAO.openConn();
+            switch (type) {
+                case 1:
+                    pstmt = conn.prepareStatement(DeleteMB);
+                    pstmt.setString(1,id);
+                    pstmt.executeUpdate();
+                    break;
+                case 2:
+                    pstmt = conn.prepareStatement(DeleteAdminMB);
+                    pstmt.setString(1,id);
+                    pstmt.executeUpdate();
+                    break;
+                case 3:
+                    pstmt = conn.prepareStatement(DeleteCompanyMB);
+                    pstmt.setString(1,id);
+                    pstmt.executeUpdate();
+                    break;
+                default:
+                    break;
+            }
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            pjDAO.closeConn(conn, pstmt, null);
+        }
+    }
+
+
     // 신규 메뉴 추가 함수
     public static void addMenu(pjMenumodel pj) {
         Connection conn = null;
@@ -299,6 +346,54 @@ public class pjDAO {
             pjDAO.closeConn(conn, pstmt, rs);
         }
         return pj;
+    }
+
+    //게시판 전체 목록보기 메서드
+    // 글번호, 제목, 작성자, 작성일, 조회수
+    public static List<pjUOMmodel> listUOM() {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        List<pjUOMmodel> result = new ArrayList<>();
+        // 전체 글 목록을 저장하기 위해 배열로 변수 선언
+        // listBoard 변수에 정의된 질의문을 실행하고
+        // 그 결과를 boardModel 객체 형태로 변환
+        // 물론 모든 항목이 아닌 일부 항목을 선별
+        // 일부 : 번호 제목 작성자 작성일 조회수
+
+
+        try {
+            conn = openConn();
+            pstmt = conn.prepareStatement(listUOM);
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                pjUOMmodel m = new pjUOMmodel(
+                        rs.getString("userno"),
+                        rs.getString("username"),
+                        rs.getString("useremail"),
+                        rs.getString("usernum"),
+                        rs.getString("useraddr"),
+                        rs.getString("orderno"),
+                        rs.getString("delinfo"),
+                        rs.getString("billinfo"),
+                        rs.getInt("ordervalue"),
+                        rs.getString("menuno"),
+                        rs.getString("menulist"),
+                        rs.getString("menuinfo"),
+                        rs.getString("menuname"),
+                        rs.getString("adminno"),
+                        rs.getString("comno")
+                );
+                //조회한 결과들을 boardModel 객체로 생성
+                result.add(m);
+                //boardmodel 객체를 arraylist에 저장
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            closeConn(conn, pstmt, rs);
+        }
+        return result;
     }
 
 }
