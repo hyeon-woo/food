@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
@@ -7,107 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane fx:controller="food.controller.Menu3Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <bottom>
-      <HBox alignment="CENTER" prefHeight="67.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label text="금주의 식단을  E-mail로 받아보세요!">
-               <font>
-                  <Font size="24.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="30.0" right="30.0" />
-               </HBox.margin>
-            </Label>
-            <TextField alignment="CENTER" text="이메일">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="30.0" right="30.0" />
-               </HBox.margin>
-            </TextField>
-            <Button mnemonicParsing="false" text="받아보기">
-               <font>
-                  <Font size="20.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="30.0" right="30.0" />
-               </HBox.margin>
-            </Button>
-         </children>
-      </HBox>
-   </bottom>
-   <top>
-      <HBox alignment="CENTER" prefHeight="109.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
-         <children>
-            <HBox alignment="CENTER" prefHeight="109.0" prefWidth="546.0">
-               <children>
-                  <Button mnemonicParsing="false" text="메뉴">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="10.0" right="10.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button mnemonicParsing="false" text="신청하기">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="10.0" right="10.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button mnemonicParsing="false" text="생산자">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="10.0" right="10.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button mnemonicParsing="false" text="레시피">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="10.0" right="10.0" />
-                     </HBox.margin>
-                  </Button>
-               </children>
-            </HBox>
-            <ImageView fitHeight="133.0" fitWidth="322.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../img/KakaoTalk_20160919_094546180.png" />
-               </image>
-            </ImageView>
-            <HBox alignment="CENTER" prefHeight="109.0" prefWidth="365.0">
-               <children>
-                  <Button mnemonicParsing="false" text="로그인" textAlignment="CENTER">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="15.0" right="15.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="102.0" text="회원가입" textAlignment="CENTER">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="15.0" right="15.0" />
-                     </HBox.margin>
-                  </Button>
-               </children>
-               <HBox.margin>
-                  <Insets />
-               </HBox.margin>
-            </HBox>
-         </children>
-      </HBox>
-   </top>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <GridPane BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -122,7 +23,7 @@
          <children>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="170.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../img/SKU0924_web_step01.jpg" />
                      </image>
@@ -134,7 +35,7 @@
                   <Separator prefWidth="200.0" />
                   <TextFlow prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="중간 냄비에 쌀을 넣고 찬물로 커버. , 입자의 주위에 휙 흐린 물을 부어 물이 맑은 실행까지 반복 손을 사용합니다. , 냄비 고열을 통해 종기에 가져다 낮은, 커버에 열을 줄이기 위해 2 컵의 물을 추가합니다. 쌀은 약 15 분을 흡수 부드러운 물은​​ 요리까지. 신성하게 빛날 베이킹 시트에 확산 냉각합니다. " />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="중간 냄비에 쌀을 넣고 찬물로 커버. , 입자의 주위에 휙 흐린 물을 부어 물이 맑은 실행까지 반복 손을 사용합니다. , 냄비 고열을 통해 종기에 가져다 낮은, 커버에 열을 줄이기 위해 2 컵의 물을 추가합니다. 쌀은 약 15 분을 흡수 부드러운 물은​​ 요리까지. 신성하게 빛날 베이킹 시트에 확산 냉각합니다. " wrappingWidth="276.359375" />
                      </children>
                      <opaqueInsets>
                         <Insets />
@@ -150,7 +51,7 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                <children>
-                  <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="170.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../img/SKU0924_web_step02.jpg" />
                      </image>
@@ -178,7 +79,7 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
                <children>
-                  <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="180.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../img/SKU0924_web_step03.jpg" />
                      </image>
@@ -206,7 +107,7 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
                <children>
-                  <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="180.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../img/SKU0924_web_step04.jpg" />
                      </image>
@@ -234,7 +135,7 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="180.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../img/SKU0924_web_step05.jpg" />
                      </image>
@@ -262,7 +163,7 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
-                  <ImageView fitHeight="180.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="180.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../img/SKU0924_web_step06.jpg" />
                      </image>
@@ -291,4 +192,129 @@
          </children>
       </GridPane>
    </center>
+   <top>
+      <Pane prefHeight="109.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="background" alignment="CENTER" prefHeight="109.0" prefWidth="1024.0" stylesheets="@../../css/food.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="109.0" prefWidth="379.0">
+                     <children>
+                        <Button fx:id="Menu" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" stylesheets="@../../css/menu2.css" text="메뉴">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="Apply" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" stylesheets="@../../css/menu2.css" text="주문">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="Howwork" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" stylesheets="@../../css/menu2.css" text="생산자">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="Recipe" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" stylesheets="@../../css/menu2.css" text="레시피">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="-50.0" right="10.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <ImageView fitHeight="80.0" fitWidth="240.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/KakaoTalk_20160919_094546180.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">
+                     <children>
+                        <Button fx:id="Login" mnemonicParsing="false" stylesheets="@../../css/menu2.css" text="로그인" textAlignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Pane prefHeight="92.0" prefWidth="226.0">
+                           <children>
+                              <Text layoutX="61.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="회원이 아니신가요?" />
+                              <Label layoutX="21.0" layoutY="44.0" text="가입">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#2b53f5" />
+                                          <Stop color="#1a3cc6" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <Text layoutX="60.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="하셔서 많은 혜택을 누리세요!" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Pane>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="40.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="footer" alignment="CENTER" prefHeight="40.0" prefWidth="1024.0" stylesheets="@../../css/food.css">
+               <children>
+                  <Label stylesheets="@../../css/food.css" text="금주의 식단을  E-mail로 받아보세요!" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField alignment="CENTER" prefHeight="27.0" prefWidth="218.0" stylesheets="@../../css/food.css" text="이메일">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="Receive" mnemonicParsing="false" stylesheets="@../../css/food.css" text="받아보기">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </bottom>
 </BorderPane>
