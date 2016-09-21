@@ -20,7 +20,7 @@ public class MainController {
     @FXML private Label categoryad;
     @FXML private Label managerinfo;
     @FXML private Label productad;
-
+    @FXML private Button login;
 
     public void goorderad(Event event){
 
@@ -99,9 +99,21 @@ public class MainController {
 
     }
 
-    //이걸왜만들었지싶네요
-   public void mapagego(ActionEvent event) {
 
+
+
+   public void mapagego(ActionEvent event) {
+       FXMLLoader loader = new FXMLLoader(getClass().getResource("../../kbh/fxml/managerlogin.fxml"));
+
+       try{
+           Parent root = loader.load();
+           Stage stage = (Stage)login.getScene().getWindow();
+           stage.setScene(new Scene(root));
+           stage.setTitle("");
+           stage.show();
+       }catch (Exception ex){
+           ex.printStackTrace();
+       }
     }
 }
 
