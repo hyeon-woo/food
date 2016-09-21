@@ -8,152 +8,162 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.collections.FXCollections?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kbh.Controller.MainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0"
+            prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="kbh.Controller.MainController">
     <top>
-        <Label alignment="CENTER" prefHeight="32.0" prefWidth="599.0" text="관리자페이지" textFill="#53c1d0" BorderPane.alignment="CENTER">
+        <Label alignment="CENTER" prefHeight="32.0" prefWidth="599.0" text="관리자페이지" textFill="#53c1d0"
+               BorderPane.alignment="CENTER">
             <BorderPane.margin>
-                <Insets top="5.0" />
+                <Insets top="5.0"/>
             </BorderPane.margin>
             <font>
-                <Font size="26.0" />
+                <Font size="26.0"/>
             </font>
         </Label>
     </top>
     <left>
-        <VBox alignment="TOP_CENTER" prefHeight="339.0" prefWidth="119.0" style="-fx-background-color: 794f80;" BorderPane.alignment="CENTER">
+        <VBox alignment="TOP_CENTER" prefHeight="339.0" prefWidth="119.0" style="-fx-background-color: 794f80;"
+              BorderPane.alignment="CENTER">
             <children>
                 <Label fx:id="managerinfo" onMouseClicked="#gomanagerinfo" text="관리자정보변경">
                     <font>
-                        <Font size="14.5" />
+                        <Font size="14.5"/>
                     </font>
                     <VBox.margin>
-                        <Insets top="30.0" />
+                        <Insets top="30.0"/>
                     </VBox.margin>
                 </Label>
                 <Label fx:id="memberad" onMouseClicked="#gomemberad" text="회원관리">
                     <font>
-                        <Font size="14.5" />
+                        <Font size="14.5"/>
                     </font>
                     <VBox.margin>
-                        <Insets top="30.0" />
+                        <Insets top="30.0"/>
                     </VBox.margin>
                 </Label>
                 <Label fx:id="categoryad" onMouseClicked="#gocategoryad" text="카테고리관리">
                     <font>
-                        <Font size="14.5" />
+                        <Font size="14.5"/>
                     </font>
                     <VBox.margin>
-                        <Insets top="30.0" />
+                        <Insets top="30.0"/>
                     </VBox.margin>
                 </Label>
                 <Label fx:id="productad" onMouseClicked="#goproductad" text="상품관리">
                     <font>
-                        <Font size="14.5" />
+                        <Font size="14.5"/>
                     </font>
                     <VBox.margin>
-                        <Insets top="30.0" />
+                        <Insets top="30.0"/>
                     </VBox.margin>
                 </Label>
                 <Label fx:id="orderad" onMouseClicked="#goorderad" text="주문정보관리">
                     <font>
-                        <Font size="14.5" />
+                        <Font size="14.5"/>
                     </font>
                     <VBox.margin>
-                        <Insets top="30.0" />
+                        <Insets top="30.0"/>
                     </VBox.margin>
                 </Label>
                 <Label fx:id="home" onMouseClicked="#gohome" text="홈폐이지로 가기">
                     <font>
-                        <Font size="14.5" />
+                        <Font size="14.5"/>
                     </font>
                     <VBox.margin>
-                        <Insets top="30.0" />
+                        <Insets top="30.0"/>
                     </VBox.margin>
                 </Label>
             </children>
             <BorderPane.margin>
-                <Insets bottom="15.0" top="5.0" />
+                <Insets bottom="15.0" top="5.0"/>
             </BorderPane.margin>
             <opaqueInsets>
-                <Insets />
+                <Insets/>
             </opaqueInsets>
         </VBox>
     </left>
     <bottom>
-        <AnchorPane prefHeight="23.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+        <AnchorPane prefHeight="23.0" prefWidth="600.0" BorderPane.alignment="CENTER"/>
     </bottom>
     <right>
-        <AnchorPane prefHeight="708.0" prefWidth="12.0" BorderPane.alignment="CENTER" />
+        <AnchorPane prefHeight="708.0" prefWidth="12.0" BorderPane.alignment="CENTER"/>
     </right>
     <center>
         <GridPane prefHeight="707.0" prefWidth="885.0" BorderPane.alignment="CENTER">
             <columnConstraints>
-                <ColumnConstraints />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="3.0" prefWidth="23.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" prefWidth="153.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="90.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="511.0" minWidth="10.0" prefWidth="425.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="115.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="115.0" />
+                <ColumnConstraints/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="3.0" prefWidth="16.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" prefWidth="150.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="90.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="511.0" minWidth="10.0" prefWidth="425.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="115.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="115.0"/>
             </columnConstraints>
             <rowConstraints>
-                <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="233.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="492.0" minHeight="10.0" prefHeight="492.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="233.0" minHeight="0.0" prefHeight="121.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="492.0" minHeight="10.0" prefHeight="492.0" vgrow="SOMETIMES"/>
             </rowConstraints>
             <children>
-                <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: silver;" GridPane.columnIndex="1">
+                <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: silver;"
+                      GridPane.columnIndex="1">
                     <GridPane.margin>
-                        <Insets right="10.0" />
+                        <Insets right="10.0"/>
                     </GridPane.margin>
                 </HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: silver;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: silver;"
+                      GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <GridPane.margin>
-                        <Insets right="10.0" />
+                        <Insets right="10.0"/>
                     </GridPane.margin>
                 </HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: silver;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: silver;"
+                      GridPane.columnIndex="1" GridPane.rowIndex="2">
                     <GridPane.margin>
-                        <Insets right="10.0" />
+                        <Insets right="10.0"/>
                     </GridPane.margin>
                 </HBox>
                 <Label text="[ 주문정보관리 ]" GridPane.columnIndex="2">
                     <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="System Bold" size="18.0"/>
                     </font>
                 </Label>
-                <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="2">
+                <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="4"
+                           GridPane.rowIndex="2">
                     <columns>
-                        <TableColumn prefWidth="75.0" text="번호" />
-                        <TableColumn prefWidth="75.0" text="주문번호" />
-                        <TableColumn prefWidth="75.0" text="아이디" />
-                        <TableColumn prefWidth="75.0" text="결제금액" />
-                        <TableColumn prefWidth="75.0" text="주문일시" />
-                        <TableColumn prefWidth="94.0" text="결제방법/상태" />
-                        <TableColumn prefWidth="69.0" text="배송상태" />
-                        <TableColumn prefWidth="76.0" text="반품상태" />
-                        <TableColumn prefWidth="71.0" text="취소상태" />
+                        <TableColumn prefWidth="75.0" text="번호"/>
+                        <TableColumn prefWidth="75.0" text="주문번호"/>
+                        <TableColumn prefWidth="75.0" text="아이디"/>
+                        <TableColumn prefWidth="75.0" text="결제금액"/>
+                        <TableColumn prefWidth="75.0" text="주문일시"/>
+                        <TableColumn prefWidth="94.0" text="결제방법/상태"/>
+                        <TableColumn prefWidth="69.0" text="배송상태"/>
+                        <TableColumn prefWidth="76.0" text="반품상태"/>
+                        <TableColumn prefWidth="71.0" text="취소상태"/>
                     </columns>
                 </TableView>
-                <AnchorPane prefHeight="145.0" prefWidth="265.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="1">
+                <AnchorPane prefHeight="145.0" prefWidth="265.0" GridPane.columnIndex="2" GridPane.columnSpan="3"
+                            GridPane.rowIndex="1">
                     <children>
-                        <Label layoutX="8.0" layoutY="14.0" text="[ 주문검색 ]" />
+                        <Label layoutX="8.0" layoutY="14.0" text="[ 주문검색 ]"/>
                         <ComboBox layoutX="8.0" layoutY="41.0" prefHeight="23.0" prefWidth="115.0" promptText="검색">
 
                             <items>
                                 <FXCollections fx:factory="observableArrayList">
-                                    <String fx:value="주문번호" />
-                                    <String fx:value="아이디검색" />
-                                    <String fx:value="번호" />
+                                    <String fx:value="주문번호"/>
+                                    <String fx:value="아이디검색"/>
+                                    <String fx:value="번호"/>
                                 </FXCollections>
                             </items>
                         </ComboBox>
 
-                        <TextField layoutX="158.0" layoutY="41.0" prefHeight="23.0" prefWidth="160.0" />
-                        <Button layoutX="330.0" layoutY="41.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="50.0" text="검색" />
+                        <TextField layoutX="158.0" layoutY="41.0" prefHeight="23.0" prefWidth="160.0"/>
+                        <Button layoutX="330.0" layoutY="41.0" mnemonicParsing="false" prefHeight="23.0"
+                                prefWidth="50.0" text="검색"/>
                         <Label layoutX="134.0" layoutY="42.0" text=":">
                             <font>
-                                <Font size="17.0" />
+                                <Font size="17.0"/>
                             </font>
                         </Label>
                     </children>

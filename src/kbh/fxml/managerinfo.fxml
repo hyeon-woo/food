@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.collections.FXCollections?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kbh.Controller.MainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kbh.Controller.MainController">
     <top>
         <Label alignment="CENTER" prefHeight="32.0" prefWidth="599.0" text="관리자페이지" textFill="#53c1d0" BorderPane.alignment="CENTER">
             <BorderPane.margin>
@@ -89,16 +89,16 @@
         <GridPane onMouseClicked="#gomanagerinfo" prefHeight="298.0" prefWidth="453.0" BorderPane.alignment="CENTER">
             <columnConstraints>
                 <ColumnConstraints />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="3.0" prefWidth="17.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" prefWidth="221.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="53.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="511.0" minWidth="10.0" prefWidth="509.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="3.0" prefWidth="12.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="10.0" prefWidth="425.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="152.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="511.0" minWidth="10.0" prefWidth="189.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="115.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="233.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="492.0" minHeight="10.0" prefHeight="492.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="431.0" minHeight="0.0" prefHeight="431.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="492.0" minHeight="10.0" prefHeight="221.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
                 <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: silver;" GridPane.columnIndex="1">
@@ -121,6 +121,65 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="25.0" layoutY="38.0" text="아이디">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="82.0" text="비밀번호">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="123.0" text="비밀번호확인">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="253.0" text="이메일">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="201.0" text="주소">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="164.0" text="이름">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="300.0" text="전화번호">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="125.0" layoutY="36.0" prefHeight="23.0" prefWidth="160.0" promptText="수정시에만 입력" />
+                  <TextField layoutX="125.0" layoutY="162.0" prefHeight="23.0" prefWidth="160.0" />
+                  <TextField layoutX="125.0" layoutY="209.0" prefHeight="23.0" prefWidth="160.0" />
+                  <TextField layoutX="125.0" layoutY="251.0" prefHeight="23.0" prefWidth="160.0" />
+                  <TextField layoutX="125.0" layoutY="298.0" prefHeight="23.0" prefWidth="160.0" />
+                  <PasswordField layoutX="125.0" layoutY="80.0" prefHeight="23.0" prefWidth="160.0" promptText="수정시에만 입력" />
+                  <PasswordField layoutX="125.0" layoutY="121.0" prefHeight="23.0" prefWidth="160.0" promptText="수정시에만 입력" />
+                  <Button layoutX="125.0" layoutY="357.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="60.0" text="변경">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="226.0" layoutY="357.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="60.0" text="취소">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin>
+            </AnchorPane>
             </children>
         </GridPane>
     </center>
