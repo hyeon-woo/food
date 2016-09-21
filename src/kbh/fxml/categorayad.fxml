@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.collections.FXCollections?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: ;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:controller="kbh.Controller.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: ;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
     <top>
-        <Label alignment="CENTER" prefHeight="32.0" prefWidth="599.0" style="-fx-background-color: ;" text="관리자페이지" textFill="#53c1d0" BorderPane.alignment="CENTER">
+        <Label alignment="CENTER" prefHeight="32.0" prefWidth="599.0"  text="관리자페이지" textFill="#53c1d0" BorderPane.alignment="CENTER">
             <BorderPane.margin>
                 <Insets top="5.0" />
             </BorderPane.margin>
@@ -22,7 +22,7 @@
     <left>
         <VBox alignment="TOP_CENTER" prefHeight="339.0" prefWidth="119.0" style="-fx-background-color: 794f80;" BorderPane.alignment="CENTER">
             <children>
-                <Label fx:id="managerinfo" text="관리자정보변경">
+                <Label fx:id="managerinfo" onMouseClicked="#gomanagerinfo" text="관리자정보변경">
                     <font>
                         <Font size="14.5" />
                     </font>
@@ -30,7 +30,7 @@
                         <Insets top="30.0" />
                     </VBox.margin>
                 </Label>
-                <Label fx:id="memberad" text="회원관리">
+                <Label fx:id="memberad" onMouseClicked="#gomemberad" text="회원관리">
                     <font>
                         <Font size="14.5" />
                     </font>
@@ -38,7 +38,7 @@
                         <Insets top="30.0" />
                     </VBox.margin>
                 </Label>
-                <Label fx:id="categoryad" text="카테고리관리">
+                <Label fx:id="categoryad" onMouseClicked="#gocategoryad" text="카테고리관리">
                     <font>
                         <Font size="14.5" />
                     </font>
@@ -46,7 +46,7 @@
                         <Insets top="30.0" />
                     </VBox.margin>
                 </Label>
-                <Label fx:id="productad" text="상품관리">
+                <Label fx:id="productad" onMouseClicked="#goproductad" text="상품관리">
                     <font>
                         <Font size="14.5" />
                     </font>
@@ -54,7 +54,7 @@
                         <Insets top="30.0" />
                     </VBox.margin>
                 </Label>
-                <Label fx:id="orderad" text="주문정보관리">
+                <Label fx:id="orderad" onMouseClicked="#goorderad" text="주문정보관리">
                     <font>
                         <Font size="14.5" />
                     </font>
@@ -62,7 +62,7 @@
                         <Insets top="30.0" />
                     </VBox.margin>
                 </Label>
-                <Label fx:id="gohome" text="홈폐이지로 가기">
+                <Label fx:id="home" onMouseClicked="#gohome" text="홈폐이지로 가기">
                     <font>
                         <Font size="14.5" />
                     </font>
