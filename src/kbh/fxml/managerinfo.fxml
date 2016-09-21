@@ -20,7 +20,7 @@
         </Label>
     </top>
     <left>
-        <VBox alignment="TOP_CENTER" prefHeight="339.0" prefWidth="119.0" style="-fx-background-color: 794f80;" BorderPane.alignment="CENTER">
+        <VBox alignment="TOP_CENTER" prefHeight="339.0" prefWidth="119.0"  BorderPane.alignment="CENTER">
             <children>
                 <Label fx:id="managerinfo" onMouseClicked="#gomanagerinfo" text="관리자정보변경">
                     <font>
