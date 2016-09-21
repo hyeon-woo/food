@@ -1,4 +1,4 @@
-package kbh.sample;
+package kbh.Main;
 
 
 import javafx.application.Application;
@@ -18,13 +18,15 @@ public class Main extends Application{
    @Override
     public void start(Stage stage) throws Exception {
        FXMLLoader loader = new FXMLLoader(
-               getClass().getResource("managerlogin.fxml"));
-       Parent root = loader.load();
+               getClass().getResource("" +
+                       "../fxml/mainpage1.fxml"));
 
-       stage.setScene(new Scene(root));
-       stage.setResizable(false);
+    Parent root = loader.load();
 
-       stage.show();
+    stage.setScene(new Scene(root));
+    stage.setResizable(false);
+
+    stage.show();
 
    }
 }

@@ -105,8 +105,48 @@
                 <RowConstraints maxHeight="492.0" minHeight="10.0" prefHeight="492.0" vgrow="SOMETIMES"/>
             </rowConstraints>
             <children>
+                <Label prefHeight="15.0" prefWidth="118.0" text="[ 회원관리 ]" GridPane.columnIndex="2">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <Label text="전체회원 0 명 / 오늘 가입회원 0명" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                <TableView prefHeight="488.0" prefWidth="591.0" GridPane.columnIndex="2" GridPane.columnSpan="3"
+                           GridPane.rowIndex="2">
+                    <columns>
+                        <TableColumn prefWidth="109.0" text="아이디"/>
+                        <TableColumn prefWidth="117.0" text="이름"/>
+                        <TableColumn prefWidth="134.0" text="E-mail"/>
+                        <TableColumn prefWidth="120.0" text="전화번호"/>
+                        <TableColumn prefWidth="157.0" text="주소"/>
+                        <TableColumn prefWidth="95.0" text="구매총액"/>
+                    </columns>
+                </TableView>
                 <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4"
                       GridPane.rowIndex="1">
+                    <children>
+                        <ComboBox prefHeight="23.0" prefWidth="118.0" promptText="검색">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="아이디검색"/>
+                                    <String fx:value="이름검색"/>
+                                </FXCollections>
+                            </items>
+                            <HBox.margin>
+                                <Insets left="100.0"/>
+                            </HBox.margin>
+                        </ComboBox>
+                        <TextField prefHeight="23.0" prefWidth="217.0">
+                            <HBox.margin>
+                                <Insets left="10.0"/>
+                            </HBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="48.0" text="검색">
+                            <HBox.margin>
+                                <Insets left="10.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
                     <GridPane.margin>
                         <Insets/>
                     </GridPane.margin>
