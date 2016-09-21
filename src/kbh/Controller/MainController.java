@@ -7,7 +7,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -41,7 +40,7 @@ public class MainController {
             }
         }
     public void gomemberad(Event event){
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../../kbh/fxml/mainpage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/mainpage1.fxml"));
         try{
             Parent root = loader.load();
             Stage stage = (Stage)memberad.getScene().getWindow();
@@ -68,7 +67,7 @@ public class MainController {
     }
 
     public void gocategoryad(Event event) {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../../kbh/fxml/categoryad.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../fxml/categorayad.fxml"));
 
         try{
             Parent root = loader.load();

@@ -19,7 +19,7 @@ public class Main extends Application{
     public void start(Stage stage) throws Exception {
        FXMLLoader loader = new FXMLLoader(
                getClass().getResource("" +
-                       "../../kbh/fxml/mainpage.fxml"));
+                       "../fxml/mainpage1.fxml"));
 
     Parent root = loader.load();
 
