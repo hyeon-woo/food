@@ -25,6 +25,8 @@ public class Menu3Controller extends MainController {
     private Button Howwork;
 
 
+
+
     public void goMenu1(ActionEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
                 "../view/menu/menu1a.fxml"
