@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -19,7 +20,7 @@ import java.util.ResourceBundle;
 /**
  * Created by java on 2016-09-19.
  */
-public class MainController implements Initializable{
+public class MainController implements Initializable {
     @FXML
     private Button Menu;
     @FXML
@@ -30,6 +31,26 @@ public class MainController implements Initializable{
     private Button Seemenu;
     @FXML
     private Button Login;
+    @FXML
+    private Label JoinMember;
+
+    public void goJoinMember(Event event) {
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("../../cronian/project/login/joinmember.fxml")
+        );
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) JoinMember.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("JoinMember");
+
+            stage.show();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
     public void gologin(ActionEvent event) {
 
 
@@ -48,13 +69,14 @@ public class MainController implements Initializable{
             ex.printStackTrace();
         }
     }
+
     private FXMLLoader loader1;
 
     public void goMenu1(ActionEvent event) {
 
         try {
             Parent root1 = loader1.load();
-            Stage stage = (Stage)Menu.getScene().getWindow();
+            Stage stage = (Stage) Menu.getScene().getWindow();
             stage.setScene(new Scene(root1));
             stage.setTitle("foodmenu1");
 
@@ -71,7 +93,7 @@ public class MainController implements Initializable{
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage)Main.getScene().getWindow();
+            Stage stage = (Stage) Main.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("maker");
 
@@ -87,7 +109,7 @@ public class MainController implements Initializable{
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage)Howwork.getScene().getWindow();
+            Stage stage = (Stage) Howwork.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("maker");
 
@@ -104,7 +126,7 @@ public class MainController implements Initializable{
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage)Seemenu.getScene().getWindow();
+            Stage stage = (Stage) Seemenu.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("foodmenu1");
 

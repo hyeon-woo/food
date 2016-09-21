@@ -70,7 +70,7 @@
                                 <Insets bottom="15.0" top="15.0" />
                             </padding>
                         </Label>
-                        <TextField promptText="이메일을 입력해주세요">
+                        <TextField fx:id="email" promptText="이메일을 입력해주세요">
                             <font>
                                 <Font size="18.0" />
                             </font>
@@ -86,7 +86,7 @@
                                 <Insets bottom="15.0" top="15.0" />
                             </padding>
                         </Label>
-                        <PasswordField promptText="비밀번호를 입력해주세요">
+                        <PasswordField fx:id="passwd" promptText="비밀번호를 입력해주세요">
                             <padding>
                                 <Insets bottom="15.0" left="10.0" top="15.0" />
                             </padding>
@@ -117,7 +117,7 @@
                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                             </padding>
                         </HBox>
-                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" style="-fx-cursor: hand;" text="로그인" textAlignment="CENTER">
+                        <Button fx:id="login" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#gologin" prefHeight="40.0" prefWidth="190.0" style="-fx-cursor: hand;" text="로그인" textAlignment="CENTER">
                             <font>
                                 <Font size="18.0" />
                             </font>
