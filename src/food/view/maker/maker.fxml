@@ -88,7 +88,7 @@
                         <Pane prefHeight="92.0" prefWidth="226.0">
                             <children>
                                 <Text layoutX="61.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="회원이 아니신가요?" />
-                                <Label layoutX="21.0" layoutY="44.0" style="-fx-cursor: hand;" text="가입">
+                                <Label fx:id="JoinMember" layoutX="21.0" layoutY="44.0" onMouseClicked="#goJoinMember" style="-fx-cursor: hand;" text="가입">
                                     <font>
                                         <Font name="System Bold Italic" size="18.0" />
                                     </font>
@@ -155,9 +155,9 @@
         </HBox>
     </bottom>
     <center>
-        <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <ScrollPane hbarPolicy="NEVER" BorderPane.alignment="CENTER">
             <content>
-                <ImageView fitHeight="10000.0" fitWidth="1020.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="10000.0" fitWidth="1050.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../img/maker.png" />
                     </image>

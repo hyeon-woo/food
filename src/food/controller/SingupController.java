@@ -6,7 +6,14 @@ import cronian.project.model.pjJoinUpdate;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 /**
  * Created by java on 2016-09-21.
@@ -20,6 +27,8 @@ public class SingupController { @FXML TextField emailfw;
     @FXML TextField useraddrnum;
     @FXML TextField useraddrtext;
     @FXML Label checked;
+    @FXML
+    ImageView Main;
 
     public void checkemail(ActionEvent event) {
         boolean result =false;
@@ -43,6 +52,19 @@ public class SingupController { @FXML TextField emailfw;
         pj = new pjJoinUpdate(sb.toString(),username.getText(),userphone.getText(),passwd.getText(),sb1.toString());
         if(pjDAO.addMember(pj,1)){
             Waring("완료","가입완료");
+                FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                        "../view/food.fxml"
+                ));
+                try {
+                    Parent root = loader.load();
+                    Stage stage = (Stage) Main.getScene().getWindow();
+                    stage.setScene(new Scene(root));
+                    stage.setTitle("main");
+
+                    stage.show();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
         }else{
             Waring("오류","오류");
         }
@@ -67,6 +89,24 @@ public class SingupController { @FXML TextField emailfw;
             checked.setStyle("-fx-text-fill: red");
         }
     }
+
+    public void gomain(Event event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/food.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) Main.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("main");
+
+            stage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
 }
 
 

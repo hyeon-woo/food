@@ -12,7 +12,6 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -20,7 +19,7 @@ import java.util.ResourceBundle;
 /**
  * Created by java on 2016-09-19.
  */
-public class MainController implements Initializable {
+public class MainloginController implements Initializable {
     @FXML
     private Button Menu;
     @FXML
@@ -36,7 +35,7 @@ public class MainController implements Initializable {
 
     public void goJoinMember(Event event) {
         FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("../view/singup/joinmember.fxml")
+                getClass().getResource("../../cronian/project/login/joinmember.fxml")
         );
         try {
             Parent root = loader.load();

@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -20,6 +21,10 @@ public class MakerController {
     private ImageView Main;
     @FXML
     private Button Menu;
+    @FXML
+    private Label JoinMember;
+    @FXML
+    private Button Login;
 
     public void goMain(Event event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
@@ -49,6 +54,42 @@ public class MakerController {
 
             stage.show();
         } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public void gologin(ActionEvent event) {
+
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/login/getstart.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) Login.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("login");
+
+            stage.show();
+        } catch (IOException ex) {
+
+            ex.printStackTrace();
+        }
+    }
+
+    public void goJoinMember(Event event) {
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("../view/singup/joinmember.fxml")
+        );
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) JoinMember.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("JoinMember");
+
+            stage.show();
+
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }

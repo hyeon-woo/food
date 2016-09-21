@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -12,11 +13,13 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 /**
  * Created by java on 2016-09-21.
  */
-public class LoginController {
+public class LoginController implements Initializable{
 
     @FXML
     ImageView Main;
@@ -26,6 +29,9 @@ public class LoginController {
     PasswordField passwd;
     @FXML
     Button login;
+    @FXML
+    Button join;
+
 
 
 
@@ -40,7 +46,7 @@ public class LoginController {
         if (result) {
 
             FXMLLoader loader = new FXMLLoader(getClass()
-                    .getResource("../view/food.fxml"
+                    .getResource("../view/foodint.fxml"
                     ));
             try {
                 Parent root = loader.load();
@@ -85,4 +91,28 @@ public class LoginController {
             al.showAndWait();
         }
 
+    public void goJoin(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/singup/joinmember.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage)join.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("join");
+
+            stage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
+
+
+    }
+
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
 }
