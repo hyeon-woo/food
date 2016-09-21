@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hj.controller.paymentController">
+    <left>
+        <Pane prefHeight="582.0" prefWidth="43.0" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Pane prefHeight="592.0" prefWidth="64.0" BorderPane.alignment="CENTER" />
+    </right>
+    <center>
+        <HBox BorderPane.alignment="CENTER">
+            <children>
+                <Pane prefHeight="589.0" prefWidth="680.0">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="42.0" text="배송지를 입력하여 신선한 재료를 받아보세요!" textAlignment="CENTER" textFill="#5b5656">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <CheckBox layoutX="359.0" layoutY="99.0" mnemonicParsing="false" text="새로운 배송지 추가" textFill="#5b5656" />
+                        <CheckBox layoutX="202.0" layoutY="99.0" mnemonicParsing="false" text="주문자 주소와 동일" textFill="#5b5656" />
+                        <ComboBox fx:id="edomain" layoutX="461.0" layoutY="145.0" prefHeight="30.0" prefWidth="97.0" promptText="직접입력" style="-fx-background-color: lightgray;">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="hotmail.com" />
+                                    <String fx:value="hanmail.net" />
+                                    <String fx:value="naver.com" />
+                                    <String fx:value="daum.net" />
+                                </FXCollections>
+                            </items>
+                        </ComboBox>
+                        <TextField layoutX="174.0" layoutY="145.0" prefHeight="30.0" prefWidth="135.0" />
+                        <Label layoutX="120.0" layoutY="152.0" text="이메일" textFill="#5b5656">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <TextField layoutX="174.0" layoutY="195.0" prefHeight="30.0" prefWidth="106.0">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <Label layoutX="133.0" layoutY="202.0" text="이름" textFill="#5b5656">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <TextField layoutX="377.0" layoutY="195.0" prefHeight="30.0" prefWidth="180.0" />
+                        <Label layoutX="315.0" layoutY="202.0" text="전화번호" textFill="#5b5656">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="319.0" layoutY="244.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: lightgray;" text="우편번호검색" textFill="#111111">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Button>
+                        <TextField layoutX="174.0" layoutY="244.0" prefHeight="30.0" promptText="우편번호 입력">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <Label layoutX="133.0" layoutY="251.0" text="주소" textFill="#5b5656">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <TextField layoutX="174.0" layoutY="292.0" prefHeight="30.0" prefWidth="382.0">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <Label layoutX="263.0" layoutY="353.0" text="결제정보를 입력해주세요" textFill="#5b5656">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Pane layoutX="88.0" layoutY="383.0" prefHeight="175.0" prefWidth="497.0" style="-fx-border-color: seagreen; -fx-border-radius: 20px;">
+                            <children>
+                                <Button layoutX="383.0" layoutY="38.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="89.0" style="-fx-background-color: seagreen; -fx-border-color: seagreen;" text="CVC" textFill="WHITE" />
+                                <Button layoutX="267.0" layoutY="38.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: seagreen; -fx-border-color: seagreen;" text="만료" textFill="WHITE" />
+                                <Button layoutX="26.0" layoutY="38.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="236.0" style="-fx-background-color: seagreen; -fx-border-color: seagreen;" text="카드번호" textFill="WHITE" />
+                                <TextField alignment="CENTER" layoutX="383.0" layoutY="68.0" prefHeight="30.0" prefWidth="89.0" promptText="CVC" />
+                                <TextField alignment="CENTER" layoutX="267.0" layoutY="68.0" prefHeight="30.0" prefWidth="111.0" promptText="2016/12/29" />
+                                <TextField alignment="CENTER" layoutX="26.0" layoutY="68.0" prefHeight="30.0" prefWidth="236.0" promptText="카드번호 입력" />
+                                <Button fx:id="payBtn" layoutX="307.0" layoutY="115.0" mnemonicParsing="false" onAction="#goPay" prefHeight="28.0" prefWidth="165.0" style="-fx-background-color: darkorange;" text="결제하기" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </Pane>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="313.0" layoutY="151.0" text="\@" textAlignment="CENTER" textFill="#5b5656">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField layoutX="329.0" layoutY="145.0" prefHeight="30.0" prefWidth="125.0">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                    </children>
+                </Pane>
+                <VBox alignment="CENTER" prefHeight="518.0" prefWidth="222.0" style="-fx-background-color: seagreen;">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="95.0" text="주문정보 확인" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="30.0" />
+                            </VBox.margin>
+                        </Label>
+                        <TextArea prefHeight="437.0" prefWidth="226.0" text="★ 이메일 :&#10;ha@naver.com&#10;&#10;&#10;★ 선택내역 :&#10;2 인 · 주 당 3 조리법 &#10;(각각 제공 2)&#10;&#10;&#10;★ 식이 환경 설정&#10;당신은 고기, 해산물, 가금류&#10;조리법의 혼합을 받게됩니다&#10;&#10;&#10;★ 배송일자:&#10;2016/07/29&#10;&#10;&#10;★ 반복 주간  :&#10;- 총 $ 59.94&#10;먼저 주 할인 - $ 30.00&#10;세 $ 0.00&#10;배송 비어 있는&#10;첫 주 총 $ 29.94&#10;&#10;&#10;">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets left="5.0" right="5.0" />
+                            </VBox.margin>
+                        </TextArea>
+                        <Button fx:id="paychangeBtn" mnemonicParsing="false" onAction="#paychange" style="-fx-background-color: seagreen; -fx-border-color: white; -fx-border-radius: 10px;" text="주문수정" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+    <top>
+        <Pane prefHeight="109.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="BOTTOM_LEFT" prefHeight="109.0" prefWidth="1024.0">
+                    <children>
+                        <ImageView fitHeight="103.0" fitWidth="220.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                            <cursor>
+                                <Cursor fx:constant="SW_RESIZE" />
+                            </cursor>
+                            <image>
+                                <Image url="@../img/logo.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="50.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Pane prefHeight="109.0" prefWidth="755.0">
+                            <children>
+                                <ImageView fitHeight="225.0" fitWidth="370.0" layoutX="320.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/진행과정2.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                    </children>
+                </HBox>
+            </children>
+        </Pane>
+    </top>
+    <bottom>
+        <Pane prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox fx:id="footer" alignment="CENTER" prefHeight="40.0" prefWidth="1024.0">
+                    <children>
+                        <Label text="금주의 식단을  E-mail로 받아보세요!" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="30.0" right="30.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField alignment="CENTER" prefHeight="27.0" prefWidth="218.0" text="이메일">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="30.0" right="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <Button fx:id="Receive" mnemonicParsing="false" style="-fx-cursor: hand;" text="받아보기">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" right="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+            <BorderPane.margin>
+                <Insets top="30.0" />
+            </BorderPane.margin>
+        </Pane>
+    </bottom>
+</BorderPane>

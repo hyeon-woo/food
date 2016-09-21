@@ -10,5 +10,11 @@
       <schema-pattern>*.FOODICON *.SYS *.SYSTEM</schema-pattern>
       <default-schemas>*.FOODICON *.SYS *.SYSTEM</default-schemas>
     </data-source>
+    <data-source name="Oracle - xe@192.168.160.131." uuid="47b95ba1-c121-4609-a83d-a8367aa6d7ef">
+      <secret-storage>master_key</secret-storage>
+      <user-name>hj</user-name>
+      <schema-pattern>*.HJ *.SYS *.SYSTEM</schema-pattern>
+      <default-schemas>*.HJ *.SYS *.SYSTEM</default-schemas>
+    </data-source>
   </component>
 </project>
