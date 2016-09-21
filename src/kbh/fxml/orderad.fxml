@@ -86,11 +86,11 @@
         <AnchorPane prefHeight="708.0" prefWidth="12.0" BorderPane.alignment="CENTER" />
     </right>
     <center>
-        <GridPane prefHeight="298.0" prefWidth="453.0" BorderPane.alignment="CENTER">
+        <GridPane prefHeight="707.0" prefWidth="885.0" BorderPane.alignment="CENTER">
             <columnConstraints>
                 <ColumnConstraints />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="3.0" prefWidth="17.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" prefWidth="221.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="3.0" prefWidth="30.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" prefWidth="169.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="53.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="511.0" minWidth="10.0" prefWidth="509.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="115.0" />
@@ -122,7 +122,7 @@
                         <Font name="System Bold" size="18.0" />
                     </font>
                 </Label>
-                <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="2">
+                <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="2">
                     <columns>
                         <TableColumn prefWidth="75.0" text="번호" />
                         <TableColumn prefWidth="75.0" text="주문번호" />
