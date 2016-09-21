@@ -14,7 +14,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" stylesheets="@../../css/menu1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food.controller.Menu1aController">
     <bottom>
-        <HBox fx:id="footer" alignment="CENTER" prefHeight="40.0" prefWidth="1024.0" stylesheets="@../../css/menu1.css" BorderPane.alignment="CENTER">
+        <HBox fx:id="footer" alignment="CENTER" prefHeight="47.0" prefWidth="1024.0" stylesheets="@../../css/menu1.css" BorderPane.alignment="CENTER">
             <children>
                 <Label stylesheets="@../../css/food.css" text="금주의 식단을  E-mail로 받아보세요!" textFill="WHITE">
                     <font>
@@ -73,8 +73,7 @@
                                 <Cursor fx:constant="HAND" />
                             </cursor>
                         </Button>
-                        <Button fx:id="Howwork" mnemonicParsing="false" onAction="#goMaker" prefHeight="20.0"
-                                prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../../css/food.css" text="생산자">
+                        <Button fx:id="Howwork" mnemonicParsing="false" onAction="#goMaker" prefHeight="20.0" prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../../css/food.css" text="생산자">
                         <font>
                                 <Font size="16.0" />
                             </font>

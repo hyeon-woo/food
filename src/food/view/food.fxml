@@ -16,15 +16,16 @@
                 <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">
                     <children>
                         <Button fx:id="Menu" mnemonicParsing="false" onAction="#goMenu1" prefHeight="20.0" prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../css/food.css" text="메뉴">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets right="5.0" />
-                     </HBox.margin>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></Button>
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets right="5.0" />
+                            </HBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
                         <Button fx:id="Apply" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../css/food.css" text="주문">
                             <HBox.margin>
                                 <Insets left="5.0" right="5.0" />
@@ -32,9 +33,9 @@
                             <font>
                                 <Font size="16.0" />
                             </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
                         </Button>
                         <Button fx:id="Howwork" mnemonicParsing="false" onAction="#goMaker" prefHeight="20.0" prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../css/food.css" text="생산자">
                             <HBox.margin>
@@ -43,9 +44,9 @@
                             <font>
                                 <Font size="16.0" />
                             </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
                         </Button>
                         <Button fx:id="Recipe" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../css/food.css" text="레시피">
                             <HBox.margin>
@@ -54,9 +55,9 @@
                             <font>
                                 <Font size="16.0" />
                             </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
                         </Button>
                     </children>
                     <HBox.margin>
@@ -70,9 +71,9 @@
                     <HBox.margin>
                         <Insets right="30.0" />
                     </HBox.margin>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
                 </ImageView>
                 <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">
                     <children>
@@ -83,9 +84,9 @@
                             <font>
                                 <Font size="18.0" />
                             </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
                         </Button>
                         <Pane prefHeight="92.0" prefWidth="226.0">
                             <children>
@@ -102,9 +103,9 @@
                                             </stops>
                                         </LinearGradient>
                                     </textFill>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
                                 </Label>
                                 <Text layoutX="60.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="하셔서 많은 혜택을 누리세요!" />
                             </children>
@@ -168,9 +169,9 @@
                                     <font>
                                         <Font size="25.0" />
                                     </font>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
                                 </Button>
                             </children>
                             <VBox.margin>
@@ -183,13 +184,13 @@
                     <children>
                         <Pane fx:id="BroweOurRecipes" prefHeight="250.0" prefWidth="500.0" stylesheets="@../css/food.css">
                             <children>
-                                <Button fx:id="Seemenu" layoutX="175.0" layoutY="167.0" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../css/food.css" text="메뉴보기" textAlignment="CENTER" textFill="WHITE">
+                                <Button fx:id="Seemenu" layoutX="175.0" layoutY="167.0" mnemonicParsing="false" onAction="#boxgoMenu1" style="-fx-cursor: hand;" stylesheets="@../css/food.css" text="메뉴보기" textAlignment="CENTER" textFill="WHITE">
                                     <font>
                                         <Font size="25.0" />
                                     </font>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
                                 </Button>
                                 <Text layoutX="99.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="우리의 조리법을 테스트합니다. " textAlignment="CENTER">
                                     <font>
@@ -217,7 +218,7 @@
         </GridPane>
     </center>
     <bottom>
-        <HBox fx:id="footer" alignment="CENTER" prefHeight="47.0" prefWidth="1024.0" stylesheets="@../css/food.css" BorderPane.alignment="CENTER">
+        <HBox fx:id="footer" alignment="CENTER" prefHeight="47.0" prefWidth="1014.0" stylesheets="@../css/food.css" BorderPane.alignment="CENTER">
             <children>
                 <Label stylesheets="@../css/food.css" text="금주의 식단을  E-mail로 받아보세요!" textFill="WHITE">
                     <HBox.margin>
@@ -242,9 +243,9 @@
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
                 </Button>
             </children>
         </HBox>
