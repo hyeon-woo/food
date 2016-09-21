@@ -27,7 +27,7 @@ public class MakerController {
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage)Main.getScene().getWindow();
+            Stage stage = (Stage) Main.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("Main");
 
@@ -38,19 +38,19 @@ public class MakerController {
     }
 
     public void goMenu1(ActionEvent actionEvent) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                    "../view/menu/menu1a.fxml"
-            ));
-            try {
-                Parent root = loader.load();
-                Stage stage = (Stage)Menu.getScene().getWindow();
-                stage.setScene(new Scene(root));
-                stage.setTitle("Menu ");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/menu/menu1a.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) Menu.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Menu ");
 
-                stage.show();
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
+            stage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
+    }
 
 }
