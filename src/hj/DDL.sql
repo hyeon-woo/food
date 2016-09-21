@@ -10,6 +10,15 @@ Create table users(
 
 
 
+
+
+
+
+
+
+
+
+
 -- 메뉴 테이블 생성
 Create table menu(
   menuno VARCHAR2(13) CONSTRAINT pk_menu PRIMARY KEY,
@@ -80,3 +89,6 @@ create view MOC as select * from orders join menu using (menuno) join company us
 
 commit;
 
+
+
+SELECT  * from users;

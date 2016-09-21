@@ -50,11 +50,10 @@ public class joinmemberController {
         } else {
             Waring("오류", "존재하는 Email입니다");
         }
-
     }
 
     public void joinmember(ActionEvent event) throws Exception {
-       /* pjJoinUpdate pj;
+        pjJoinUpdate pj;
         StringBuilder sb = new StringBuilder();
         sb.append(emailbk.getText()).append("@").append(emailbk.getText());
         StringBuilder sb1 = new StringBuilder();
@@ -62,22 +61,20 @@ public class joinmemberController {
         pj = new pjJoinUpdate(sb.toString(), username.getText(), userphone.getText(), passwd.getText(), sb1.toString());
         if (pjDAO.addMember(pj, 1)) {
             Waring("완료", "가입완료");
+            FXMLLoader login = new FXMLLoader(getClass().getResource("../view/order.fxml"));
+            try {
+                Parent root = login.load();
+                Stage stage = (Stage) joinOk.getScene().getWindow();
+                stage.setScene(new Scene(root));
+                stage.setTitle("주문");
+                stage.show();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
         } else {
             Waring("오류", "오류");
-        }*/
-
-       FXMLLoader login = new FXMLLoader(getClass().getResource("../view/order.fxml"));
-        try {
-            Parent root = login.load();
-            Stage stage = (Stage) joinOk.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("주문");
-            stage.show();
-        } catch (IOException ex) {
-            ex.printStackTrace();
         }
     }
-
 
     public void Waring(String head, String text) {
         Alert al = new Alert(Alert.AlertType.ERROR);
