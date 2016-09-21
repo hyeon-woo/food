@@ -22,7 +22,7 @@ public class Controller {
         Stage stage = (Stage)login.getScene().getWindow();
 
         FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("../kbh/managerindexpage.fxml"));
+                getClass().getResource("../kbh/.fxml"));
         Parent root = loader.load();
 
         stage.setTitle("managerpage");
