@@ -86,7 +86,7 @@
         <AnchorPane prefHeight="708.0" prefWidth="12.0" BorderPane.alignment="CENTER" />
     </right>
     <center>
-        <GridPane prefHeight="298.0" prefWidth="453.0" BorderPane.alignment="CENTER">
+        <GridPane alignment="CENTER" prefHeight="298.0" prefWidth="453.0" BorderPane.alignment="CENTER">
             <columnConstraints>
                 <ColumnConstraints />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="3.0" prefWidth="17.0" />
@@ -116,6 +116,11 @@
                         <Insets right="10.0" />
                     </GridPane.margin>
                 </HBox>
+            <Label text="[ 카테고리관리 ]" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
             </children>
         </GridPane>
     </center>

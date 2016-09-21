@@ -80,7 +80,10 @@
         </VBox>
     </left>
     <bottom>
-        <AnchorPane prefHeight="23.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+        <AnchorPane prefHeight="50.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="132.0" mnemonicParsing="false" text="Button" />
+         </children></AnchorPane>
     </bottom>
     <right>
         <AnchorPane prefHeight="708.0" prefWidth="12.0" BorderPane.alignment="CENTER" />
@@ -88,12 +91,12 @@
     <center>
         <GridPane prefHeight="298.0" prefWidth="453.0" BorderPane.alignment="CENTER">
             <columnConstraints>
-                <ColumnConstraints />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="3.0" prefWidth="17.0" />
+                <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="3.0" prefWidth="13.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" prefWidth="221.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="53.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="511.0" minWidth="10.0" prefWidth="509.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="115.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="185.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="511.0" minWidth="10.0" prefWidth="228.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="250.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
@@ -116,6 +119,51 @@
                         <Insets right="10.0" />
                     </GridPane.margin>
                 </HBox>
+            <Label text="[ 상품관리 ]" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="1">
+               <children>
+                  <ComboBox prefHeight="23.0" prefWidth="132.0" promptText="상품분류 전체" />
+                  <ComboBox prefHeight="23.0" prefWidth="95.0" promptText="구분전체">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <Label text="검색어 입력 :">
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="23.0" prefWidth="162.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" text="검색">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="2">
+              <columns>
+                <TableColumn prefWidth="105.0" text="상품번호" />
+                <TableColumn prefWidth="105.0" text="바코드" />
+                  <TableColumn prefWidth="105.0" text="상품분류" />
+                  <TableColumn prefWidth="105.0" text="상품명" />
+                  <TableColumn prefWidth="105.0" text="가격" />
+                  <TableColumn prefWidth="105.0" text="유통기한" />
+                  <TableColumn prefWidth="105.0" text="판매여부" />
+                  <TableColumn prefWidth="105.0" text="비고" />
+              </columns>
+            </TableView>
             </children>
         </GridPane>
     </center>
