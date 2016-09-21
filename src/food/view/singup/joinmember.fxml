@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.collections.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.collections.FXCollections?>
+<?import java.lang.*?>
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<?import java.lang.String?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cronian.project.login.joinmemberController">
+<BorderPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food.controller.SingupController">
     <bottom>
         <HBox alignment="CENTER" prefHeight="67.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
             <children>
@@ -96,17 +93,17 @@
                         <Font name="System Bold" size="16.0" />
                     </font>
                 </Label>
-                <Label text="이              름" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                <Label text="이                름" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                     <font>
                         <Font name="System Bold" size="16.0" />
                     </font>
                 </Label>
-                <Label text="전   화  번   호" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                <Label text="전    화   번    호" GridPane.halignment="CENTER" GridPane.rowIndex="5">
                     <font>
                         <Font name="System Bold" size="16.0" />
                     </font>
                 </Label>
-                <Label text="주             소" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                <Label text="주               소" GridPane.halignment="CENTER" GridPane.rowIndex="6">
                     <font>
                         <Font name="System Bold" size="16.0" />
                     </font>
@@ -118,17 +115,11 @@
                     <GridPane.margin>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                     </GridPane.margin>
-               <font>
-                  <Font size="14.0" />
-               </font>
                 </TextField>
                 <TextField fx:id="emailfw" prefHeight="50.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <GridPane.margin>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                     </GridPane.margin>
-               <font>
-                  <Font size="14.0" />
-               </font>
                 </TextField>
                 <TextField fx:id="emailbk" prefHeight="50.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                     <GridPane.margin>
@@ -137,20 +128,14 @@
                     <opaqueInsets>
                         <Insets />
                     </opaqueInsets>
-               <font>
-                  <Font size="14.0" />
-               </font>
                 </TextField>
-                <TextField fx:id="userphone" prefHeight="50.0" prefWidth="216.0" promptText="       010       -               -" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                <TextField fx:id="userphone" prefHeight="50.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
                     <GridPane.margin>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                     </GridPane.margin>
                     <opaqueInsets>
                         <Insets />
                     </opaqueInsets>
-               <font>
-                  <Font size="14.0" />
-               </font>
                 </TextField>
                 <TextField fx:id="username" prefHeight="50.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                     <GridPane.margin>
@@ -159,9 +144,6 @@
                     <opaqueInsets>
                         <Insets />
                     </opaqueInsets>
-               <font>
-                  <Font size="14.0" />
-               </font>
                 </TextField>
                 <TextField fx:id="useraddrnum" prefHeight="50.0" promptText="우편번호 입력" GridPane.columnIndex="1" GridPane.rowIndex="6">
                     <GridPane.margin>
@@ -170,9 +152,6 @@
                     <opaqueInsets>
                         <Insets />
                     </opaqueInsets>
-               <font>
-                  <Font size="14.0" />
-               </font>
                 </TextField>
                 <ComboBox fx:id="edomain" prefHeight="50.0" prefWidth="150.0" promptText="직접입력" GridPane.columnIndex="4" GridPane.rowIndex="1">
                     <items>
@@ -213,7 +192,7 @@
                         <Insets />
                     </GridPane.margin>
                     <children>
-                        <Button mnemonicParsing="false" onAction="#joinmember" prefHeight="61.0" prefWidth="415.0" style="-fx-background-color: orange;" text="가입하기">
+                        <Button mnemonicParsing="false" onAction="#joinmember" prefHeight="61.0" prefWidth="170.0" style="-fx-background-color: orange;" text="가입하기">
                             <font>
                                 <Font name="System Bold" size="20.0" />
                             </font>
@@ -227,9 +206,6 @@
                     <GridPane.margin>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                     </GridPane.margin>
-               <font>
-                  <Font size="14.0" />
-               </font>
                 </Button>
                 <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="6">
                     <children>
@@ -245,7 +221,7 @@
                         <Font name="System Bold" size="14.0" />
                     </font>
                 </Label>
-                <Label text="비밀번호  재확인" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                <Label text="비밀번호 재확인" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>
@@ -254,17 +230,11 @@
                     <GridPane.margin>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                     </GridPane.margin>
-               <font>
-                  <Font size="14.0" />
-               </font>
                 </PasswordField>
                 <PasswordField fx:id="conpasswd" onKeyReleased="#passwdchck" prefHeight="50.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                     <GridPane.margin>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                     </GridPane.margin>
-               <font>
-                  <Font size="14.0" />
-               </font>
                 </PasswordField>
                 <Label fx:id="checked" prefHeight="51.0" prefWidth="195.0" text="Label" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
                     <font>
