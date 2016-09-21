@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * Created by java on 2016-09-20.
+ * @date 2016-09-20.
  */
 public class joinmain extends Application {
     public static void main(String[] args) {
