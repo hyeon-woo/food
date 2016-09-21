@@ -61,6 +61,34 @@
                         <Insets bottom="10.0" left="50.0" />
                     </HBox.margin>
                 </ImageView>
+            <HBox alignment="CENTER" prefHeight="93.0" prefWidth="637.0">
+               <children>
+                  <Label text="① 선택">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                  </Label>
+                  <Label style="-fx-background-color: orange;" text="② 주문/결제">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                  </Label>
+                  <Label text="③ 완료">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
             </children>
         </HBox>
     </top>
