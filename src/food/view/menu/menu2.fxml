@@ -104,7 +104,7 @@
                 </ImageView>
                 <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">
                     <children>
-                        <Button fx:id="Login" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../../css/menu2.css" text="로그인" textAlignment="CENTER">
+                        <Button fx:id="Login" mnemonicParsing="false" onAction="#gologin" style="-fx-cursor: hand;" stylesheets="@../../css/menu2.css" text="로그인" textAlignment="CENTER">
                             <font>
                                 <Font size="18.0" />
                             </font>

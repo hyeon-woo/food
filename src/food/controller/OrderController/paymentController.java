@@ -1,4 +1,4 @@
-package hj.controller;
+package food.controller.OrderController;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,20 +13,19 @@ import java.io.IOException;
 /**
  * Created by java on 2016-09-21.
  */
-public class completeController {
+public class paymentController {
+    @FXML
+    Button payBtn;
+    @FXML Button paychangeBtn;
 
-    @FXML Button logoutBtn;
-    @FXML Button gomainBtn;
+    public void goPay(ActionEvent event) throws Exception {
 
-
-    public void goMain(ActionEvent event) throws Exception {
-
-        FXMLLoader login = new FXMLLoader(getClass().getResource("/food/view/foodout.fxml"));
+        FXMLLoader login = new FXMLLoader(getClass().getResource("../view/complete.fxml"));
         try {
             Parent root = login.load();
-            Stage stage = (Stage)gomainBtn.getScene().getWindow();
+            Stage stage = (Stage)payBtn.getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("메인 페이지");
+            stage.setTitle("주문완료 페이지");
             stage.show();
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -34,23 +33,31 @@ public class completeController {
     }
 
 
-    public void goLogout(ActionEvent event) throws Exception {
+    public void paychange(ActionEvent event) throws Exception {
 
-        FXMLLoader login = new FXMLLoader();
+        FXMLLoader login = new FXMLLoader(getClass().getResource("../view/order.fxml"));
         try {
             Parent root = login.load();
-            Stage stage = (Stage) logoutBtn.getScene().getWindow();
+            Stage stage = (Stage) paychangeBtn.getScene().getWindow();
             stage.setScene(new Scene(root));
+            stage.setTitle("주문 페이지");
             stage.show();
-            stage.close();
         } catch (IOException ex) {
             ex.printStackTrace();
         }
 
 
     }
+
 
 
 
 
 }
+
+
+
+
+
+
+

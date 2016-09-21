@@ -31,6 +31,27 @@ public class Menu1aController extends MainController {
     private ImageView Main;
     @FXML
     private Button Howwork;
+
+    @FXML
+    private Button Login;
+    public void gologin(ActionEvent event) {
+
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/login/getstart.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) Login.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("login");
+
+            stage.show();
+        } catch (IOException ex) {
+
+            ex.printStackTrace();
+        }
+    }
     public void goMaker(ActionEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
                 "../view/maker/maker.fxml"
@@ -99,7 +120,7 @@ public class Menu1aController extends MainController {
 
     public void goMain(Event event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "../view/food.fxml"
+                "../view/foodout.fxml"
         ));
         try {
             Parent root = loader.load();

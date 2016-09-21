@@ -32,6 +32,26 @@ public class MainloginController implements Initializable {
     private Button Login;
     @FXML
     private Label JoinMember;
+    @FXML
+    private Button Apply;
+
+
+    public void goOrder(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("../view/order/order1.fxml")
+        );
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) Apply.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Order");
+
+            stage.show();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
 
     public void goJoinMember(Event event) {
         FXMLLoader loader = new FXMLLoader(
@@ -88,7 +108,7 @@ public class MainloginController implements Initializable {
 
     public void goMain(Event event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "../view/food.fxml"
+                "../view/foodout.fxml"
         ));
         try {
             Parent root = loader.load();

@@ -53,7 +53,7 @@ public class SingupController { @FXML TextField emailfw;
         if(pjDAO.addMember(pj,1)){
             Waring("완료","가입완료");
                 FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                        "../view/food.fxml"
+                        "../view/foodout.fxml"
                 ));
                 try {
                     Parent root = loader.load();
@@ -92,7 +92,7 @@ public class SingupController { @FXML TextField emailfw;
 
     public void gomain(Event event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "../view/food.fxml"
+                "../view/foodout.fxml"
         ));
         try {
             Parent root = loader.load();

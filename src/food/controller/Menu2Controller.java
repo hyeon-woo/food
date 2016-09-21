@@ -25,6 +25,27 @@ public class Menu2Controller extends MainController{
     @FXML
     private Button detail;
 
+    @FXML
+    private Button Login;
+    public void gologin(ActionEvent event) {
+
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/login/getstart.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) Login.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("login");
+
+            stage.show();
+        } catch (IOException ex) {
+
+            ex.printStackTrace();
+        }
+    }
+
     public void godetail(ActionEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
                 "../view/menu/menu3.fxml"
@@ -80,7 +101,7 @@ public class Menu2Controller extends MainController{
 
     public void goMain(Event event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "../view/food.fxml"
+                "../view/foodout.fxml"
         ));
         try {
             Parent root = loader.load();

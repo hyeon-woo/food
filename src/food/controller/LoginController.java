@@ -46,7 +46,7 @@ public class LoginController implements Initializable{
         if (result) {
 
             FXMLLoader loader = new FXMLLoader(getClass()
-                    .getResource("../view/foodint.fxml"
+                    .getResource("../view/foodin.fxml"
                     ));
             try {
                 Parent root = loader.load();
@@ -69,7 +69,7 @@ public class LoginController implements Initializable{
 
     public void goMain(Event event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "../view/food.fxml"
+                "../view/foodout.fxml"
         ));
         try {
             Parent root = loader.load();

@@ -29,28 +29,13 @@ public class MainController implements Initializable {
     private Button Howwork;
     @FXML
     private Button Seemenu;
-    @FXML
-    private Button Login;
+
     @FXML
     private Label JoinMember;
-
-    public void goJoinMember(Event event) {
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("../view/singup/joinmember.fxml")
-        );
-        try {
-            Parent root = loader.load();
-            Stage stage = (Stage) JoinMember.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("JoinMember");
-
-            stage.show();
-
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
-
+    @FXML
+    private Button Apply;
+    @FXML
+    private Button Login;
     public void gologin(ActionEvent event) {
 
 
@@ -69,6 +54,34 @@ public class MainController implements Initializable {
             ex.printStackTrace();
         }
     }
+    public void goOrder(ActionEvent event) {
+
+
+    }
+
+
+
+
+
+
+    public void goJoinMember(Event event) {
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("../view/singup/joinmember.fxml")
+        );
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) JoinMember.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("JoinMember");
+
+            stage.show();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
 
     private FXMLLoader loader1;
 
@@ -89,7 +102,7 @@ public class MainController implements Initializable {
 
     public void goMain(Event event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "../view/food.fxml"
+                "../view/foodout.fxml"
         ));
         try {
             Parent root = loader.load();

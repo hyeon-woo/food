@@ -74,7 +74,7 @@
                 </ImageView>
                 <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">
                     <children>
-                        <Button fx:id="Login" mnemonicParsing="false" style="-fx-cursor: hand;" stylesheets="@../../css/food.css" text="로그인" textAlignment="CENTER">
+                        <Button fx:id="Login" mnemonicParsing="false" onAction="#gologin" style="-fx-cursor: hand;" stylesheets="@../../css/food.css" text="로그인" textAlignment="CENTER">
                             <HBox.margin>
                                 <Insets right="15.0" />
                             </HBox.margin>

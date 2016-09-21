@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 public class FoodMain extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../food/view/food.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../food/view/foodout.fxml"));
 
         Parent root = loader.load();
 

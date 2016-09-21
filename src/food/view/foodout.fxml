@@ -26,7 +26,7 @@
                                 <Cursor fx:constant="HAND" />
                             </cursor>
                         </Button>
-                        <Button fx:id="Apply" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../css/food.css" text="주문">
+                        <Button fx:id="Apply" mnemonicParsing="false" onAction="#goOrder" prefHeight="20.0" prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../css/food.css" text="주문">
                             <HBox.margin>
                                 <Insets left="5.0" right="5.0" />
                             </HBox.margin>
