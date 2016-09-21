@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="67.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="금주의 식단을  E-mail로 받아보세요!">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField alignment="CENTER" text="이메일">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" text="받아보기">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </bottom>
+    <left>
+        <Pane prefHeight="582.0" prefWidth="43.0" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Pane prefHeight="592.0" prefWidth="64.0" BorderPane.alignment="CENTER" />
+    </right>
+    <top>
+        <HBox alignment="BOTTOM_LEFT" prefHeight="90.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="83.0" fitWidth="281.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                    <cursor>
+                        <Cursor fx:constant="SW_RESIZE" />
+                    </cursor>
+                    <image>
+                        <Image url="@../../img/hj/img/logo.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="50.0" />
+                    </HBox.margin>
+                </ImageView>
+            <HBox alignment="CENTER" prefHeight="93.0" prefWidth="637.0">
+               <children>
+                  <Label text="① 선택">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                  </Label>
+                  <Label style="-fx-background-color: orange;" text="② 주문/결제">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                  </Label>
+                  <Label text="③ 완료">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <HBox BorderPane.alignment="CENTER">
+            <children>
+                <GridPane alignment="CENTER" prefHeight="591.0" prefWidth="659.0" style="-fx-border-color: orange;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="107.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="185.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="27.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="282.0" minWidth="10.0" prefWidth="186.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="151.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="47.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="55.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="29.0" minHeight="7.0" prefHeight="7.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="39.0" minHeight="9.0" prefHeight="9.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="55.0" minHeight="5.0" prefHeight="12.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="배송지 입력" textAlignment="CENTER" GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <Label text="이 메 일" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                        </Label>
+                        <Label text="이     름" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                        </Label>
+                        <Label text="전화번호" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                        </Label>
+                        <Label text="주     소" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                        </Label>
+                        <TextField prefHeight="50.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <GridPane.margin>
+                                <Insets bottom="5.0" left="10.0" />
+                            </GridPane.margin>
+                        </TextField>
+                        <Label text="결제" GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <TextField prefHeight="50.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <GridPane.margin>
+                                <Insets bottom="5.0" left="10.0" right="10.0" />
+                            </GridPane.margin>
+                        </TextField>
+                        <TextField prefHeight="50.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                            <GridPane.margin>
+                                <Insets bottom="5.0" left="10.0" right="10.0" />
+                            </GridPane.margin>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <TextField prefHeight="50.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <GridPane.margin>
+                                <Insets bottom="5.0" left="10.0" right="10.0" />
+                            </GridPane.margin>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <TextField prefHeight="50.0" promptText="우편번호 입력" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                            <GridPane.margin>
+                                <Insets bottom="5.0" left="10.0" right="10.0" />
+                            </GridPane.margin>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <ComboBox fx:id="edomain" prefHeight="50.0" prefWidth="150.0" promptText="직접입력" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                            <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="hotmail.com" />
+                                <String fx:value="hanmail.net" />
+                                <String fx:value="naver.com" />
+                                <String fx:value="daum.net" />
+                            </FXCollections>
+                            </items>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" />
+                     </GridPane.margin>
+
+
+<!--                            <GridPane.margin>
+                                <Insets bottom="5.0" left="10.0" right="10.0" />
+                            </GridPane.margin>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>-->
+                        </ComboBox>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="\@" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="88.0" text="우편번호검색" textFill="#111111" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <GridPane.margin>
+                                <Insets bottom="5.0" left="10.0" />
+                            </GridPane.margin>
+                        </Button>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnSpan="5" GridPane.rowIndex="10">
+                            <children>
+                                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="342.0" text="카드번호">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin></Button>
+                                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="만료" />
+                                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" text="CVC" />
+                            </children>
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnSpan="5" GridPane.rowIndex="12">
+                            <children>
+                                <TextField alignment="CENTER" prefHeight="50.0" prefWidth="342.0" promptText="카드번호 입력">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </TextField>
+                                <TextField alignment="CENTER" prefHeight="50.0" prefWidth="150.0" promptText="2016/12/29" />
+                                <TextField alignment="CENTER" prefHeight="50.0" prefWidth="130.0" promptText="CVC" />
+                            </children>
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                        </HBox>
+                        <Separator prefWidth="200.0" GridPane.columnSpan="5" GridPane.rowIndex="13" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0" GridPane.columnSpan="5" GridPane.halignment="CENTER" GridPane.rowIndex="14" GridPane.valignment="CENTER">
+                            <GridPane.margin>
+                                <Insets />
+                            </GridPane.margin>
+                            <children>
+                                <Button mnemonicParsing="false" style="-fx-background-color: orange;" text="결제하기">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="5" GridPane.rowIndex="7">
+                            <children>
+                                <Separator layoutY="22.0" prefHeight="0.0" prefWidth="655.0" />
+                            </children>
+                        </Pane>
+                  <CheckBox mnemonicParsing="false" text="주문자 주소와 동일" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" text="새로운 배송지 추가" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></CheckBox>
+                  <TextField prefHeight="44.0" prefWidth="208.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </GridPane>
+            <VBox alignment="CENTER" prefHeight="592.0" prefWidth="226.0" style="-fx-background-color: orange;">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="95.0" text="주문정보 확인" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea prefHeight="437.0" prefWidth="226.0" text="★ 이메일 :&#10;ha@naver.com&#10;&#10;&#10;★ 선택내역 :&#10;2 인 · 주 당 3 조리법 &#10;(각각 제공 2)&#10;&#10;&#10;★ 식이 환경 설정&#10;당신은 고기, 해산물, 가금류&#10;조리법의 혼합을 받게됩니다&#10;&#10;&#10;★ 배송일자:&#10;2016/07/29&#10;&#10;&#10;★ 반복 주간  :&#10;- 총 $ 59.94&#10;먼저 주 할인 - $ 30.00&#10;세 $ 0.00&#10;배송 비어 있는&#10;첫 주 총 $ 29.94&#10;&#10;&#10;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </TextArea>
+                  <Button mnemonicParsing="false" text="주문수정">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

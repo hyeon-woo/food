@@ -28,7 +28,26 @@ public class MainController implements Initializable{
     private Button Howwork;
     @FXML
     private Button Seemenu;
+    @FXML
+    private Button Login;
+    public void gologin(ActionEvent event) {
 
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/login/getstart.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) Login.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("login");
+
+            stage.show();
+        } catch (IOException ex) {
+
+            ex.printStackTrace();
+        }
+    }
     private FXMLLoader loader1;
 
     public void goMenu1(ActionEvent event) {
@@ -102,4 +121,6 @@ public class MainController implements Initializable{
                 "../view/menu/menu1a.fxml"
         ));
     }
+
+
 }

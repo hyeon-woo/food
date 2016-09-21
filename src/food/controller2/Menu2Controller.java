@@ -22,6 +22,26 @@ public class Menu2Controller extends MainController {
     @FXML
     private Button Howwork;
 
+    @FXML
+    private Button detail;
+
+    public void godetail(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "../view/menu2a/menu3.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage)detail.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("detail");
+
+            stage.show();
+        } catch (IOException ex) {
+
+            ex.printStackTrace();
+        }
+    }
+
     public void goMaker(ActionEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
                 "../view/maker/maker.fxml"
