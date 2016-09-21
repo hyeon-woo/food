@@ -56,9 +56,6 @@ public class LoginController {
             Waring("Wellcome" , "로그인 되었습니다!");
         } else {
             Waring("오류","존재하지 않는 아이디 입니다!");
-
-
-
         }
     }
 
