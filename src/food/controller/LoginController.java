@@ -61,6 +61,7 @@ public class LoginController implements Initializable{
                 stage.show();
             } catch (IOException ex) {
 
+
                 ex.printStackTrace();
             }
             Waring("Wellcome" , "로그인 되었습니다!");

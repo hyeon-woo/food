@@ -115,7 +115,7 @@ public class SplashController implements Initializable {
 
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/last/view/main/foodin.fxml"));
+                getClass().getResource("/last/view/main/foodout.fxml"));
         Parent root = null;
 
         try {

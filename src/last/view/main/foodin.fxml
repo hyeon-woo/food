@@ -77,7 +77,7 @@
                 </ImageView>
                 <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">
                     <children>
-                        <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#gologin" style="-fx-cursor: hand;" stylesheets="@../../css/food.css" text="로그인" textAlignment="CENTER">
+                        <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#gologin" style="-fx-cursor: hand;" stylesheets="@../../css/food.css" text="로그아웃" textAlignment="CENTER">
                             <HBox.margin>
                                 <Insets right="15.0" />
                             </HBox.margin>
@@ -88,11 +88,17 @@
                                 <Cursor fx:constant="HAND" />
                             </cursor>
                         </Button>
-                        <Pane prefHeight="92.0" prefWidth="226.0">
+                        <Pane prefHeight="73.0" prefWidth="231.0">
                             <children>
-                                <Text layoutX="61.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="회원이 아니신가요?" />
-                                <Button fx:id="join" layoutY="41.0" mnemonicParsing="false" onAction="#goJoin" prefHeight="32.0" prefWidth="53.0" text="가입" />
-                                <Text layoutX="60.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="하셔서 많은 혜택을 누리세요!" />
+                                <Text layoutX="105.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="안녕하세요" textAlignment="CENTER" wrappingWidth="97.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                                <Button fx:id="join" layoutX="70.0" layoutY="42.0" mnemonicParsing="false" onAction="#goJoin" prefHeight="32.0" prefWidth="80.0" text="가입" />
+                                <Text layoutX="153.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="회원님!">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
                             </children>
                         </Pane>
                     </children>
