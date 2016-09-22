@@ -8,17 +8,6 @@ Create table users(
   userpw VARCHAR2(20) CONSTRAINT nn_userpw NOT NULL
 );
 
-
-
-
-
-
-
-
-
-
-
-
 -- 메뉴 테이블 생성
 Create table menu(
   menuno VARCHAR2(13) CONSTRAINT pk_menu PRIMARY KEY,
