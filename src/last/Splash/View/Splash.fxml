@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="SplashScreen" prefHeight="200.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="140.0" fitWidth="450.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../img/hj/logo.png" />
+            </image>
+        </ImageView>
+        <Text fill="#ffb048" layoutX="153.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Text>
+    </children>
+</Pane>
