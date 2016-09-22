@@ -25,7 +25,8 @@
     <top>
         <HBox alignment="CENTER" prefHeight="91.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
             <children>
-                <ImageView fitHeight="150.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="main" fitHeight="150.0" fitWidth="286.0" onMouseClicked="#gomain" pickOnBounds="true"
+                           preserveRatio="true">
                     <image>
                         <Image url="@../../img/hj/logo.png"/>
                     </image>

@@ -9,7 +9,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="last.controller.MainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="last.controller.MainloginController">
     <top>
         <HBox fx:id="background" alignment="CENTER" prefHeight="55.0" prefWidth="1024.0" stylesheets="@../../css/food.css" BorderPane.alignment="CENTER">
             <children>
@@ -66,7 +66,7 @@
                 </HBox>
                 <ImageView fx:id="Main" fitHeight="80.0" fitWidth="240.0" nodeOrientation="INHERIT" onMouseClicked="#goMain" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
                     <image>
-                        <Image url="@../../../java/last/img/foodimg/KakaoTalk_20160919_094546180.png" />
+                        <Image url="@../../img/foodimg/KakaoTalk_20160919_094546180.png" />
                     </image>
                     <HBox.margin>
                         <Insets right="30.0" />
@@ -77,7 +77,7 @@
                 </ImageView>
                 <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">
                     <children>
-                        <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#gologin" prefHeight="35.0" prefWidth="108.0" style="-fx-cursor: hand;" stylesheets="/css/food.css" text="로그아웃" textAlignment="CENTER">
+                        <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#gomain" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: orange;" stylesheets="/css/food.css" text="로그아웃" textAlignment="CENTER">
                             <cursor>
                                 <Cursor fx:constant="HAND" />
                             </cursor>
@@ -131,13 +131,13 @@
             <children>
                 <ImageView fitHeight="345.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../java/last/img/foodimg/.png" />
+                        <Image url="@../../img/foodimg/.png" />
                     </image>
                 </ImageView>
                 <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <ImageView fitHeight="250.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <image>
-                        <Image url="@../../../java/last/img/foodimg/20160906-1939%25-001.png" />
+                        <Image url="@../../img/foodimg/20160906-1939%25-001.png" />
                     </image>
                 </ImageView>
                 <VBox alignment="CENTER" prefHeight="363.0" prefWidth="513.0" stylesheets="/css/food.css" GridPane.columnIndex="1">

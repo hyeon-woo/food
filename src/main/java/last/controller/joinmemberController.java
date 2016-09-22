@@ -7,19 +7,23 @@ import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 /**
  * @date 2016-09-20.
  * @author hj
  *
  */
-public class joinmemberController {
+public class joinmemberController implements Initializable {
     @FXML
     TextField emailfw;
     @FXML
@@ -40,7 +44,10 @@ public class joinmemberController {
     Label checked;
     @FXML
     Button joinOk;
+    @FXML
+    ImageView main;
 
+    private FXMLLoader loader;
 
     public void checkemail(ActionEvent event) {
         boolean result = false;
@@ -96,5 +103,18 @@ public class joinmemberController {
             checked.setVisible(true);
             checked.setStyle("-fx-text-fill: red");
         }
+    }
+
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+      FXMLLoader loader = new FXMLLoader(getClass().getResource(
+              "/fxml/main/foodin.fxml"
+      ));
+
+    }
+
+    public void gomain(Event event) {
+        loader = new FXMLLoader(getClass().getResource(""));
     }
 }

@@ -8,13 +8,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 
@@ -28,7 +28,8 @@ public class MainloginController implements Initializable {
     @FXML    private Button Seemenu;
     @FXML    private Button Apply;
     @FXML private Button join;
-    @FXML private Button loginBtn;
+    @FXML private Button logoutBtn;
+
 
 
 
@@ -68,20 +69,28 @@ public class MainloginController implements Initializable {
         }
     }
 
-    public void gologin(ActionEvent event) {
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/fxml/order/getstart.fxml"));
-        try {
-            Parent root = loader.load();
-            Stage stage = (Stage) loginBtn.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("login");
+    public void gomain(ActionEvent event) {
+        Alert confirm = new Alert(
+                Alert.AlertType.CONFIRMATION
+        );
+        confirm.setTitle("확인");
+        confirm.setHeaderText(null);
+        confirm.setContentText("로그아웃 하시겠습니까?");
 
-            stage.show();
-        } catch (IOException ex) {
+        ButtonType okbtn = new ButtonType(
+                "네", ButtonBar.ButtonData.OK_DONE
+        );
+        ButtonType nobtn = new ButtonType(
+                "아니오", ButtonBar.ButtonData.CANCEL_CLOSE);
 
-            ex.printStackTrace();
-        }
+        confirm.getButtonTypes().setAll(okbtn, nobtn);
+
+        Optional<ButtonType> result = confirm.showAndWait();
+        if (result.get() == okbtn) {
+            goMain();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main/foodout.fxml"));
+        }else event.consume();;
+
     }
 
     private FXMLLoader loader1;
@@ -102,19 +111,28 @@ public class MainloginController implements Initializable {
 
 
     public void goMain(Event event) {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/main/foodout.fxml"
-        ));
-        try {
-            Parent root = loader.load();
-            Stage stage = (Stage) Main.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("maker");
+        Alert confirm = new Alert(
+                Alert.AlertType.CONFIRMATION
+        );
+        confirm.setTitle("확인");
+        confirm.setHeaderText(null);
+        confirm.setContentText("로그아웃 하시겠습니까?");
 
-            stage.show();
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
+        ButtonType okbtn = new ButtonType(
+                "네", ButtonBar.ButtonData.OK_DONE
+        );
+        ButtonType nobtn = new ButtonType(
+                "아니오", ButtonBar.ButtonData.CANCEL_CLOSE);
+
+        confirm.getButtonTypes().setAll(okbtn, nobtn);
+
+        Optional<ButtonType> result = confirm.showAndWait();
+        if (result.get() == okbtn) {
+            goMain();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main/foodout.fxml"));
+        }else event.consume();;
+
+
     }
 
     public void goMaker(ActionEvent event) {
@@ -136,7 +154,7 @@ public class MainloginController implements Initializable {
 
     public void boxgoMenu1(ActionEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/menu/menu1a.fxml"
+                "/fxml/menu/menu.fxml"
         ));
         try {
             Parent root = loader.load();
@@ -155,7 +173,7 @@ public class MainloginController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         loader1 = new FXMLLoader(getClass().getResource(
-                "/fxml/menu/menu1a.fxml"
+                "/fxml/menu/menu.fxml"
         ));
 
 
@@ -164,6 +182,21 @@ public class MainloginController implements Initializable {
     public void senddata(pjJoinUpdate result) {
         pj = result;
         join.setText(pj.getName());
+    }
+    public void goMain() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "/fxml/main/foodout.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage)Main.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("maker");
+
+            stage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
 }

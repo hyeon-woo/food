@@ -62,7 +62,7 @@ public class MakerController {
 
     public void goMenu1(ActionEvent actionEvent) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/menu/menu1a.fxml"
+                "/fxml/menu/menu.fxml"
         ));
         try {
             Parent root = loader.load();

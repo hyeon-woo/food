@@ -1,6 +1,7 @@
 package last.controller;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,6 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonBar;
 import javafx.scene.control.ButtonType;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -24,6 +26,8 @@ public class completeController {
     Button logoutBtn;
     @FXML
     Button confirmBtn;
+    @FXML
+    ImageView Main;
 
 
 
@@ -68,6 +72,23 @@ public class completeController {
             event.consume();
         }
     }
+
+    public void goMain(Event event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "/fxml/main/foodin.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) Main.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("foodmain");
+
+            stage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
 }
 
 

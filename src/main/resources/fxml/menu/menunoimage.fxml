@@ -12,7 +12,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" stylesheets="@../../css/menu1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="last.controller.Menu1aController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" stylesheets="@../../css/menu1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="last.controller.ManuMainController">
     <bottom>
         <HBox fx:id="footer" alignment="CENTER" prefHeight="47.0" prefWidth="1024.0" stylesheets="@../../css/menu1.css" BorderPane.alignment="CENTER">
             <children>
@@ -148,125 +148,6 @@
             </children>
         </HBox>
     </top>
-    <center>
-        <GridPane prefHeight="526.0" prefWidth="1024.0" stylesheets="@../../css/menu1.css" BorderPane.alignment="CENTER">
-            <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            </columnConstraints>
-            <rowConstraints>
-                <RowConstraints maxHeight="342.33331298828125" minHeight="10.0" prefHeight="291.6666564941406" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="318.3333435058594" minHeight="10.0" prefHeight="294.3333435058594" vgrow="SOMETIMES" />
-            </rowConstraints>
-            <children>
-                <Pane prefHeight="200.0" prefWidth="200.0">
-                    <children>
-                        <VBox fx:id="picture1" layoutX="31.0" layoutY="19.0" onMouseClicked="#goMenu2" prefHeight="270.0" prefWidth="329.0">
-                            <children>
-                                <ImageView fitHeight="218.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
-                                    <image>
-                                        <Image url="@../../../java/last/img/foodimg/FS_SKU0928_web__1_.jpg" />
-                                    </image>
-                                    <cursor>
-                                        <Cursor fx:constant="HAND" />
-                                    </cursor>
-                                </ImageView>
-                                <Label fx:id="ptext1" alignment="CENTER" contentDisplay="CENTER" prefHeight="65.0" prefWidth="327.0" style="-fx-cursor: hand;" text="바질과 오이 샐러드와 치킨 볶음밥" textAlignment="CENTER">
-                                    <font>
-                                        <Font size="14.0" />
-                                    </font>
-                                    <cursor>
-                                        <Cursor fx:constant="HAND" />
-                                    </cursor>
-                                </Label>
-                            </children>
-                            <cursor>
-                                <Cursor fx:constant="HAND" />
-                            </cursor>
-                        </VBox>
-                    </children>
-                </Pane>
-                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-                    <children>
-                        <VBox fx:id="picture2" alignment="TOP_CENTER" layoutX="31.0" layoutY="19.0" onMouseClicked="#goMenu2a" prefHeight="270.0" prefWidth="100.0" style="-fx-cursor: hand;">
-                            <children>
-                                <ImageView fitHeight="218.0" fitWidth="327.0" style="-fx-cursor: hand;">
-                                    <image>
-                                        <Image url="@../../img/foodimg/FS_SKU1018_web.jpg" />
-                                    </image>
-                                    <cursor>
-                                        <Cursor fx:constant="HAND" />
-                                    </cursor>
-                                </ImageView>
-                                <Label fx:id="ptext2" alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="327.0" style="-fx-cursor: hand;" text="핀토 콩, 체다 치즈 옥수수와 고구마 고추" textAlignment="CENTER">
-                                    <font>
-                                        <Font size="14.0" />
-                                    </font>
-                                    <cursor>
-                                        <Cursor fx:constant="HAND" />
-                                    </cursor>
-                                </Label>
-                            </children>
-                            <cursor>
-                                <Cursor fx:constant="HAND" />
-                            </cursor>
-                        </VBox>
-                    </children>
-                </Pane>
-                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-                    <children>
-                        <VBox fx:id="picture3" alignment="TOP_CENTER" layoutX="32.0" layoutY="21.0" prefHeight="270.0" prefWidth="293.0">
-                            <children>
-                                <ImageView fitHeight="218.0" fitWidth="327.0" style="-fx-cursor: hand;">
-                                    <image>
-                                        <Image url="@../../../java/last/img/foodimg/FS_SKU0903_web_badge.jpg" />
-                                    </image>
-                                    <cursor>
-                                        <Cursor fx:constant="HAND" />
-                                    </cursor>
-                                </ImageView>
-                                <Label fx:id="ptext3" alignment="CENTER" contentDisplay="CENTER" prefHeight="73.0" prefWidth="327.0" style="-fx-cursor: hand;" text="비벼비벼 모든걸비빔밥" textAlignment="CENTER">
-                                    <font>
-                                        <Font size="14.0" />
-                                    </font>
-                                    <cursor>
-                                        <Cursor fx:constant="HAND" />
-                                    </cursor>
-                                </Label>
-                            </children>
-                        </VBox>
-                    </children>
-                </Pane>
-                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                    <children>
-                        <VBox fx:id="picture4" alignment="TOP_CENTER" layoutX="32.0" layoutY="21.0" prefHeight="270.0" prefWidth="100.0">
-                            <children>
-                                <ImageView fitHeight="218.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
-                                    <image>
-                                        <Image url="@../../../java/last/img/foodimg/FS_SKU0863_web__1_.jpg" />
-                                    </image>
-                                    <cursor>
-                                        <Cursor fx:constant="HAND" />
-                                    </cursor>
-                                </ImageView>
-                                <Label fx:id="ptext4" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="327.0" style="-fx-cursor: hand;" text="턱부서질샌드위치" textAlignment="CENTER">
-                                    <font>
-                                        <Font size="14.0" />
-                                    </font>
-                                    <cursor>
-                                        <Cursor fx:constant="HAND" />
-                                    </cursor>
-                                </Label>
-                            </children>
-                        </VBox>
-                    </children>
-                </Pane>
-            </children>
-            <BorderPane.margin>
-                <Insets />
-            </BorderPane.margin>
-        </GridPane>
-    </center>
     <left>
         <VBox fx:id="sidemenu" prefHeight="586.0" prefWidth="223.0" stylesheets="@../../css/menu1.css" BorderPane.alignment="CENTER">
             <children>
@@ -312,7 +193,7 @@
                                         <Cursor fx:constant="HAND" />
                                     </cursor>
                                 </Button>
-                                <Button fx:id="nextweek" mnemonicParsing="false" prefHeight="40.0" prefWidth="85.0" style="-fx-cursor: hand;" stylesheets="@../../css/menu1.css" text="다음주" textAlignment="CENTER">
+                                <Button fx:id="nextweek" mnemonicParsing="false" onMouseClicked="#secondPage" prefHeight="40.0" prefWidth="85.0" style="-fx-cursor: hand;" stylesheets="@../../css/menu1.css" text="다음주" textAlignment="CENTER">
                                     <HBox.margin>
                                         <Insets />
                                     </HBox.margin>
@@ -323,11 +204,27 @@
                                         <Cursor fx:constant="HAND" />
                                     </cursor>
                                 </Button>
+                        <Button mnemonicParsing="false" onAction="#firstPage" prefHeight="20.0" prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../../css/food.css" text="메뉴">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" style="-fx-cursor: hand;" stylesheets="@../../css/food.css" text="메뉴">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
                             </children>
                         </HBox>
                         <HBox alignment="CENTER" prefHeight="116.0" prefWidth="223.0" GridPane.rowIndex="3">
                             <children>
-                                <Button fx:id="twofamily" mnemonicParsing="false" prefHeight="40.0" prefWidth="85.0" style="-fx-cursor: hand;" stylesheets="@../../css/menu1.css" text="2인 가족" textAlignment="CENTER">
+                                <Button fx:id="twofamily" mnemonicParsing="false" onMouseClicked="#thirdPage" prefHeight="40.0" prefWidth="85.0" style="-fx-cursor: hand;" stylesheets="@../../css/menu1.css" text="2인 가족" textAlignment="CENTER">
                                     <font>
                                         <Font size="14.0" />
                                     </font>
@@ -338,7 +235,7 @@
                                         <Cursor fx:constant="HAND" />
                                     </cursor>
                                 </Button>
-                                <Button fx:id="fourfamily" mnemonicParsing="false" prefHeight="40.0" prefWidth="85.0" style="-fx-cursor: hand;" stylesheets="@../../css/menu1.css" text="4인 가족" textAlignment="CENTER">
+                                <Button fx:id="fourfamily" mnemonicParsing="false" onMouseClicked="#fouthpage" prefHeight="40.0" prefWidth="85.0" style="-fx-cursor: hand;" stylesheets="@../../css/menu1.css" text="4인 가족" textAlignment="CENTER">
                                     <font>
                                         <Font size="14.0" />
                                     </font>
@@ -351,7 +248,7 @@
                                 </Button>
                             </children>
                         </HBox>
-                        <Button fx:id="Apply2" alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="170.0" style="-fx-cursor: hand;" stylesheets="@../../css/menu1.css" text="신청하기" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                        <Button fx:id="Apply2" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#goOrder" prefHeight="40.0" prefWidth="170.0" style="-fx-cursor: hand;" stylesheets="@../../css/menu1.css" text="신청하기" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -373,4 +270,7 @@
             </BorderPane.margin>
         </VBox>
     </left>
+   <center>
+      <Pane fx:id="center" prefHeight="530.0" prefWidth="1024.0" BorderPane.alignment="CENTER" />
+   </center>
 </BorderPane>
