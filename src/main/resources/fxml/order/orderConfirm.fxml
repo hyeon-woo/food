@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0"
+            prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="last.controller.orderConfirmController">
+    <left>
+        <Pane prefHeight="582.0" prefWidth="43.0" BorderPane.alignment="CENTER"/>
+    </left>
+    <right>
+        <Pane prefHeight="592.0" prefWidth="64.0" BorderPane.alignment="CENTER"/>
+    </right>
+    <top>
+        <Pane prefHeight="109.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="BOTTOM_LEFT" prefHeight="109.0" prefWidth="1024.0">
+                    <children>
+                        <ImageView fitHeight="103.0" fitWidth="220.0" nodeOrientation="INHERIT" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <cursor>
+                                <Cursor fx:constant="SW_RESIZE"/>
+                            </cursor>
+                            <image>
+                                <Image url="@../../img/hj/logo.png"/>
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="50.0"/>
+                            </HBox.margin>
+                        </ImageView>
+                        <Pane prefHeight="109.0" prefWidth="755.0"/>
+                    </children>
+                </HBox>
+            </children>
+        </Pane>
+    </top>
+    <bottom>
+        <Pane prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox fx:id="footer" alignment="CENTER" prefHeight="40.0" prefWidth="1024.0">
+                    <children>
+                        <Label text="금주의 식단을  E-mail로 받아보세요!" textFill="WHITE">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets left="30.0" right="30.0"/>
+                            </HBox.margin>
+                        </Label>
+                        <TextField alignment="CENTER" prefHeight="27.0" prefWidth="218.0" text="이메일">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets left="30.0" right="10.0"/>
+                            </HBox.margin>
+                        </TextField>
+                        <Button fx:id="Receive" mnemonicParsing="false" style="-fx-cursor: hand;" text="받아보기">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" right="30.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+            <BorderPane.margin>
+                <Insets top="30.0"/>
+            </BorderPane.margin>
+        </Pane>
+    </bottom>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER" layoutX="105.0" layoutY="84.0" prefHeight="300.0" prefWidth="686.0"
+                      style="-fx-background-color: seagreen;">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="198.0"
+                               text="주문정보 확인" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font size="20.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Label>
+                        <TextArea prefHeight="220.0" prefWidth="676.0"
+                                  text="■  주문자 정보&#10;     이     름:    이푸드&#10;     주     소:    서울시  영등포구 당산동&#10;     이 메 일:    food@naver.com&#10;     전화번호:   010-123-1234&#10;&#10;■  배송일자 : 2016/ 10/ 01&#10;&#10;■  주문내역: FAMALY PLAN/ 2주/&#10;&#10;■  반복주문 신청 : Y/N">
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets left="5.0" right="5.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextArea>
+                    </children>
+                </VBox>
+                <Button fx:id="mainBtn" layoutX="377.0" layoutY="434.0" mnemonicParsing="false" onAction="#goMain"
+                        prefHeight="35.0" prefWidth="142.0"
+                        style="-fx-background-color: seagreen; -fx-text-fill: white;" text="메인화면 가기">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
