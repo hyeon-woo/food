@@ -53,9 +53,21 @@ public class MainController implements Initializable {
             ex.printStackTrace();
         }
     }
-    public void goOrder(ActionEvent event) {
+    public void goOrder(ActionEvent event){
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("/fxml/order/joinmember.fxml")
+        );
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage) JoinMember.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("JoinMember");
 
+            stage.show();
 
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
    public void goJoinMember(Event event) {
@@ -152,4 +164,7 @@ public class MainController implements Initializable {
     }
 
 
+    public void goJoin(ActionEvent event) {
+        loader1 = new FXMLLoader(getClass().getResource(""));
+    }
 }

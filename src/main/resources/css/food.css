@@ -3,10 +3,12 @@
 #background3 {-fx-background-color: white;}
 #background4 {-fx-background-color: white;}
 #Menu {-fx-background-color: white; -fx-border-color: orange;}
+#loginBtn {-fx-background-color: white; -fx-border-color: orange;}
 #Apply {-fx-background-color: white; -fx-border-color: orange;}
 #Howwork {-fx-background-color: white; -fx-border-color: orange;}
 #Recipe {-fx-background-color: white; -fx-border-color: orange;}
 #Login {-fx-background-color: white; -fx-border-color: orange;}
+#join {-fx-background-color: white; -fx-border-color: orange;}
 
 
 #Start {-fx-background-color: darkorange;}
