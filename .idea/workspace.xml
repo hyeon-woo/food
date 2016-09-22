@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c7aa03f-0a6a-495b-8ab3-13bb3cf4de8f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hj/controller/orderConfirmController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/view/complete.fxml" afterPath="$PROJECT_DIR$/src/hj/view/complete.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/controller/completeController.java" afterPath="$PROJECT_DIR$/src/hj/controller/completeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/view/getstart.fxml" afterPath="$PROJECT_DIR$/src/hj/view/getstart.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/controller/getstartController.java" afterPath="$PROJECT_DIR$/src/hj/controller/getstartController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/view/orderConfirm.fxml" afterPath="$PROJECT_DIR$/src/hj/view/orderConfirm.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/getstartMain.java" afterPath="$PROJECT_DIR$/src/hj/getstartMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/controller/joinmemberController.java" afterPath="$PROJECT_DIR$/src/hj/controller/joinmemberController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/controller/orderConfirmController.java" afterPath="$PROJECT_DIR$/src/hj/controller/orderConfirmController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/controller/orderController.java" afterPath="$PROJECT_DIR$/src/hj/controller/orderController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hj/controller/paymentController.java" afterPath="$PROJECT_DIR$/src/hj/controller/paymentController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="bca449a8-9111-4c5c-90d9-fe9fa961b7ab" name="Failed commit: Default" comment=".." />
@@ -60,24 +61,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="orderConfirmController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/hj/controller/orderConfirmController.java">
+      <file leaf-file-name="paymentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hj/controller/paymentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29598308">
-              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getstartController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hj/controller/getstartController.java">
+      <file leaf-file-name="getstartMain.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hj/getstartMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.17804155">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,8 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/hj/loginout/ordermain.java" />
-        <option value="$PROJECT_DIR$/src/hj/loginout/orderMain.java" />
         <option value="$PROJECT_DIR$/src/hj/loginout/controller/getstartController.java" />
         <option value="$PROJECT_DIR$/src/hj/loginout/pjDAO.java" />
         <option value="$PROJECT_DIR$/src/hj/loginout/view/joinmember.fxml" />
@@ -145,14 +142,16 @@
         <option value="$PROJECT_DIR$/src/food/FoodMain.java" />
         <option value="$PROJECT_DIR$/src/food/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/kbh/fxml/orderad.fxml" />
-        <option value="$PROJECT_DIR$/src/hj/controller/joinmemberController.java" />
         <option value="$PROJECT_DIR$/src/hj/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/hj/getstartMain.java" />
         <option value="$PROJECT_DIR$/src/hj/view/getstart.fxml" />
-        <option value="$PROJECT_DIR$/src/hj/controller/getstartController.java" />
-        <option value="$PROJECT_DIR$/src/hj/controller/completeController.java" />
         <option value="$PROJECT_DIR$/src/hj/view/orderConfirm.fxml" />
         <option value="$PROJECT_DIR$/src/hj/controller/orderConfirmController.java" />
+        <option value="$PROJECT_DIR$/src/hj/controller/completeController.java" />
+        <option value="$PROJECT_DIR$/src/hj/controller/getstartController.java" />
+        <option value="$PROJECT_DIR$/src/hj/controller/joinmemberController.java" />
+        <option value="$PROJECT_DIR$/src/hj/controller/orderController.java" />
+        <option value="$PROJECT_DIR$/src/hj/controller/paymentController.java" />
+        <option value="$PROJECT_DIR$/src/hj/getstartMain.java" />
       </list>
     </option>
   </component>
@@ -293,6 +292,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="food" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="food" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="food" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -731,7 +748,7 @@
       <workItem from="1474505209139" duration="2486000" />
       <workItem from="1474508166020" duration="698000" />
       <workItem from="1474508954620" duration="2528000" />
-      <workItem from="1474511864995" duration="5293000" />
+      <workItem from="1474511864995" duration="5561000" />
     </task>
     <task id="LOCAL-00001" summary="..">
       <created>1474427727093</created>
@@ -769,11 +786,17 @@
       <option name="project" value="LOCAL" />
       <updated>1474511342486</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="..">
+      <created>1474517172442</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1474517172442</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37362000" />
+    <option name="totallyTimeSpent" value="37630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -795,7 +818,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3261745" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.05637584" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22550336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1152,13 +1175,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hj/controller/paymentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/food/src/hj/view/payment.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1219,14 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hj/controller/orderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76979744">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/b6897860/39d10fce-941c-4935-b420-1aa59585007b/.FOODICON.USERS">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1236,22 +1244,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hj/controller/joinmemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="5" selection-start-line="78" selection-start-column="3" selection-end-line="84" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hj/getstartMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1275,16 +1267,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hj/controller/getstartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hj/view/orderConfirm.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1296,20 +1278,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hj/controller/completeController.java">
+    <entry file="file://$PROJECT_DIR$/src/hj/controller/orderConfirmController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4890511">
-          <caret line="56" column="70" selection-start-line="56" selection-start-column="70" selection-end-line="56" selection-end-column="93" />
+        <state vertical-scroll-proportion="0.5109489">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hj/controller/orderConfirmController.java">
+    <entry file="file://$PROJECT_DIR$/src/hj/controller/completeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29598308">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.69343066">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hj/controller/getstartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6569343">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hj/controller/joinmemberController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2919708">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hj/controller/orderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18613139">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hj/controller/paymentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hj/getstartMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17804155">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>

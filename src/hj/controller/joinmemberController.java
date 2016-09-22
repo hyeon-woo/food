@@ -16,6 +16,8 @@ import java.io.IOException;
 
 /**
  * @date 2016-09-20.
+ * @author hj
+ *
  */
 public class joinmemberController {
     @FXML

@@ -11,7 +11,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * Created by java on 2016-09-22.
+ * @date 2016-09-22.
+ * @author hj
  */
 public class orderConfirmController {
     @FXML

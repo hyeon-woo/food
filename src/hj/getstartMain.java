@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 /**
  * @date 2016-09-21.
+ * @author hj
  */
 public class getstartMain extends Application{
     public static void main(String[] args) {
