@@ -59,7 +59,7 @@ public class getstartController {
         // db 연결 필요
         result = pjDAO.Login(sb.toString(), sb2.toString(), 1);
         if (result!=null) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/last/view/order/order.fxml"
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/last/view/main/foodin.fxml"
             ));
             try {
                 Parent root = loader.load();
