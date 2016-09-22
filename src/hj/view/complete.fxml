@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane fx:controller="hj.controller.completeController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hj.controller.completeController">
     <left>
         <Pane prefHeight="582.0" prefWidth="43.0" style=": ;" BorderPane.alignment="CENTER" />
     </left>
@@ -35,7 +35,7 @@
                                 <Font name="System Bold" size="24.0" />
                             </font>
                         </Label>
-                        <Button fx:id="gomainBtn" mnemonicParsing="false" onAction="#goMain" style="-fx-background-color: seagreen;" text="메인화면가기" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                        <Button fx:id="gomainBtn" mnemonicParsing="false" onAction="#goMain" style="-fx-background-color: seagreen;" text="주문정보 확인하기" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                             <font>
                                 <Font size="18.0" />
                             </font>
@@ -59,7 +59,7 @@
                                 <Insets top="50.0" />
                             </GridPane.margin>
                         </Label>
-                        <Label text="다른 주문을 원하세요?" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                        <Label text="주문정보를 확인하시겠습니까?" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                             <font>
                                 <Font size="14.0" />
                             </font>

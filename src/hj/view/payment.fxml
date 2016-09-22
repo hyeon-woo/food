@@ -18,7 +18,7 @@
         <Pane prefHeight="592.0" prefWidth="64.0" BorderPane.alignment="CENTER" />
     </right>
     <center>
-        <HBox BorderPane.alignment="CENTER">
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
             <children>
                 <Pane prefHeight="589.0" prefWidth="680.0">
                     <children>
@@ -113,37 +113,6 @@
                         </TextField>
                     </children>
                 </Pane>
-                <VBox alignment="CENTER" prefHeight="518.0" prefWidth="222.0" style="-fx-background-color: seagreen;">
-                    <HBox.margin>
-                        <Insets left="20.0" />
-                    </HBox.margin>
-                    <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="95.0" text="주문정보 확인" textAlignment="CENTER" textFill="WHITE">
-                            <font>
-                                <Font size="14.0" />
-                            </font>
-                            <VBox.margin>
-                                <Insets bottom="30.0" />
-                            </VBox.margin>
-                        </Label>
-                        <TextArea prefHeight="437.0" prefWidth="226.0" text="★ 이메일 :&#10;ha@naver.com&#10;&#10;&#10;★ 선택내역 :&#10;2 인 · 주 당 3 조리법 &#10;(각각 제공 2)&#10;&#10;&#10;★ 식이 환경 설정&#10;당신은 고기, 해산물, 가금류&#10;조리법의 혼합을 받게됩니다&#10;&#10;&#10;★ 배송일자:&#10;2016/07/29&#10;&#10;&#10;★ 반복 주간  :&#10;- 총 $ 59.94&#10;먼저 주 할인 - $ 30.00&#10;세 $ 0.00&#10;배송 비어 있는&#10;첫 주 총 $ 29.94&#10;&#10;&#10;">
-                            <opaqueInsets>
-                                <Insets />
-                            </opaqueInsets>
-                            <VBox.margin>
-                                <Insets left="5.0" right="5.0" />
-                            </VBox.margin>
-                        </TextArea>
-                        <Button fx:id="paychangeBtn" mnemonicParsing="false" onAction="#paychange" style="-fx-background-color: seagreen; -fx-border-color: white; -fx-border-radius: 10px;" text="주문수정" textFill="WHITE">
-                            <VBox.margin>
-                                <Insets top="30.0" />
-                            </VBox.margin>
-                            <font>
-                                <Font size="14.0" />
-                            </font>
-                        </Button>
-                    </children>
-                </VBox>
             </children>
         </HBox>
     </center>
