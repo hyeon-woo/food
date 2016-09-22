@@ -35,7 +35,7 @@
                                 <Font name="System Bold" size="24.0" />
                             </font>
                         </Label>
-                        <Button fx:id="gomainBtn" mnemonicParsing="false" onAction="#goMain" style="-fx-background-color: seagreen;" text="주문정보 확인하기" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                        <Button fx:id="confirmBtn" mnemonicParsing="false" onAction="#goConfirm" style="-fx-background-color: seagreen;" text="주문정보 확인하기" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                             <font>
                                 <Font size="18.0" />
                             </font>

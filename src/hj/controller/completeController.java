@@ -23,15 +23,16 @@ public class completeController {
     @FXML
     Button logoutBtn;
     @FXML
-    Button gomainBtn;
+    Button confirmBtn;
 
 
-    public void goMain(ActionEvent event) throws Exception {
+
+    public void goConfirm(ActionEvent event) throws Exception {
 
         FXMLLoader login = new FXMLLoader(getClass().getResource("../view/orderConfirm.fxml"));
         try {
             Parent root = login.load();
-            Stage stage = (Stage) gomainBtn.getScene().getWindow();
+            Stage stage = (Stage) confirmBtn.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("주문확인 페이지");
             stage.show();
@@ -68,6 +69,8 @@ public class completeController {
         }
     }
 }
+
+
 
 
 

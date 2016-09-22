@@ -31,7 +31,7 @@
                     <children>
                         <Pane prefHeight="236.0" prefWidth="500.0">
                             <children>
-                                <TextField layoutX="168.0" layoutY="94.0" prefHeight="30.0" prefWidth="232.0" promptText="이메일을 입력해주세요" />
+                                <TextField fx:id="email" layoutX="168.0" layoutY="94.0" prefHeight="30.0" prefWidth="232.0" promptText="이메일을 입력해주세요" />
                                 <Label layoutX="115.0" layoutY="100.0" text="이메일" textFill="#5b5656">
                                     <font>
                                         <Font size="14.0" />
@@ -42,7 +42,6 @@
                                         <Font size="14.0" />
                                     </font>
                                 </Label>
-                                <TextField layoutX="168.0" layoutY="141.0" prefHeight="30.0" prefWidth="232.0" promptText="비밀번호를 입력해주세요" />
                                 <Label alignment="CENTER_RIGHT" layoutX="258.0" layoutY="197.0" prefHeight="16.0" prefWidth="142.0" text="비밀번호 찾기" textAlignment="JUSTIFY" textFill="#5b5656" underline="true">
                                     <font>
                                         <Font size="13.0" />
@@ -53,11 +52,12 @@
                                         <Font size="13.0" />
                                     </font>
                                 </CheckBox>
+                                <PasswordField fx:id="passwd" layoutX="168.0" layoutY="145.0" prefHeight="30.0" prefWidth="232.0" promptText="비밀번호를 입력해주세요" />
                             </children>
                         </Pane>
                         <Pane prefHeight="100.0" prefWidth="500.0">
                             <children>
-                                <Button layoutX="85.0" layoutY="32.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="330.0" style="-fx-background-color: darkorange;" text="로그인" textFill="WHITE">
+                                <Button fx:id="loginBtn" layoutX="85.0" layoutY="32.0" mnemonicParsing="false" onAction="#gologin" prefHeight="30.0" prefWidth="330.0" style="-fx-background-color: darkorange;" text="로그인" textFill="WHITE">
                                     <font>
                                         <Font size="18.0" />
                                     </font>
