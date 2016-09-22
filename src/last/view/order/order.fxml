@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hj.controller.orderController">
+    <left>
+        <Pane prefHeight="592.0" prefWidth="40.0" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Pane prefHeight="592.0" prefWidth="40.0" BorderPane.alignment="CENTER" />
+    </right>
+    <top>
+        <HBox alignment="BOTTOM_LEFT" prefHeight="109.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="103.0" fitWidth="220.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                    <cursor>
+                        <Cursor fx:constant="SW_RESIZE" />
+                    </cursor>
+                    <image>
+                        <Image url="@../../img/hj/logo.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="50.0" />
+                    </HBox.margin>
+                </ImageView>
+                <Pane prefHeight="109.0" prefWidth="780.0">
+                    <children>
+                        <ImageView fitHeight="164.0" fitWidth="367.0" layoutX="352.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../img/hj/진행과정1.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <GridPane alignment="CENTER" hgap="30.0" prefHeight="531.0" prefWidth="920.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="515.0" minHeight="10.0" prefHeight="450.0" valignment="CENTER" />
+                <RowConstraints maxHeight="289.0" minHeight="10.0" prefHeight="142.0" valignment="CENTER" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.halignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="311.0" fitWidth="418.0" layoutX="20.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../img/hj/order1.png" />
+                            </image>
+                        </ImageView>
+                        <Pane layoutX="46.0" layoutY="288.0" prefHeight="98.0" prefWidth="365.0" />
+                          <TextArea layoutX="78.0" layoutY="360.0" prefHeight="72.0" prefWidth="364.0" style="-fx-background-color: white;" text="주당 조리법 ----------------------------------- (3)&#10;서빙 당 가격 ------------------------------15000원&#10;첫 주 총 --------------------------------- 35000원" />
+                  <CheckBox contentDisplay="CENTER" layoutX="135.0" layoutY="42.0" mnemonicParsing="false" text="PERSONAL PLAN" textAlignment="RIGHT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                    <children>
+                        <ImageView fitHeight="305.0" fitWidth="418.0" layoutX="14.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../img/hj/order2.png" />
+                            </image>
+                        </ImageView>
+                        <Pane layoutX="46.0" layoutY="285.0" prefHeight="98.0" prefWidth="365.0">
+                     <children>
+                                <TextArea layoutX="-13.0" layoutY="48.0" prefHeight="72.0" prefWidth="364.0" style="-fx-background-color: white;" text="주당 조리법 ------------------------------- 둘 또는 넷&#10;서빙 당 가격 ------------------------------- 10000원&#10;첫 주 총 ------------------------ 45000원 또는 12만원" />
+                     </children>
+                        </Pane>
+                  <CheckBox layoutX="150.0" layoutY="41.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="163.0" text="FAMALY PLAN">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                    <children>
+                        <Button fx:id="choiceBtn" layoutX="120.0" layoutY="45.0" mnemonicParsing="false" onAction="#choice" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: seagreen;" text="선택" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <Button fx:id="cancelBtn" layoutX="129.0" layoutY="55.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: orangered;" text="취소" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </GridPane>
+    </center>
+    <bottom>
+        <Pane prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox fx:id="footer" alignment="CENTER" prefHeight="40.0" prefWidth="1024.0">
+                    <children>
+                        <Label text="금주의 식단을  E-mail로 받아보세요!" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="30.0" right="30.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField alignment="CENTER" prefHeight="27.0" prefWidth="218.0" text="이메일">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="30.0" right="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <Button fx:id="Receive" mnemonicParsing="false" style="-fx-cursor: hand;" text="받아보기">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" right="30.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </Pane>
+    </bottom>
+</BorderPane>

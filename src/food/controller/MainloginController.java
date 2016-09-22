@@ -1,5 +1,6 @@
 package food.controller;
 
+import cronian.project.model.pjJoinUpdate;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -31,9 +32,12 @@ public class MainloginController implements Initializable {
     @FXML
     private Button Login;
     @FXML
-    private Label JoinMember;
+    private Label getid;
     @FXML
     private Button Apply;
+
+
+    private pjJoinUpdate pj;
 
 
     public void goOrder(ActionEvent event) {
@@ -59,7 +63,7 @@ public class MainloginController implements Initializable {
         );
         try {
             Parent root = loader.load();
-            Stage stage = (Stage) JoinMember.getScene().getWindow();
+            Stage stage = (Stage) getid.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("JoinMember");
 
@@ -156,12 +160,18 @@ public class MainloginController implements Initializable {
 
     }
 
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         loader1 = new FXMLLoader(getClass().getResource(
                 "../view/menu/menu1a.fxml"
         ));
+
+
     }
 
-
+    public void senddata(pjJoinUpdate result) {
+        pj = result;
+        getid.setText(pj.getName());
+    }
 }

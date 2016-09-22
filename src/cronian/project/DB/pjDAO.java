@@ -48,6 +48,9 @@ public class pjDAO {
     private static final String insertMB;
     private static final String insertAdminMB;
     private static final String insertCompanyMB;
+    private static final String sendUserData;
+    private static final String sendAdminData;
+    private static final String sendCompanyData;
 
     static {
         JoinMB = "insert into users values (sq_users.nextval,?,?,?,?,?)";
@@ -71,7 +74,11 @@ public class pjDAO {
         insertMB = "insert into users values (sq_user.nextval,?,?,?,?,?)";
         insertAdminMB = "insert into admin values (sq_admin.nextval,?,?,?,?,?)";
         insertCompanyMB = "insert into company values (sq_company.nextval,?,?,?,?)";
+        sendUserData = "select * from users";
+        sendAdminData = "select * from admin";
+        sendCompanyData = "select * from company";
     }
+
 
     public static Connection openConn() {
         Connection conn = null;
@@ -109,6 +116,40 @@ public class pjDAO {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+    }
+
+    public static pjJoinUpdate senddate(String id, int type) {
+        Connection conn = pjDAO.openConn();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        pjJoinUpdate pj = null;
+        try {
+            switch (type) {
+                case 1:
+                    pstmt = conn.prepareStatement(sendUserData);
+                    rs = pstmt.executeQuery();
+                    if(rs.next()){
+                        pj = new pjJoinUpdate(rs.getString("useremail"),rs.getString("username"),rs.getString("usernum"),rs.getString("userpw"),rs.getString("useraddr"));
+                    }
+                    break;
+                case 2:
+                    pstmt = conn.prepareStatement(sendAdminData);
+                    if(rs.next()){
+                        pj = new pjJoinUpdate(rs.getString("adminemail"),rs.getString("adminname"),rs.getString("adminnum"),rs.getString("adminpw"),rs.getString("adminaddr"));
+                    }
+                    break;
+                case 3:
+                    pstmt = conn.prepareStatement(sendCompanyData);
+                    if(rs.next()){
+                        pj = new pjJoinUpdate(rs.getString("comemail"),rs.getString("comname"),rs.getString("comnum"),rs.getString("compw"),"");
+                    }
+                    break;
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally { closeConn(conn,pstmt,rs);}
+
+        return pj;
     }
 
     // 이메일 체크 (중복 검사)
@@ -418,11 +459,11 @@ public class pjDAO {
     // 아이디와 비밀번호를 각각 getText() 함수로 받아와서
     // 지정된 타입 (1:유저,2:관리자,3:업체) 과 함께 함수에 전달
     // 검사해준다.
-    public static boolean Login(String id, String pw, int type) {
+    public static pjJoinUpdate Login(String id, String pw, int type) {
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
-        boolean result = false;
+        pjJoinUpdate result = null;
         try {
             conn = pjDAO.openConn();
             switch (type) {
@@ -431,8 +472,10 @@ public class pjDAO {
                     pstmt.setString(1, id);
                     rs = pstmt.executeQuery();
                     if (rs.next()) {
+                        System.out.println(rs.next());
                         if (rs.getString("userpw").equals(pw)) {
-                            result = true;
+                            result = senddate(id,type);
+
                         }
                     }
                     break;
@@ -442,7 +485,8 @@ public class pjDAO {
                     rs = pstmt.executeQuery();
                     if (rs.next()) {
                         if (rs.getString(1).equals(pw)) {
-                            result = true;
+                            result = senddate(id,type);
+
                         }
                     }
                     break;
@@ -452,7 +496,8 @@ public class pjDAO {
                     rs = pstmt.executeQuery();
                     if (rs.next()) {
                         if (rs.getString("compw").equals(pw)) {
-                            result = true;
+                            result = senddate(id,type);;
+                            senddate(id,type);
                         }
                     }
                     break;
