@@ -24,28 +24,17 @@ import java.util.ResourceBundle;
  *
  */
 public class joinmemberController implements Initializable {
-    @FXML
-    TextField emailfw;
-    @FXML
-    TextField emailbk;
-    @FXML
-    TextField username;
-    @FXML
-    TextField userphone;
-    @FXML
-    PasswordField passwd;
-    @FXML
-    PasswordField conpasswd;
-    @FXML
-    TextField useraddrnum;
-    @FXML
-    TextField useraddrtext;
-    @FXML
-    Label checked;
-    @FXML
-    Button joinOk;
-    @FXML
-    ImageView main;
+    @FXML TextField emailfw;
+    @FXML TextField emailbk;
+    @FXML TextField username;
+    @FXML TextField userphone;
+    @FXML PasswordField passwd;
+    @FXML PasswordField conpasswd;
+    @FXML TextField useraddrnum;
+    @FXML TextField useraddrtext;
+    @FXML Label checked;
+    @FXML Button joinOk;
+    @FXML ImageView main;
 
     private FXMLLoader loader;
 
@@ -56,6 +45,13 @@ public class joinmemberController implements Initializable {
         result = pjDAO.checkemail(sb.toString(), 1);
         if (result) {
             Waring("정상작동", "사용가능 Email입니다");
+            username.setEditable(true);
+            userphone.setEditable(true);
+            passwd.setEditable(true);
+            conpasswd.setEditable(true);
+            useraddrnum.setEditable(true);
+            useraddrtext.setEditable(true);
+
         } else {
             Waring("오류", "존재하는 Email입니다");
         }
