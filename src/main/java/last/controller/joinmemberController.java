@@ -44,13 +44,14 @@ public class joinmemberController implements Initializable {
         sb.append(emailbk.getText()).append("@").append(emailbk.getText());
         result = pjDAO.checkemail(sb.toString(), 1);
         if (result) {
-            Waring("정상작동", "사용가능 Email입니다");
             username.setEditable(true);
             userphone.setEditable(true);
             passwd.setEditable(true);
             conpasswd.setEditable(true);
             useraddrnum.setEditable(true);
             useraddrtext.setEditable(true);
+            Waring("정상작동", "사용가능 Email입니다");
+
 
         } else {
             Waring("오류", "존재하는 Email입니다");
