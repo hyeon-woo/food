@@ -30,10 +30,6 @@ public class MainloginController implements Initializable {
     @FXML    private Button Apply;
     @FXML private Button logoutBtn;
     @FXML private Text name;
-
-
-
-
     private pjJoinUpdate pj;
 
 
@@ -44,6 +40,8 @@ public class MainloginController implements Initializable {
         try {
             Parent root = loader.load();
             Stage stage = (Stage) Apply.getScene().getWindow();
+            orderController oc = loader.getController();
+            oc.senddata(pj);
             stage.setScene(new Scene(root));
             stage.setTitle("Order");
 

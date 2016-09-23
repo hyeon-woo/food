@@ -41,6 +41,7 @@ public class orderController {
             Parent root = login.load();
             Stage stage = (Stage)choiceBtn.getScene().getWindow();
             stage.setScene(new Scene(root));
+
             paymentController pc = login.getController();
             pc.senddata(pj,pjor);
             stage.setTitle("결제 페이지");
@@ -122,6 +123,7 @@ public class orderController {
     }
 
     public void senddata(pjJoinUpdate result) {
+
         pj = result;
     }
 }

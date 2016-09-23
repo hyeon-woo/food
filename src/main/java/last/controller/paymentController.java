@@ -149,6 +149,7 @@ public class paymentController{
     public void senddata (pjJoinUpdate pj, pjOrdermodel pjor){
         this.pj = pj;
         this.pjor = pjor;
+        System.out.println(pj.getEmail());
         String[] email = pj.getEmail().toString().split("@");
         String[] ad = pj.getAddr().toString().split("//");
         id1.setText(email[0]);
