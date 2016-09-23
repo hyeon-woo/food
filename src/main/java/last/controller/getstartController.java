@@ -65,13 +65,15 @@ public class getstartController implements Initializable {
 
         // db 연결 필요
         result = pjDAO.Login(sb.toString(), sb2.toString(), 1);
-        if (result == null) {
-            //if (result!=null) {
+
+            if (result!=null) {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main/foodin.fxml"
             ));
             try {
                 Parent root = loader.load();
                 Stage stage = (Stage) join.getScene().getWindow();
+                MainloginController mlc = loader.getController();
+                mlc.senddata(result);
                 stage.setScene(new Scene(root));
                 stage.setTitle("주문 페이지");
 

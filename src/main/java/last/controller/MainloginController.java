@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -27,8 +28,8 @@ public class MainloginController implements Initializable {
     @FXML    private Button Howwork;
     @FXML    private Button Seemenu;
     @FXML    private Button Apply;
-    @FXML private Button join;
     @FXML private Button logoutBtn;
+    @FXML private Text name;
 
 
 
@@ -53,21 +54,6 @@ public class MainloginController implements Initializable {
         }
     }
 
-    public void goJoin(Event event) {
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/fxml/order/joinmember.fxml")  );
-        try {
-            Parent root = loader.load();
-            Stage stage = (Stage) join.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.setTitle("JoinMember");
-
-            stage.show();
-
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
 
     public void gomain(ActionEvent event) {
         Alert confirm = new Alert(
@@ -181,7 +167,7 @@ public class MainloginController implements Initializable {
 
     public void senddata(pjJoinUpdate result) {
         pj = result;
-        join.setText(pj.getName());
+        name.setText(pj.getName());
     }
     public void goMain() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
