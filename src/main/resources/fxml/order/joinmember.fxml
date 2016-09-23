@@ -23,7 +23,7 @@
     <top>
         <HBox alignment="CENTER" prefHeight="91.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
             <children>
-                <ImageView fx:id="main" fitHeight="150.0" fitWidth="286.0" onMouseClicked="#gomain" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="main" fitHeight="150.0" fitWidth="286.0" onMouseClicked="#gomain" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
                     <image>
                         <Image url="@../../img/hj/logo.png" />
                     </image>
@@ -94,7 +94,7 @@
                         </FXCollections>
                     </items>
                 </ComboBox>
-                <Button layoutX="594.0" layoutY="128.0" mnemonicParsing="false" onAction="#checkemail" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: lightgray;" text="중복확인">
+                <Button layoutX="594.0" layoutY="128.0" mnemonicParsing="false" onAction="#checkemail" prefHeight="30.0" prefWidth="79.0" style="-fx-text-fill: white; -fx-cursor: hand; -fx-background-color: orange;" text="중복확인">
                     <opaqueInsets>
                         <Insets />
                     </opaqueInsets>
@@ -171,7 +171,7 @@
                         <Image url="@../../img/hj/memberlogin.png" />
                     </image>
                 </ImageView>
-                <Button fx:id="joinOk" layoutX="189.0" layoutY="504.0" mnemonicParsing="false" onAction="#joinmember" prefHeight="33.0" prefWidth="486.0" style="-fx-background-color: darkorange;" text="여기를 누르면 가입이 완료됩니다" textFill="WHITE">
+                <Button fx:id="joinOk" layoutX="189.0" layoutY="504.0" mnemonicParsing="false" onAction="#joinmember" prefHeight="33.0" prefWidth="486.0" style="-fx-background-color: darkorange; -fx-cursor: hand;" text="여기를 누르면 가입이 완료됩니다" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="18.0" />
                     </font>

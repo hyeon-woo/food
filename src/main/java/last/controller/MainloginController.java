@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -81,13 +82,15 @@ public class MainloginController implements Initializable {
     private FXMLLoader loader1;
     public void goMenu1(ActionEvent event) {
 
-        try {
+            try {
+
             Parent root1 = loader1.load();
-            Stage stage = (Stage) Menu.getScene().getWindow();
+            Stage stage = (Stage)Menu.getScene().getWindow();
             ManuMainloginController mmlc = loader1.getController();
             mmlc.senddata(pj);
             stage.setScene(new Scene(root1));
             stage.setTitle("foodmenu1");
+
 
             stage.show();
         } catch (IOException ex) {
@@ -101,7 +104,7 @@ public class MainloginController implements Initializable {
                 "/fxml/maker/makerlogin.fxml"
         ));
         try {
-            Parent root = loader.load();
+            Parent root = loader1.load();
             Stage stage = (Stage)Howwork.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("maker");
