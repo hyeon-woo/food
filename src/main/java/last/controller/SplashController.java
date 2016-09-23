@@ -120,6 +120,7 @@ public class SplashController implements Initializable {
             ex.printStackTrace();
         }
         stage.setScene(new Scene(root));
+        stage.setResizable(false);
         stage.setTitle("Main");
         stage.show();
     }

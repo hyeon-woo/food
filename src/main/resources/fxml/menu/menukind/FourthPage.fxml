@@ -12,20 +12,20 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="570.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <GridPane layoutX="10.0" layoutY="10.0" prefHeight="526.0" prefWidth="1024.0" stylesheets="@../../../css/menu1.css">
+      <GridPane layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="1024.0">
          <children>
-            <Pane prefHeight="200.0" prefWidth="200.0">
+            <Pane prefHeight="150.0" prefWidth="100.0">
                <children>
-                  <VBox fx:id="picture1" layoutX="31.0" layoutY="19.0" onMouseClicked="#goMenu2" prefHeight="270.0" prefWidth="329.0">
+                  <VBox fx:id="picture1" layoutX="31.0" layoutY="19.0" prefHeight="200.0" prefWidth="329.0">
                      <children>
                         <ImageView fitHeight="218.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                            <image>
-                              <Image url="@../../../img/foodimg/SKU1057_web.jpg" />
+                              <Image url="@../../../img/foodimg/FS_SKU0735_web_badge.jpg" />
                            </image>
                         </ImageView>
                         <Label fx:id="ptext1" alignment="CENTER" contentDisplay="CENTER" prefHeight="65.0" prefWidth="327.0" style="-fx-cursor: hand;" text="바질과 오이 샐러드와 치킨 볶음밥" textAlignment="CENTER">
@@ -43,16 +43,16 @@
                   </VBox>
                </children>
             </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+            <Pane prefHeight="255.0" prefWidth="635.0" GridPane.columnIndex="1">
                <children>
-                  <VBox fx:id="picture2" alignment="TOP_CENTER" layoutX="31.0" layoutY="19.0" onMouseClicked="#goMenu2a" prefHeight="270.0" prefWidth="100.0" style="-fx-cursor: hand;">
+                  <VBox fx:id="picture2" alignment="TOP_CENTER" layoutX="31.0" layoutY="19.0" prefHeight="270.0" prefWidth="100.0" style="-fx-cursor: hand;">
                      <children>
                         <ImageView fitHeight="218.0" fitWidth="327.0" style="-fx-cursor: hand;">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                            <image>
-                              <Image url="@../../../img/foodimg/vitality_badge_15.jpg" />
+                              <Image url="@../../../img/foodimg/20160908-1745%25-001.png" />
                            </image>
                         </ImageView>
                         <Label fx:id="ptext2" alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="327.0" style="-fx-cursor: hand;" text="핀토 콩, 체다 치즈 옥수수와 고구마 고추" textAlignment="CENTER">
@@ -79,7 +79,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                            <image>
-                              <Image url="@../../../img/foodimg/20160908-1745%25-001.png" />
+                              <Image url="@../../../img/foodimg/lomo_badge_07.jpg" />
                            </image>
                         </ImageView>
                         <Label fx:id="ptext3" alignment="CENTER" contentDisplay="CENTER" prefHeight="73.0" prefWidth="327.0" style="-fx-cursor: hand;" text="비벼비벼 모든걸비빔밥" textAlignment="CENTER">
@@ -94,7 +94,7 @@
                   </VBox>
                </children>
             </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Pane prefHeight="337.0" prefWidth="441.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
                   <VBox fx:id="picture4" alignment="TOP_CENTER" layoutX="32.0" layoutY="21.0" prefHeight="270.0" prefWidth="100.0">
                      <children>
@@ -103,7 +103,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                            <image>
-                              <Image url="@../../../img/foodimg/FS_SKU0735_web_badge.jpg" />
+                              <Image url="@../../../img/foodimg/pork_badge_19.jpg" />
                            </image>
                         </ImageView>
                         <Label fx:id="ptext4" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="327.0" style="-fx-cursor: hand;" text="턱부서질샌드위치" textAlignment="CENTER">
@@ -120,8 +120,8 @@
             </Pane>
          </children>
          <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="507.0" minWidth="10.0" prefWidth="359.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="677.0" minWidth="10.0" prefWidth="665.0" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints maxHeight="342.33331298828125" minHeight="10.0" prefHeight="291.6666564941406" vgrow="SOMETIMES" />

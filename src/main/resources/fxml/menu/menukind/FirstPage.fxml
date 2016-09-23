@@ -12,13 +12,13 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="570.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="1024.0">
          <children>
-            <Pane prefHeight="200.0" prefWidth="200.0">
+            <Pane prefHeight="150.0" prefWidth="100.0">
                <children>
-                  <VBox fx:id="picture1" layoutX="31.0" layoutY="19.0"  prefHeight="270.0" prefWidth="329.0">
+                  <VBox fx:id="picture1" layoutX="31.0" layoutY="19.0" prefHeight="200.0" prefWidth="329.0">
                      <children>
                         <ImageView fitHeight="218.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
                            <cursor>
@@ -43,7 +43,7 @@
                   </VBox>
                </children>
             </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+            <Pane prefHeight="255.0" prefWidth="635.0" GridPane.columnIndex="1">
                <children>
                   <VBox fx:id="picture2" alignment="TOP_CENTER" layoutX="31.0" layoutY="19.0" prefHeight="270.0" prefWidth="100.0" style="-fx-cursor: hand;">
                      <children>
@@ -94,7 +94,7 @@
                   </VBox>
                </children>
             </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Pane prefHeight="337.0" prefWidth="441.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
                   <VBox fx:id="picture4" alignment="TOP_CENTER" layoutX="32.0" layoutY="21.0" prefHeight="270.0" prefWidth="100.0">
                      <children>
@@ -120,8 +120,8 @@
             </Pane>
          </children>
          <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="507.0" minWidth="10.0" prefWidth="359.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="677.0" minWidth="10.0" prefWidth="665.0" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints maxHeight="342.33331298828125" minHeight="10.0" prefHeight="291.6666564941406" vgrow="SOMETIMES" />

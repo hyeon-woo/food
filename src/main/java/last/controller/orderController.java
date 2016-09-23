@@ -33,6 +33,7 @@ public class orderController {
     private pjOrdermodel pjor;
 
 
+
     public void choice(ActionEvent event) throws Exception {
 
         FXMLLoader login = new FXMLLoader(getClass().getResource("/fxml/order/payment.fxml"));

@@ -23,19 +23,19 @@ import java.util.ResourceBundle;
  * Created by java on 2016-09-19.
  */
 public class MainController implements Initializable {
-    @FXML
-    private Button Menu;
-    @FXML
-    private ImageView Main;
-    @FXML
-    private Button Howwork;
-    @FXML
-    private Button Seemenu;
+    @FXML    private Button Menu;
+    @FXML    private ImageView Main;
+    @FXML    private Button Howwork;
+    @FXML    private Button Seemenu;
+    @FXML private Button join;
+    @FXML private Button logoutBtn;
 
     @FXML
     private Label JoinMember;
     @FXML
     private Button Apply;
+    @FXML
+    private Label Apply2;
     @FXML
     private Button Login;
 
@@ -181,7 +181,7 @@ public class MainController implements Initializable {
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage)Apply.getScene().getWindow();
+            Stage stage = (Stage)Apply2.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("login");
 
