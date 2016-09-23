@@ -16,18 +16,21 @@ import java.util.Optional;
 /**
  * Created by java on 2016-09-20.
  */
-public class MakerController {
-
+public class MakerloginController {
+    @FXML
+    private ImageView Main;
+    @FXML
+    private Button Menu;
     @FXML
     private Label JoinMember;
     @FXML
     private Button Login;
-    @FXML    private Button Menu;
-    @FXML    private ImageView Main;
-    @FXML    private Button Howwork;
-
+    @FXML
+    private Button Apply;
 
     public void gologin(ActionEvent event) {
+
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
                 "/fxml/order/getstart.fxml"
         ));
@@ -45,7 +48,7 @@ public class MakerController {
     }
     public void goMain(Event event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/main/foodout.fxml"
+                "/fxml/main/foodin.fxml"
         ));
         try {
             Parent root = loader.load();
@@ -61,13 +64,13 @@ public class MakerController {
 
     public void goMenu1(ActionEvent actionEvent) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/menu/menunoimage.fxml"
+                "/fxml/menu/menunoimagelogin.fxml"
         ));
         try {
             Parent root = loader.load();
             Stage stage = (Stage) Menu.getScene().getWindow();
             stage.setScene(new Scene(root));
-            stage.setTitle("Menu ");
+            stage.setTitle("Menu");
 
             stage.show();
         } catch (IOException ex) {
@@ -95,45 +98,54 @@ public class MakerController {
     }
 
     public void gomain(ActionEvent event) {
-        goMain(event);
+        Alert confirm = new Alert(
+                Alert.AlertType.CONFIRMATION
+        );
+        confirm.setTitle("확인");
+        confirm.setHeaderText(null);
+        confirm.setContentText("로그아웃 하시겠습니까?");
+
+        ButtonType okbtn = new ButtonType(
+                "네", ButtonBar.ButtonData.OK_DONE
+        );
+        ButtonType nobtn = new ButtonType(
+                "아니오", ButtonBar.ButtonData.CANCEL_CLOSE);
+
+        confirm.getButtonTypes().setAll(okbtn, nobtn);
+
+        Optional<ButtonType> result = confirm.showAndWait();
+        if (result.get() == okbtn) {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main/foodout.fxml"));
+        } else event.consume();
+        ;
+
     }
 
     public void goOrder(ActionEvent event) {
-            Alert confirm = new Alert(
-                    Alert.AlertType.CONFIRMATION
-            );
-            confirm.setTitle("확인");
-            confirm.setHeaderText(null);
-            confirm.setContentText("로그인 상태가 아닙니다 로그인 하시겠습니까??");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "/fxml/order/order.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage)Apply.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("maker");
 
-            ButtonType okbtn = new ButtonType(
-                    "네", ButtonBar.ButtonData.OK_DONE
-            );
-            ButtonType nobtn = new ButtonType(
-                    "아니오", ButtonBar.ButtonData.CANCEL_CLOSE);
+            stage.show();
+        } catch (IOException ex) {
 
-            confirm.getButtonTypes().setAll(okbtn, nobtn);{
-
-            }
-
-            Optional<ButtonType> result = confirm.showAndWait();
-            if (result.get() == okbtn) {
-                gologin(event);
-
-            }else event.consume();;
-
-
+            ex.printStackTrace();
         }
-
+    }
 
 
     public void gomaker(ActionEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/maker/maker.fxml"
+                "/fxml/maker/makerlogin.fxml"
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage) Howwork.getScene().getWindow();
+            Stage stage = (Stage)Apply.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("maker");
 

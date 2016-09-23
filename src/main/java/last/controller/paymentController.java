@@ -130,7 +130,7 @@ public class paymentController{
 
     public void goMain() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/main/foodin.fxml"
+                "/fxml/main/foodIn.fxml"
         ));
         try {
             Parent root = loader.load();

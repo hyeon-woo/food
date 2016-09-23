@@ -6,7 +6,6 @@ import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -17,9 +16,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.Optional;
-import java.util.ResourceBundle;
 
 /**
  * @date 2016-09-21.
@@ -54,7 +51,7 @@ public class orderController {
 
     public void cancel(ActionEvent event) throws Exception {
 
-        FXMLLoader login = new FXMLLoader(getClass().getResource("/fxml/main/foodin.fxml"));
+        FXMLLoader login = new FXMLLoader(getClass().getResource("/fxml/main/foodIn.fxml"));
         try {
             Parent root = login.load();
             Stage stage = (Stage) cancelBtn.getScene().getWindow();
@@ -98,7 +95,7 @@ public class orderController {
 
     public void goMain() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/main/foodin.fxml"
+                "/fxml/main/foodIn.fxml"
         ));
         try {
             Parent root = loader.load();

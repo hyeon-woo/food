@@ -3,7 +3,6 @@ package last.controller;
 import cronian.project.model.pjJoinUpdate;
 import cronian.project.model.pjOrdermodel;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,7 +11,6 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.Optional;
 
 /**
  * @date 2016-09-22.
@@ -48,7 +46,7 @@ public class orderConfirmController {
 
     public void goMain(ActionEvent event) throws Exception {
 
-        FXMLLoader confirm = new FXMLLoader(getClass().getResource("/fxml/main/foodin.fxml"));
+        FXMLLoader confirm = new FXMLLoader(getClass().getResource("/fxml/main/foodIn.fxml"));
         try {
             Parent root = confirm.load();
             Stage stage = (Stage) mainBtn.getScene().getWindow();

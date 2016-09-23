@@ -2,7 +2,6 @@ package last.controller;
 
 import cronian.project.DB.pjDAO;
 import cronian.project.model.pjJoinUpdate;
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -66,7 +65,7 @@ public class getstartController implements Initializable {
         // db 연결 필요
         result = pjDAO.Login(sb.toString(), sb2.toString(), 1);
             if (result!=null) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main/foodin.fxml"
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main/foodIn.fxml"
             ));
             try {
                 Parent root = loader.load();

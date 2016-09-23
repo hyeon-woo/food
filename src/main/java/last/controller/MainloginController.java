@@ -39,7 +39,7 @@ public class MainloginController implements Initializable {
         );
         try {
             Parent root = loader.load();
-            Stage stage = (Stage) Apply.getScene().getWindow();
+            Stage stage = (Stage)Apply.getScene().getWindow();
             orderController oc = loader.getController();
             oc.senddata(pj);
             stage.setScene(new Scene(root));
@@ -53,7 +53,7 @@ public class MainloginController implements Initializable {
     }
 
 
-    public void gomain(ActionEvent event) {
+    public void gomain(ActionEvent event) throws Exception{
         Alert confirm = new Alert(
                 Alert.AlertType.CONFIRMATION
         );
@@ -71,19 +71,21 @@ public class MainloginController implements Initializable {
 
         Optional<ButtonType> result = confirm.showAndWait();
         if (result.get() == okbtn) {
-            goMain();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main/foodout.fxml"));
+            Parent root = loader.load();
+            Stage stage= (Stage) Menu.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("foodMain");
         }else event.consume();;
-
     }
-
     private FXMLLoader loader1;
-
     public void goMenu1(ActionEvent event) {
 
         try {
             Parent root1 = loader1.load();
             Stage stage = (Stage) Menu.getScene().getWindow();
+            ManuMainloginController mmlc = loader1.getController();
+            mmlc.senddata(pj);
             stage.setScene(new Scene(root1));
             stage.setTitle("foodmenu1");
 
@@ -92,40 +94,15 @@ public class MainloginController implements Initializable {
             ex.printStackTrace();
         }
     }
-
-
     public void goMain(Event event) {
-        Alert confirm = new Alert(
-                Alert.AlertType.CONFIRMATION
-        );
-        confirm.setTitle("확인");
-        confirm.setHeaderText(null);
-        confirm.setContentText("로그아웃 하시겠습니까?");
-
-        ButtonType okbtn = new ButtonType(
-                "네", ButtonBar.ButtonData.OK_DONE
-        );
-        ButtonType nobtn = new ButtonType(
-                "아니오", ButtonBar.ButtonData.CANCEL_CLOSE);
-
-        confirm.getButtonTypes().setAll(okbtn, nobtn);
-
-        Optional<ButtonType> result = confirm.showAndWait();
-        if (result.get() == okbtn) {
-            goMain();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main/foodout.fxml"));
-        }else event.consume();;
-
-
     }
-
     public void goMaker(ActionEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/maker/maker.fxml"
+                "/fxml/maker/makerlogin.fxml"
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage) Howwork.getScene().getWindow();
+            Stage stage = (Stage)Howwork.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("maker");
 
@@ -138,13 +115,15 @@ public class MainloginController implements Initializable {
 
     public void boxgoMenu1(ActionEvent event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/menu/menu.fxml"
+                "/fxml/menu/menunoimagelogin.fxml"
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage) Seemenu.getScene().getWindow();
+            Stage stage = (Stage)Seemenu.getScene().getWindow();
+            ManuMainloginController mmlc = loader.getController();
+            mmlc.senddata(pj);
             stage.setScene(new Scene(root));
-            stage.setTitle("foodmenu1");
+            stage.setTitle("foodmenu");
 
             stage.show();
         } catch (IOException ex) {
@@ -157,7 +136,7 @@ public class MainloginController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         loader1 = new FXMLLoader(getClass().getResource(
-                "/fxml/menu/menu.fxml"
+                "/fxml/menu/menunoimagelogin.fxml"
         ));
 
 
@@ -169,13 +148,14 @@ public class MainloginController implements Initializable {
     }
     public void goMain() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/main/foodout.fxml"
+                "/fxml/main/foodin.fxml"
         ));
         try {
             Parent root = loader.load();
             Stage stage = (Stage)Main.getScene().getWindow();
+
             stage.setScene(new Scene(root));
-            stage.setTitle("maker");
+            stage.setTitle("Main");
 
             stage.show();
         } catch (IOException ex) {
@@ -183,4 +163,14 @@ public class MainloginController implements Initializable {
         }
     }
 
+    public void goJoinMember(Event event) {
+    }
+
+    public void gologin(ActionEvent event) {
+
+    }
+
+    public void goOrderCenter(ActionEvent event) {
+        goOrder(event);
+    }
 }

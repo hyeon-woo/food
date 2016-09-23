@@ -74,9 +74,9 @@ public class pjDAO {
         insertMB = "insert into users values (sq_user.nextval,?,?,?,?,?)";
         insertAdminMB = "insert into admin values (sq_admin.nextval,?,?,?,?,?)";
         insertCompanyMB = "insert into company values (sq_company.nextval,?,?,?,?)";
-        sendUserData = "select * from users";
-        sendAdminData = "select * from admin";
-        sendCompanyData = "select * from company";
+        sendUserData = "select * from users where useremail = ?";
+        sendAdminData = "select * from admin where adminemail = ?";
+        sendCompanyData = "select * from company comemail = ?";
     }
 
 
@@ -127,6 +127,7 @@ public class pjDAO {
             switch (type) {
                 case 1:
                     pstmt = conn.prepareStatement(sendUserData);
+                    pstmt.setString(1,id);
                     rs = pstmt.executeQuery();
                     if(rs.next()){
                         pj = new pjJoinUpdate(rs.getString("useremail"),rs.getString("username"),rs.getString("usernum"),rs.getString("userpw"),rs.getString("useraddr"));
@@ -134,12 +135,14 @@ public class pjDAO {
                     break;
                 case 2:
                     pstmt = conn.prepareStatement(sendAdminData);
+                    pstmt.setString(1,id);
                     if(rs.next()){
                         pj = new pjJoinUpdate(rs.getString("adminemail"),rs.getString("adminname"),rs.getString("adminnum"),rs.getString("adminpw"),rs.getString("adminaddr"));
                     }
                     break;
                 case 3:
                     pstmt = conn.prepareStatement(sendCompanyData);
+                    pstmt.setString(1,id);
                     if(rs.next()){
                         pj = new pjJoinUpdate(rs.getString("comemail"),rs.getString("comname"),rs.getString("comnum"),rs.getString("compw"),"");
                     }
@@ -167,7 +170,6 @@ public class pjDAO {
                     pstmt = conn.prepareStatement(checkUserEmail);
                     pstmt.setString(1, id);
                     rs = pstmt.executeQuery();
-
                     if (rs.next()) {
                         if (rs.getInt("result") > 0) {
                             result = false;
@@ -222,6 +224,7 @@ public class pjDAO {
         Connection conn = null;
         PreparedStatement pstmt = null;
         try {
+
             conn = pjDAO.openConn();
             switch (type) {
                 case 1:
@@ -472,7 +475,6 @@ public class pjDAO {
                     pstmt.setString(1, id);
                     rs = pstmt.executeQuery();
                     if (rs.next()) {
-                        System.out.println(rs.next());
                         if (rs.getString("userpw").equals(pw)) {
                             result = senddate(id,type);
 

@@ -36,12 +36,12 @@ public class joinmemberController implements Initializable {
     @FXML Button joinOk;
     @FXML ImageView main;
 
-    private FXMLLoader loader;
+
 
     public void checkemail(ActionEvent event) {
         boolean result = false;
         StringBuilder sb = new StringBuilder();
-        sb.append(emailbk.getText()).append("@").append(emailbk.getText());
+        sb.append(emailfw.getText()).append("@").append(emailbk.getText());
         result = pjDAO.checkemail(sb.toString(), 1);
         if (result) {
             username.setEditable(true);
@@ -61,13 +61,13 @@ public class joinmemberController implements Initializable {
     public void joinmember(ActionEvent event) throws Exception {
         pjJoinUpdate pj;
         StringBuilder sb = new StringBuilder();
-        sb.append(emailbk.getText()).append("@").append(emailbk.getText());
+        sb.append(emailfw.getText()).append("@").append(emailbk.getText());
         StringBuilder sb1 = new StringBuilder();
         sb1.append(useraddrnum.getText()).append("//").append(useraddrtext.getText());
         pj = new pjJoinUpdate(sb.toString(), username.getText(), userphone.getText(), passwd.getText(), sb1.toString());
         if (pjDAO.addMember(pj, 1)) {
             Waring("완료", "가입완료");
-            FXMLLoader login = new FXMLLoader(getClass().getResource("/fxml/main/foodin.fxml"));
+            FXMLLoader login = new FXMLLoader(getClass().getResource("/fxml/main/foodIn.fxml"));
             try {
                 Parent root = login.load();
                 Stage stage = (Stage) joinOk.getScene().getWindow();
@@ -107,13 +107,31 @@ public class joinmemberController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+         FXMLLoader  loader = new FXMLLoader(getClass().getResource(
+                    "/fxml/main/foodIn.fxml"));
+        }
+
+
       FXMLLoader loader = new FXMLLoader(getClass().getResource(
-              "/fxml/main/foodin.fxml"
+              "/fxml/main/foodIn.fxml"
       ));
 
-    }
 
-    public void gomain(Event event) {
-        loader = new FXMLLoader(getClass().getResource(""));
+
+    public void gomain(Event event) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "/fxml/main/foodout.fxml"
+        ));
+        try {
+            Parent root = loader.load();
+            Stage stage = (Stage)main.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("main");
+
+            stage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 }
+

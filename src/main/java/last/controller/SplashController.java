@@ -38,11 +38,11 @@ public class SplashController implements Initializable {
 
             SplashScreen.getChildren().setAll(pane);
 
-            FadeTransition fadeIn = new FadeTransition(Duration.seconds(3), pane);
+            FadeTransition fadeIn = new FadeTransition(Duration.seconds(1), pane);
             fadeIn.setFromValue(0);
             fadeIn.setToValue(1);
 
-            FadeTransition fadeOut = new FadeTransition(Duration.seconds(3), pane);
+            FadeTransition fadeOut = new FadeTransition(Duration.seconds(1), pane);
             fadeOut.setFromValue(1);
             fadeOut.setToValue(0);
 

@@ -83,7 +83,7 @@ public class completeController {
 
     public void gomian(Event event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
-                "/fxml/main/foodin.fxml"
+                "/fxml/main/foodIn.fxml"
         ));
         try {
             Parent root = loader.load();

@@ -43,14 +43,12 @@ public class MainController implements Initializable {
     private BorderPane main;
 
     public void gologin(ActionEvent event) {
-
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
                 "/fxml/order/getstart.fxml"
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage) Login.getScene().getWindow();
+            Stage stage = (Stage)Login.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("login");
 
@@ -181,7 +179,7 @@ public class MainController implements Initializable {
         ));
         try {
             Parent root = loader.load();
-            Stage stage = (Stage)Apply2.getScene().getWindow();
+            Stage stage = (Stage)Apply.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("login");
 
@@ -189,5 +187,9 @@ public class MainController implements Initializable {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+
+    public void goMenu(ActionEvent event) {
+
     }
 }

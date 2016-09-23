@@ -9,7 +9,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="last.controller.MakerController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="last.controller.MakerloginController">
     <top>
         <HBox fx:id="background" alignment="CENTER" prefHeight="55.0" prefWidth="1024.0" stylesheets="@../../css/food.css" BorderPane.alignment="CENTER">
             <children>
@@ -72,46 +72,40 @@
                         <Insets right="30.0" />
                     </HBox.margin>
                 </ImageView>
-                <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">
-                    <children>
-                        <Button fx:id="Login" mnemonicParsing="false" onAction="#gologin" style="-fx-cursor: hand;" stylesheets="@../../css/food.css" text="로그인" textAlignment="CENTER">
-                            <HBox.margin>
-                                <Insets right="15.0" />
-                            </HBox.margin>
-                            <font>
-                                <Font size="18.0" />
-                            </font>
-                            <cursor>
-                                <Cursor fx:constant="HAND" />
-                            </cursor>
-                        </Button>
-                        <Pane prefHeight="92.0" prefWidth="226.0">
-                            <children>
-                                <Text layoutX="61.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="회원이 아니신가요?" />
-                                <Label fx:id="JoinMember" layoutX="21.0" layoutY="44.0" onMouseClicked="#goJoinMember" style="-fx-cursor: hand;" text="가입">
-                                    <font>
-                                        <Font name="System Bold Italic" size="18.0" />
-                                    </font>
-                                    <textFill>
-                                        <LinearGradient endX="1.0" endY="1.0">
-                                            <stops>
-                                                <Stop color="#2b53f5" />
-                                                <Stop color="#1a3cc6" offset="1.0" />
-                                            </stops>
-                                        </LinearGradient>
-                                    </textFill>
-                                    <cursor>
-                                        <Cursor fx:constant="HAND" />
-                                    </cursor>
-                                </Label>
-                                <Text layoutX="60.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="하셔서 많은 혜택을 누리세요!" />
-                            </children>
-                        </Pane>
-                    </children>
-                    <HBox.margin>
-                        <Insets />
-                    </HBox.margin>
-                </HBox>
+            <HBox alignment="CENTER" prefHeight="109.0" prefWidth="341.0">
+               <children>
+                  <Button fx:id="logoutBtn" mnemonicParsing="false" onAction="#gomain" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: white; -fx-border-color: orange;" stylesheets="/css/food.css" text="로그아웃" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Pane prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="105.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="안녕하세요" textAlignment="CENTER" wrappingWidth="97.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="153.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="회원님!">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="name" layoutX="95.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="이름">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
             </children>
             <BorderPane.margin>
                 <Insets left="10.0" right="10.0" top="10.0" />
