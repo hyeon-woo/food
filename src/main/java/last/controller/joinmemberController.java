@@ -67,10 +67,12 @@ public class joinmemberController implements Initializable {
         pj = new pjJoinUpdate(sb.toString(), username.getText(), userphone.getText(), passwd.getText(), sb1.toString());
         if (pjDAO.addMember(pj, 1)) {
             Waring("완료", "가입완료");
-            FXMLLoader login = new FXMLLoader(getClass().getResource("/last/view/order/order.fxml"));
+            FXMLLoader login = new FXMLLoader(getClass().getResource("/fxml/main/foodin.fxml"));
             try {
                 Parent root = login.load();
                 Stage stage = (Stage) joinOk.getScene().getWindow();
+                MainloginController mlc = login.getController();
+                mlc.senddata(pj);
                 stage.setScene(new Scene(root));
                 stage.setTitle("주문");
                 stage.show();
