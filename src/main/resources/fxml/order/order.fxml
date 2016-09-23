@@ -62,7 +62,7 @@
                         </ImageView>
                         <Pane layoutX="46.0" layoutY="288.0" prefHeight="98.0" prefWidth="365.0" />
                         <TextArea layoutX="78.0" layoutY="360.0" prefHeight="72.0" prefWidth="364.0" style="-fx-background-color: white;" text="주당 조리법 ----------------------------------- (3)&#10;서빙 당 가격 ------------------------------15000원&#10;첫 주 총 --------------------------------- 35000원" />
-                        <CheckBox contentDisplay="CENTER" layoutX="135.0" layoutY="42.0" mnemonicParsing="false" text="PERSONAL PLAN" textAlignment="RIGHT">
+                        <CheckBox contentDisplay="CENTER" layoutX="135.0" layoutY="42.0" mnemonicParsing="false" onAction="#menu1" text="PERSONAL PLAN" textAlignment="RIGHT">
                             <font>
                                 <Font size="18.0" />
                             </font>
@@ -81,7 +81,7 @@
                                 <TextArea layoutX="-13.0" layoutY="48.0" prefHeight="72.0" prefWidth="364.0" style="-fx-background-color: white;" text="주당 조리법 ------------------------------- 둘 또는 넷&#10;서빙 당 가격 ------------------------------- 10000원&#10;첫 주 총 ------------------------ 45000원 또는 12만원" />
                             </children>
                         </Pane>
-                        <CheckBox layoutX="150.0" layoutY="41.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="163.0" text="FAMALY PLAN">
+                        <CheckBox layoutX="150.0" layoutY="41.0" mnemonicParsing="false" onAction="#menu2" prefHeight="25.0" prefWidth="163.0" text="FAMALY PLAN">
                             <font>
                                 <Font size="18.0" />
                             </font>
@@ -94,9 +94,9 @@
                             <font>
                                 <Font size="14.0" />
                             </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
                         </Button>
                     </children>
                 </Pane>
@@ -106,9 +106,9 @@
                             <font>
                                 <Font size="14.0" />
                             </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
                         </Button>
                     </children>
                 </Pane>

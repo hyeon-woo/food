@@ -44,6 +44,8 @@ public class MainloginController implements Initializable {
         try {
             Parent root = loader.load();
             Stage stage = (Stage) Apply.getScene().getWindow();
+            orderController oc = loader.getController();
+            oc.senddata(pj);
             stage.setScene(new Scene(root));
             stage.setTitle("Order");
 
@@ -184,5 +186,4 @@ public class MainloginController implements Initializable {
             ex.printStackTrace();
         }
     }
-
 }

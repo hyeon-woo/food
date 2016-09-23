@@ -1,5 +1,7 @@
 package last.controller;
 
+import cronian.project.model.pjJoinUpdate;
+import cronian.project.model.pjOrdermodel;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -28,6 +30,10 @@ public class completeController {
     Button confirmBtn;
     @FXML
     ImageView Main;
+    private pjJoinUpdate pj;
+    private pjOrdermodel pjor;
+
+
 
 
 
@@ -39,6 +45,8 @@ public class completeController {
             Stage stage = (Stage) confirmBtn.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("주문확인 페이지");
+            orderConfirmController occ = login.getController();
+            occ.senddata(pj,pjor);
             stage.show();
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -73,7 +81,7 @@ public class completeController {
         }
     }
 
-    public void goMain(Event event) {
+    public void gomian(Event event) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(
                 "/fxml/main/foodin.fxml"
         ));
@@ -89,6 +97,10 @@ public class completeController {
         }
     }
 
+    public void senddata(pjJoinUpdate pj, pjOrdermodel pjor){
+        this.pj = pj;
+        this.pjor = pjor;
+    }
 }
 
 
