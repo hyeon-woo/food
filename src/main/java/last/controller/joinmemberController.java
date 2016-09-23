@@ -24,28 +24,17 @@ import java.util.ResourceBundle;
  *
  */
 public class joinmemberController implements Initializable {
-    @FXML
-    TextField emailfw;
-    @FXML
-    TextField emailbk;
-    @FXML
-    TextField username;
-    @FXML
-    TextField userphone;
-    @FXML
-    PasswordField passwd;
-    @FXML
-    PasswordField conpasswd;
-    @FXML
-    TextField useraddrnum;
-    @FXML
-    TextField useraddrtext;
-    @FXML
-    Label checked;
-    @FXML
-    Button joinOk;
-    @FXML
-    ImageView main;
+    @FXML TextField emailfw;
+    @FXML TextField emailbk;
+    @FXML TextField username;
+    @FXML TextField userphone;
+    @FXML PasswordField passwd;
+    @FXML PasswordField conpasswd;
+    @FXML TextField useraddrnum;
+    @FXML TextField useraddrtext;
+    @FXML Label checked;
+    @FXML Button joinOk;
+    @FXML ImageView main;
 
     private FXMLLoader loader;
 
@@ -55,7 +44,15 @@ public class joinmemberController implements Initializable {
         sb.append(emailbk.getText()).append("@").append(emailbk.getText());
         result = pjDAO.checkemail(sb.toString(), 1);
         if (result) {
+            username.setEditable(true);
+            userphone.setEditable(true);
+            passwd.setEditable(true);
+            conpasswd.setEditable(true);
+            useraddrnum.setEditable(true);
+            useraddrtext.setEditable(true);
             Waring("정상작동", "사용가능 Email입니다");
+
+
         } else {
             Waring("오류", "존재하는 Email입니다");
         }
@@ -70,10 +67,12 @@ public class joinmemberController implements Initializable {
         pj = new pjJoinUpdate(sb.toString(), username.getText(), userphone.getText(), passwd.getText(), sb1.toString());
         if (pjDAO.addMember(pj, 1)) {
             Waring("완료", "가입완료");
-            FXMLLoader login = new FXMLLoader(getClass().getResource("/last/view/order/order.fxml"));
+            FXMLLoader login = new FXMLLoader(getClass().getResource("/fxml/main/foodin.fxml"));
             try {
                 Parent root = login.load();
                 Stage stage = (Stage) joinOk.getScene().getWindow();
+                MainloginController mlc = login.getController();
+                mlc.senddata(pj);
                 stage.setScene(new Scene(root));
                 stage.setTitle("주문");
                 stage.show();

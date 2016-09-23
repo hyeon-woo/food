@@ -1,9 +1,12 @@
 package last.controller;
 
+import cronian.project.model.pjJoinUpdate;
+import cronian.project.model.pjOrdermodel;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -14,7 +17,9 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.Optional;
+import java.util.ResourceBundle;
 
 /**
  * @date 2016-09-21.
@@ -23,8 +28,9 @@ import java.util.Optional;
 public class orderController {
     @FXML Button choiceBtn;
     @FXML Button cancelBtn;
-    @FXML
-    ImageView Main;
+    @FXML ImageView Main;
+    private pjJoinUpdate pj;
+    private pjOrdermodel pjor;
 
 
 
@@ -35,6 +41,9 @@ public class orderController {
             Parent root = login.load();
             Stage stage = (Stage)choiceBtn.getScene().getWindow();
             stage.setScene(new Scene(root));
+
+            paymentController pc = login.getController();
+            pc.senddata(pj,pjor);
             stage.setTitle("결제 페이지");
             stage.show();
         } catch (IOException ex) {
@@ -51,6 +60,8 @@ public class orderController {
             Stage stage = (Stage) cancelBtn.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("메인 페이지");
+            MainloginController mlc = login.getController();
+            mlc.senddata(pj);
             stage.show();
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -93,12 +104,27 @@ public class orderController {
             Parent root = loader.load();
             Stage stage = (Stage)Main.getScene().getWindow();
             stage.setScene(new Scene(root));
+            MainloginController mlc = loader.getController();
+            mlc.senddata(pj);
             stage.setTitle("maker");
 
             stage.show();
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+
+    public void menu1(ActionEvent event) {
+        pjor = new pjOrdermodel("1","1","notyet","","menudeppend",5000,"","3");
+    }
+
+    public void menu2(ActionEvent event) {
+        pjor = new pjOrdermodel("1","2","notyet","","menudeppend",8000,"","3");
+    }
+
+    public void senddata(pjJoinUpdate result) {
+
+        pj = result;
     }
 }
 
